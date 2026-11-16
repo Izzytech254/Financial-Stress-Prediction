@@ -1,0 +1,1194 @@
+{
+  "adversarial_auc": 0.9999999891666667,
+  "rounds": [
+    400,
+    400,
+    400,
+    400,
+    400
+  ],
+  "features": [
+    {
+      "feature": "m1_paybill_volume",
+      "adv_gain": 241504.9515625,
+      "target_gain": 6.418299913406372,
+      "ratio": 37627.55788653992
+    },
+    {
+      "feature": "m4_transfer_from_bank_volume",
+      "adv_gain": 85710.55500688552,
+      "target_gain": 13.591000080108643,
+      "ratio": 6306.420020261964
+    },
+    {
+      "feature": "m1_paybill_total_value",
+      "adv_gain": 78612.71634345055,
+      "target_gain": 2.863369941711426,
+      "ratio": 27454.613939618783
+    },
+    {
+      "feature": "m1_mm_send_volume",
+      "adv_gain": 59979.60401354432,
+      "target_gain": 2.6087749004364014,
+      "ratio": 22991.48308292882
+    },
+    {
+      "feature": "F0",
+      "adv_gain": 53207.91727092862,
+      "target_gain": 5.597219944000244,
+      "ratio": 9506.133007772361
+    },
+    {
+      "feature": "m1_transfer_from_bank_volume",
+      "adv_gain": 43596.45228906274,
+      "target_gain": 1.7706650495529175,
+      "ratio": 24621.512846514408
+    },
+    {
+      "feature": "m4_received_total_value",
+      "adv_gain": 30597.05043258667,
+      "target_gain": 0.0,
+      "ratio": 30597050432586.668
+    },
+    {
+      "feature": "m2_transfer_from_bank_volume",
+      "adv_gain": 30489.243225479127,
+      "target_gain": 0.0,
+      "ratio": 30489243225479.125
+    },
+    {
+      "feature": "m3_deposit_volume",
+      "adv_gain": 29999.758486652376,
+      "target_gain": 4.341297388076782,
+      "ratio": 6910.320993474282
+    },
+    {
+      "feature": "m6_transfer_from_bank_volume",
+      "adv_gain": 29584.040840101243,
+      "target_gain": 3.383917450904846,
+      "ratio": 8742.542115927812
+    },
+    {
+      "feature": "m4_received_volume",
+      "adv_gain": 29494.455548477174,
+      "target_gain": 2.951625108718872,
+      "ratio": 9992.615746274898
+    },
+    {
+      "feature": "m1_merchantpay_volume",
+      "adv_gain": 27988.9024433136,
+      "target_gain": 2.4172675609588623,
+      "ratio": 11578.735793993963
+    },
+    {
+      "feature": "m1_paybill_highest_amount",
+      "adv_gain": 17282.09989643097,
+      "target_gain": 0.0,
+      "ratio": 17282099896430.969
+    },
+    {
+      "feature": "m1_merchantpay_total_value",
+      "adv_gain": 15739.437068939209,
+      "target_gain": 0.0,
+      "ratio": 15739437068939.207
+    },
+    {
+      "feature": "m2_withdraw_volume",
+      "adv_gain": 15224.489613628388,
+      "target_gain": 3.7538750171661377,
+      "ratio": 4055.6730152049477
+    },
+    {
+      "feature": "m4_transfer_from_bank_total_value",
+      "adv_gain": 14280.969924545288,
+      "target_gain": 4.334625005722046,
+      "ratio": 3294.6263869189743
+    },
+    {
+      "feature": "m1_transfer_from_bank_total_value",
+      "adv_gain": 13926.666599917411,
+      "target_gain": 2.7670249938964844,
+      "ratio": 5033.083049702777
+    },
+    {
+      "feature": "m4_paybill_volume",
+      "adv_gain": 13623.857880830765,
+      "target_gain": 6.812337398529053,
+      "ratio": 1999.8800825356363
+    },
+    {
+      "feature": "m6_paybill_volume",
+      "adv_gain": 11925.748075759411,
+      "target_gain": 2.9315249919891357,
+      "ratio": 4068.1038382003685
+    },
+    {
+      "feature": "m6_transfer_from_bank_total_value",
+      "adv_gain": 10758.220475816726,
+      "target_gain": 7.610605001449585,
+      "ratio": 1413.5828192836227
+    },
+    {
+      "feature": "m5_transfer_from_bank_volume",
+      "adv_gain": 10133.718596982955,
+      "target_gain": 0.0,
+      "ratio": 10133718596982.955
+    },
+    {
+      "feature": "m3_paybill_volume",
+      "adv_gain": 10075.7569404006,
+      "target_gain": 2.5748751163482666,
+      "ratio": 3913.105094889849
+    },
+    {
+      "feature": "m1_mm_send_total_value",
+      "adv_gain": 9629.83380432129,
+      "target_gain": 5.8443074226379395,
+      "ratio": 1647.7288250396232
+    },
+    {
+      "feature": "m3_withdraw_volume",
+      "adv_gain": 9050.709359169006,
+      "target_gain": 6.8196974992752075,
+      "ratio": 1327.1423488803964
+    },
+    {
+      "feature": "m5_merchantpay_volume",
+      "adv_gain": 8234.13171877861,
+      "target_gain": 3.9670374393463135,
+      "ratio": 2075.637511013707
+    },
+    {
+      "feature": "m4_transfer_from_bank_highest_amount",
+      "adv_gain": 8190.208776855468,
+      "target_gain": 2.2406349182128906,
+      "ratio": 3655.3071214888478
+    },
+    {
+      "feature": "m1_transfer_from_bank_highest_amount",
+      "adv_gain": 7234.353626275062,
+      "target_gain": 2.5255749225616455,
+      "ratio": 2864.43833393505
+    },
+    {
+      "feature": "m4_received_highest_amount",
+      "adv_gain": 7210.477703857422,
+      "target_gain": 0.0,
+      "ratio": 7210477703857.422
+    },
+    {
+      "feature": "m4_transfer_from_bank_banks",
+      "adv_gain": 7178.186193847656,
+      "target_gain": 2.5505499839782715,
+      "ratio": 2814.3679740151447
+    },
+    {
+      "feature": "m1_deposit_volume",
+      "adv_gain": 6478.450668394566,
+      "target_gain": 2.083324909210205,
+      "ratio": 3109.6688935289008
+    },
+    {
+      "feature": "m6_mm_send_volume",
+      "adv_gain": 6074.222103977203,
+      "target_gain": 1.1609749794006348,
+      "ratio": 5232.000866961906
+    },
+    {
+      "feature": "m2_transfer_from_bank_total_value",
+      "adv_gain": 5707.916861343384,
+      "target_gain": 1.765757441520691,
+      "ratio": 3232.5599903433504
+    },
+    {
+      "feature": "m2_transfer_from_bank_highest_amount",
+      "adv_gain": 3900.0492577552795,
+      "target_gain": 0.0,
+      "ratio": 3900049257755.2793
+    },
+    {
+      "feature": "m6_paybill_highest_amount",
+      "adv_gain": 3838.583330488205,
+      "target_gain": 1.6079349517822266,
+      "ratio": 2387.2752587698055
+    },
+    {
+      "feature": "m3_deposit_total_value",
+      "adv_gain": 3767.1822887420653,
+      "target_gain": 0.0,
+      "ratio": 3767182288742.065
+    },
+    {
+      "feature": "m6_mm_send_total_value",
+      "adv_gain": 3593.7722982406617,
+      "target_gain": 8.045837640762329,
+      "ratio": 446.66229400242975
+    },
+    {
+      "feature": "m5_merchantpay_total_value",
+      "adv_gain": 3426.579029893875,
+      "target_gain": 1.8224774599075317,
+      "ratio": 1880.1763552058171
+    },
+    {
+      "feature": "m3_paybill_total_value",
+      "adv_gain": 3253.0675706863403,
+      "target_gain": 2.9764374494552612,
+      "ratio": 1092.9400079241602
+    },
+    {
+      "feature": "m2_paybill_volume",
+      "adv_gain": 3176.7476979494095,
+      "target_gain": 1.4334524869918823,
+      "ratio": 2216.151371992595
+    },
+    {
+      "feature": "m2_withdraw_total_value",
+      "adv_gain": 3050.6996344566346,
+      "target_gain": 0.0,
+      "ratio": 3050699634456.6343
+    },
+    {
+      "feature": "m5_transfer_from_bank_total_value",
+      "adv_gain": 2825.364169716835,
+      "target_gain": 1.146897554397583,
+      "ratio": 2463.48434210185
+    },
+    {
+      "feature": "m1_mm_send_recipients",
+      "adv_gain": 2773.5817993164064,
+      "target_gain": 3.209707498550415,
+      "ratio": 864.122914535017
+    },
+    {
+      "feature": "m4_paybill_companies",
+      "adv_gain": 2474.611555480957,
+      "target_gain": 15.50531268119812,
+      "ratio": 159.5976557326764
+    },
+    {
+      "feature": "m4_paybill_total_value",
+      "adv_gain": 2424.435848736763,
+      "target_gain": 6.163490056991577,
+      "ratio": 393.3543862203917
+    },
+    {
+      "feature": "m1_mm_send_highest_amount",
+      "adv_gain": 2256.053015136719,
+      "target_gain": 0.6137225031852722,
+      "ratio": 3676.0148108495227
+    },
+    {
+      "feature": "m6_transfer_from_bank_banks",
+      "adv_gain": 2251.5310050964354,
+      "target_gain": 2.0417275428771973,
+      "ratio": 1102.7578149927026
+    },
+    {
+      "feature": "m4_merchantpay_volume",
+      "adv_gain": 1916.6265956878663,
+      "target_gain": 0.0,
+      "ratio": 1916626595687.8662
+    },
+    {
+      "feature": "m3_transfer_from_bank_volume",
+      "adv_gain": 1915.4758273541927,
+      "target_gain": 0.0,
+      "ratio": 1915475827354.1926
+    },
+    {
+      "feature": "m3_withdraw_total_value",
+      "adv_gain": 1893.3551300048828,
+      "target_gain": 4.360732555389404,
+      "ratio": 434.182813442827
+    },
+    {
+      "feature": "m6_transfer_from_bank_highest_amount",
+      "adv_gain": 1832.376239013672,
+      "target_gain": 6.813165068626404,
+      "ratio": 268.94640307227274
+    },
+    {
+      "feature": "m2_transfer_from_bank_banks",
+      "adv_gain": 1820.2597418308258,
+      "target_gain": 0.0,
+      "ratio": 1820259741830.8257
+    },
+    {
+      "feature": "m1_merchantpay_highest_amount",
+      "adv_gain": 1770.2398189544679,
+      "target_gain": 0.0,
+      "ratio": 1770239818954.4678
+    },
+    {
+      "feature": "m6_paybill_total_value",
+      "adv_gain": 1574.3097998142243,
+      "target_gain": 1.0778474807739258,
+      "ratio": 1460.6053513463878
+    },
+    {
+      "feature": "m5_paybill_volume",
+      "adv_gain": 1469.716542597115,
+      "target_gain": 0.0,
+      "ratio": 1469716542597.115
+    },
+    {
+      "feature": "m4_paybill_highest_amount",
+      "adv_gain": 1265.8677653193474,
+      "target_gain": 10.538120031356812,
+      "ratio": 120.12273170475937
+    },
+    {
+      "feature": "m3_withdraw_highest_amount",
+      "adv_gain": 1231.7410396575929,
+      "target_gain": 3.752487540245056,
+      "ratio": 328.2465367623599
+    },
+    {
+      "feature": "m6_received_volume",
+      "adv_gain": 1229.127463054657,
+      "target_gain": 0.0,
+      "ratio": 1229127463054.657
+    },
+    {
+      "feature": "m3_deposit_agents",
+      "adv_gain": 1167.0271500587464,
+      "target_gain": 2.002655029296875,
+      "ratio": 582.7399788798101
+    },
+    {
+      "feature": "m1_transfer_from_bank_banks",
+      "adv_gain": 1134.1336072444915,
+      "target_gain": 1.9757499694824219,
+      "ratio": 574.0268881125522
+    },
+    {
+      "feature": "m2_paybill_total_value",
+      "adv_gain": 1122.3391502141953,
+      "target_gain": 1.7728824615478516,
+      "ratio": 633.0589725622617
+    },
+    {
+      "feature": "m1_withdraw_volume",
+      "adv_gain": 1039.9157067298888,
+      "target_gain": 12.627704858779907,
+      "ratio": 82.3519173339322
+    },
+    {
+      "feature": "m2_withdraw_agents",
+      "adv_gain": 1018.8814166784286,
+      "target_gain": 2.2033851146698,
+      "ratio": 462.41640166871247
+    },
+    {
+      "feature": "m5_merchantpay_highest_amount",
+      "adv_gain": 999.1304533004761,
+      "target_gain": 0.0,
+      "ratio": 999130453300.4761
+    },
+    {
+      "feature": "m1_deposit_total_value",
+      "adv_gain": 950.3881184637546,
+      "target_gain": 0.0,
+      "ratio": 950388118463.7545
+    },
+    {
+      "feature": "m1_deposit_agents",
+      "adv_gain": 869.6811686515808,
+      "target_gain": 1.5975124835968018,
+      "ratio": 544.3971030192486
+    },
+    {
+      "feature": "m5_merchantpay_merchants",
+      "adv_gain": 718.4892508983612,
+      "target_gain": 12.209110140800476,
+      "ratio": 58.84861734832426
+    },
+    {
+      "feature": "m3_withdraw_agents",
+      "adv_gain": 705.7890604019165,
+      "target_gain": 1.3947274684906006,
+      "ratio": 506.04084012175747
+    },
+    {
+      "feature": "F1",
+      "adv_gain": 702.6324481010437,
+      "target_gain": 3.9390949010849,
+      "ratio": 178.37408480033105
+    },
+    {
+      "feature": "m4_merchantpay_merchants",
+      "adv_gain": 636.3720872879028,
+      "target_gain": 5.745060086250305,
+      "ratio": 110.76856945328879
+    },
+    {
+      "feature": "m2_received_volume",
+      "adv_gain": 622.1242750287056,
+      "target_gain": 2.7413249015808105,
+      "ratio": 226.94291889407523
+    },
+    {
+      "feature": "m3_transfer_from_bank_total_value",
+      "adv_gain": 604.299266564846,
+      "target_gain": 3.107800006866455,
+      "ratio": 194.44599557090072
+    },
+    {
+      "feature": "m2_withdraw_highest_amount",
+      "adv_gain": 582.434464263916,
+      "target_gain": 5.59879994392395,
+      "ratio": 104.02844716606985
+    },
+    {
+      "feature": "m4_mm_send_volume",
+      "adv_gain": 567.4352445170283,
+      "target_gain": 7.33891236782074,
+      "ratio": 77.31871100243252
+    },
+    {
+      "feature": "m6_received_total_value",
+      "adv_gain": 529.0013701438904,
+      "target_gain": 0.0,
+      "ratio": 529001370143.8904
+    },
+    {
+      "feature": "m5_transfer_from_bank_highest_amount",
+      "adv_gain": 520.7752862930298,
+      "target_gain": 0.0,
+      "ratio": 520775286293.0298
+    },
+    {
+      "feature": "m4_merchantpay_total_value",
+      "adv_gain": 512.6976005077362,
+      "target_gain": 3.8805099725723267,
+      "ratio": 132.1211912865556
+    },
+    {
+      "feature": "m6_mm_send_highest_amount",
+      "adv_gain": 503.3727149963379,
+      "target_gain": 5.578305006027222,
+      "ratio": 90.23757474039488
+    },
+    {
+      "feature": "m1_paybill_companies",
+      "adv_gain": 434.3922119140625,
+      "target_gain": 3.267549991607666,
+      "ratio": 132.9412596277972
+    },
+    {
+      "feature": "m1_withdraw_total_value",
+      "adv_gain": 415.2864640235901,
+      "target_gain": 17.548370122909546,
+      "ratio": 23.665244184573293
+    },
+    {
+      "feature": "m2_paybill_companies",
+      "adv_gain": 373.36938549280165,
+      "target_gain": 6.5233376026153564,
+      "ratio": 57.23594395695132
+    },
+    {
+      "feature": "m3_deposit_highest_amount",
+      "adv_gain": 369.96343936920164,
+      "target_gain": 2.5053250789642334,
+      "ratio": 147.67083215184326
+    },
+    {
+      "feature": "m1_deposit_highest_amount",
+      "adv_gain": 349.93418902754786,
+      "target_gain": 1.3250800371170044,
+      "ratio": 264.0853223665035
+    },
+    {
+      "feature": "m2_paybill_highest_amount",
+      "adv_gain": 347.96897600889207,
+      "target_gain": 5.246300101280212,
+      "ratio": 66.32654808627007
+    },
+    {
+      "feature": "m6_mm_send_recipients",
+      "adv_gain": 303.0435165405273,
+      "target_gain": 1.1829224824905396,
+      "ratio": 256.1820582244017
+    },
+    {
+      "feature": "m5_paybill_total_value",
+      "adv_gain": 295.7320028945804,
+      "target_gain": 1.227929949760437,
+      "ratio": 240.83784479028168
+    },
+    {
+      "feature": "m6_merchantpay_volume",
+      "adv_gain": 265.3201741695404,
+      "target_gain": 0.0,
+      "ratio": 265320174169.54037
+    },
+    {
+      "feature": "m3_received_volume",
+      "adv_gain": 260.11165709495543,
+      "target_gain": 0.0,
+      "ratio": 260111657094.9554
+    },
+    {
+      "feature": "m2_merchantpay_volume",
+      "adv_gain": 198.21101179122925,
+      "target_gain": 0.0,
+      "ratio": 198211011791.22925
+    },
+    {
+      "feature": "m6_received_highest_amount",
+      "adv_gain": 189.7574161529541,
+      "target_gain": 8.88829517364502,
+      "ratio": 21.349135286850174
+    },
+    {
+      "feature": "m2_received_total_value",
+      "adv_gain": 178.57914625108242,
+      "target_gain": 4.2930299043655396,
+      "ratio": 41.5974615103169
+    },
+    {
+      "feature": "m4_mm_send_total_value",
+      "adv_gain": 151.15081958770753,
+      "target_gain": 0.0,
+      "ratio": 151150819587.70752
+    },
+    {
+      "feature": "m6_merchantpay_total_value",
+      "adv_gain": 131.23918414115906,
+      "target_gain": 0.0,
+      "ratio": 131239184141.15904
+    },
+    {
+      "feature": "m5_mm_send_volume",
+      "adv_gain": 118.95581884384156,
+      "target_gain": 3.5164600610733032,
+      "ratio": 33.82828661324402
+    },
+    {
+      "feature": "m3_paybill_highest_amount",
+      "adv_gain": 106.1967987060547,
+      "target_gain": 0.0,
+      "ratio": 106196798706.05469
+    },
+    {
+      "feature": "m5_paybill_companies",
+      "adv_gain": 99.41300048828126,
+      "target_gain": 2.327589988708496,
+      "ratio": 42.7107011663732
+    },
+    {
+      "feature": "m4_merchantpay_highest_amount",
+      "adv_gain": 89.07741632461548,
+      "target_gain": 6.078602433204651,
+      "ratio": 14.654259311872686
+    },
+    {
+      "feature": "m6_merchantpay_highest_amount",
+      "adv_gain": 74.55451288223267,
+      "target_gain": 0.0,
+      "ratio": 74554512882.23267
+    },
+    {
+      "feature": "m2_received_senders",
+      "adv_gain": 70.03992738723755,
+      "target_gain": 5.533455014228821,
+      "ratio": 12.65753985430046
+    },
+    {
+      "feature": "m3_received_total_value",
+      "adv_gain": 66.09021654129029,
+      "target_gain": 0.0,
+      "ratio": 66090216541.29028
+    },
+    {
+      "feature": "m5_paybill_highest_amount",
+      "adv_gain": 64.80180435180664,
+      "target_gain": 5.740599989891052,
+      "ratio": 11.288333006067566
+    },
+    {
+      "feature": "m5_transfer_from_bank_banks",
+      "adv_gain": 60.281948280334475,
+      "target_gain": 0.0,
+      "ratio": 60281948280.33447
+    },
+    {
+      "feature": "m3_transfer_from_bank_highest_amount",
+      "adv_gain": 56.80067095756531,
+      "target_gain": 0.0,
+      "ratio": 56800670957.56531
+    },
+    {
+      "feature": "m4_deposit_agents",
+      "adv_gain": 51.55487027168274,
+      "target_gain": 1.3236000537872314,
+      "ratio": 38.95048967791874
+    },
+    {
+      "feature": "m1_withdraw_highest_amount",
+      "adv_gain": 50.51490743160248,
+      "target_gain": 2.598900079727173,
+      "ratio": 19.437033307363013
+    },
+    {
+      "feature": "m5_mm_send_total_value",
+      "adv_gain": 46.867297077178954,
+      "target_gain": 4.117590069770813,
+      "ratio": 11.382215390956922
+    },
+    {
+      "feature": "m2_merchantpay_total_value",
+      "adv_gain": 44.497518587112424,
+      "target_gain": 0.0,
+      "ratio": 44497518587.11242
+    },
+    {
+      "feature": "m3_merchantpay_volume",
+      "adv_gain": 42.16756820678711,
+      "target_gain": 1.2182199954986572,
+      "ratio": 34.61408311141081
+    },
+    {
+      "feature": "m3_received_senders",
+      "adv_gain": 37.110838413238525,
+      "target_gain": 1.4510849714279175,
+      "ratio": 25.574545335650217
+    },
+    {
+      "feature": "m4_mm_send_highest_amount",
+      "adv_gain": 36.44426040649414,
+      "target_gain": 1.8106149435043335,
+      "ratio": 20.128112008084063
+    },
+    {
+      "feature": "m4_mm_send_recipients",
+      "adv_gain": 36.078399658203125,
+      "target_gain": 21.41924262046814,
+      "ratio": 1.6843919411997492
+    },
+    {
+      "feature": "m1_withdraw_agents",
+      "adv_gain": 31.05965385437012,
+      "target_gain": 14.434984922409058,
+      "ratio": 2.1516928503334296
+    },
+    {
+      "feature": "m2_received_highest_amount",
+      "adv_gain": 29.629951602220537,
+      "target_gain": 3.271239995956421,
+      "ratio": 9.057712558475808
+    },
+    {
+      "feature": "m2_deposit_agents",
+      "adv_gain": 28.726844024658202,
+      "target_gain": 0.0,
+      "ratio": 28726844024.6582
+    },
+    {
+      "feature": "m6_deposit_volume",
+      "adv_gain": 28.281565952301026,
+      "target_gain": 0.0,
+      "ratio": 28281565952.301025
+    },
+    {
+      "feature": "m6_withdraw_volume",
+      "adv_gain": 24.21625361442566,
+      "target_gain": 5.026942491531372,
+      "ratio": 4.8172927481076675
+    },
+    {
+      "feature": "m6_merchantpay_merchants",
+      "adv_gain": 18.299407863616942,
+      "target_gain": 0.0,
+      "ratio": 18299407863.61694
+    },
+    {
+      "feature": "m3_transfer_from_bank_banks",
+      "adv_gain": 17.872579956054686,
+      "target_gain": 3.852262496948242,
+      "ratio": 4.639502101835952
+    },
+    {
+      "feature": "m3_merchantpay_total_value",
+      "adv_gain": 17.68860991001129,
+      "target_gain": 0.0,
+      "ratio": 17688609910.01129
+    },
+    {
+      "feature": "m4_deposit_volume",
+      "adv_gain": 15.72342020869255,
+      "target_gain": 0.0,
+      "ratio": 15723420208.692549
+    },
+    {
+      "feature": "m6_deposit_total_value",
+      "adv_gain": 14.768530035018921,
+      "target_gain": 0.0,
+      "ratio": 14768530035.01892
+    },
+    {
+      "feature": "m3_received_highest_amount",
+      "adv_gain": 11.809812068939209,
+      "target_gain": 2.0254974365234375,
+      "ratio": 5.830573690272839
+    },
+    {
+      "feature": "m2_merchantpay_merchants",
+      "adv_gain": 10.39069414138794,
+      "target_gain": 35.82988739013672,
+      "ratio": 0.2900007479219234
+    },
+    {
+      "feature": "m6_withdraw_total_value",
+      "adv_gain": 8.92923002243042,
+      "target_gain": 5.399405002593994,
+      "ratio": 1.6537433321795414
+    },
+    {
+      "feature": "m6_paybill_companies",
+      "adv_gain": 5.986172008514404,
+      "target_gain": 1.1942174434661865,
+      "ratio": 5.012631523893217
+    },
+    {
+      "feature": "m6_withdraw_agents",
+      "adv_gain": 5.580093228816986,
+      "target_gain": 1.206262469291687,
+      "ratio": 4.625936200657607
+    },
+    {
+      "feature": "m4_deposit_total_value",
+      "adv_gain": 4.915255272388459,
+      "target_gain": 2.7358325719833374,
+      "ratio": 1.796621372567595
+    },
+    {
+      "feature": "m2_merchantpay_highest_amount",
+      "adv_gain": 3.434741973876953,
+      "target_gain": 0.0,
+      "ratio": 3434741973.876953
+    },
+    {
+      "feature": "m6_deposit_highest_amount",
+      "adv_gain": 2.9175439834594727,
+      "target_gain": 0.0,
+      "ratio": 2917543983.4594727
+    },
+    {
+      "feature": "m1_received_volume",
+      "adv_gain": 2.269987964630127,
+      "target_gain": 0.0,
+      "ratio": 2269987964.630127
+    },
+    {
+      "feature": "m3_merchantpay_merchants",
+      "adv_gain": 2.206797981262207,
+      "target_gain": 40.95492482185364,
+      "ratio": 0.05388358032171924
+    },
+    {
+      "feature": "m6_withdraw_highest_amount",
+      "adv_gain": 2.195323944091797,
+      "target_gain": 0.0,
+      "ratio": 2195323944.091797
+    },
+    {
+      "feature": "m5_withdraw_agents",
+      "adv_gain": 1.8427119255065918,
+      "target_gain": 2.3931100368499756,
+      "ratio": 0.7700071857799426
+    },
+    {
+      "feature": "m6_deposit_agents",
+      "adv_gain": 1.477735996246338,
+      "target_gain": 1.0018750429153442,
+      "ratio": 1.4749703620436747
+    },
+    {
+      "feature": "m5_withdraw_highest_amount",
+      "adv_gain": 0.780378007888794,
+      "target_gain": 14.924647450447083,
+      "ratio": 0.052287868804105596
+    },
+    {
+      "feature": "m4_deposit_highest_amount",
+      "adv_gain": 0.7205659866333007,
+      "target_gain": 7.710714936256409,
+      "ratio": 0.09344995794769832
+    },
+    {
+      "feature": "m4_withdraw_agents",
+      "adv_gain": 0.22774140238761903,
+      "target_gain": 4.226712346076965,
+      "ratio": 0.05388145293235211
+    },
+    {
+      "feature": "m5_received_total_value",
+      "adv_gain": 0.006674580276012421,
+      "target_gain": 5.75819993019104,
+      "ratio": 0.0011591435441234905
+    },
+    {
+      "feature": "m3_mm_send_recipients",
+      "adv_gain": 0.0,
+      "target_gain": 30.08826494216919,
+      "ratio": 0.0
+    },
+    {
+      "feature": "F4",
+      "adv_gain": 0.0,
+      "target_gain": 14.420959711074829,
+      "ratio": 0.0
+    },
+    {
+      "feature": "m5_mm_send_recipients",
+      "adv_gain": 0.0,
+      "target_gain": 13.92373526096344,
+      "ratio": 0.0
+    },
+    {
+      "feature": "m2_deposit_volume",
+      "adv_gain": 0.0,
+      "target_gain": 12.944432616233826,
+      "ratio": 0.0
+    },
+    {
+      "feature": "m6_received_senders",
+      "adv_gain": 0.0,
+      "target_gain": 11.425187468528748,
+      "ratio": 0.0
+    },
+    {
+      "feature": "m5_daily_avg_bal",
+      "adv_gain": 0.0,
+      "target_gain": 10.86876380443573,
+      "ratio": 0.0
+    },
+    {
+      "feature": "age",
+      "adv_gain": 0.0,
+      "target_gain": 9.613854885101318,
+      "ratio": 0.0
+    },
+    {
+      "feature": "F3",
+      "adv_gain": 0.0,
+      "target_gain": 9.563810348510742,
+      "ratio": 0.0
+    },
+    {
+      "feature": "F2",
+      "adv_gain": 0.0,
+      "target_gain": 9.172397494316101,
+      "ratio": 0.0
+    },
+    {
+      "feature": "m5_received_senders",
+      "adv_gain": 0.0,
+      "target_gain": 8.932352423667908,
+      "ratio": 0.0
+    },
+    {
+      "feature": "F5",
+      "adv_gain": 0.0,
+      "target_gain": 8.116272449493408,
+      "ratio": 0.0
+    },
+    {
+      "feature": "m2_daily_avg_bal",
+      "adv_gain": 0.0,
+      "target_gain": 6.481642484664917,
+      "ratio": 0.0
+    },
+    {
+      "feature": "m4_withdraw_total_value",
+      "adv_gain": 0.0,
+      "target_gain": 6.06400990486145,
+      "ratio": 0.0
+    },
+    {
+      "feature": "m5_withdraw_volume",
+      "adv_gain": 0.0,
+      "target_gain": 5.988767623901367,
+      "ratio": 0.0
+    },
+    {
+      "feature": "arpu",
+      "adv_gain": 0.0,
+      "target_gain": 5.764520049095154,
+      "ratio": 0.0
+    },
+    {
+      "feature": "m4_daily_avg_bal",
+      "adv_gain": 0.0,
+      "target_gain": 5.627034962177277,
+      "ratio": 0.0
+    },
+    {
+      "feature": "m6_daily_avg_bal",
+      "adv_gain": 0.0,
+      "target_gain": 5.608647465705872,
+      "ratio": 0.0
+    },
+    {
+      "feature": "m4_received_senders",
+      "adv_gain": 0.0,
+      "target_gain": 5.544645071029663,
+      "ratio": 0.0
+    },
+    {
+      "feature": "m5_withdraw_total_value",
+      "adv_gain": 0.0,
+      "target_gain": 5.378880023956299,
+      "ratio": 0.0
+    },
+    {
+      "feature": "m5_mm_send_highest_amount",
+      "adv_gain": 0.0,
+      "target_gain": 4.341355085372925,
+      "ratio": 0.0
+    },
+    {
+      "feature": "m3_daily_avg_bal",
+      "adv_gain": 0.0,
+      "target_gain": 3.6136499643325806,
+      "ratio": 0.0
+    },
+    {
+      "feature": "m5_received_highest_amount",
+      "adv_gain": 0.0,
+      "target_gain": 2.556137442588806,
+      "ratio": 0.0
+    },
+    {
+      "feature": "m1_received_highest_amount",
+      "adv_gain": 0.0,
+      "target_gain": 2.554194986820221,
+      "ratio": 0.0
+    },
+    {
+      "feature": "m2_deposit_highest_amount",
+      "adv_gain": 0.0,
+      "target_gain": 2.460437536239624,
+      "ratio": 0.0
+    },
+    {
+      "feature": "m1_merchantpay_merchants",
+      "adv_gain": 0.0,
+      "target_gain": 2.332427501678467,
+      "ratio": 0.0
+    },
+    {
+      "feature": "m2_mm_send_highest_amount",
+      "adv_gain": 0.0,
+      "target_gain": 2.154289960861206,
+      "ratio": 0.0
+    },
+    {
+      "feature": "region_Coastal & Eastern Corridor",
+      "adv_gain": 0.0,
+      "target_gain": 1.7487424612045288,
+      "ratio": 0.0
+    },
+    {
+      "feature": "m4_withdraw_volume",
+      "adv_gain": 0.0,
+      "target_gain": 1.6476025581359863,
+      "ratio": 0.0
+    },
+    {
+      "feature": "m1_received_total_value",
+      "adv_gain": 0.0,
+      "target_gain": 1.5131725072860718,
+      "ratio": 0.0
+    },
+    {
+      "feature": "m2_mm_send_total_value",
+      "adv_gain": 0.0,
+      "target_gain": 1.4108999967575073,
+      "ratio": 0.0
+    },
+    {
+      "feature": "gender_M",
+      "adv_gain": 0.0,
+      "target_gain": 1.3828999996185303,
+      "ratio": 0.0
+    },
+    {
+      "feature": "m2_mm_send_recipients",
+      "adv_gain": 0.0,
+      "target_gain": 1.2095675468444824,
+      "ratio": 0.0
+    },
+    {
+      "feature": "gender_F",
+      "adv_gain": 0.0,
+      "target_gain": 1.042852520942688,
+      "ratio": 0.0
+    },
+    {
+      "feature": "region_Lake Zone (Northwest)",
+      "adv_gain": 0.0,
+      "target_gain": 0.8372874855995178,
+      "ratio": 0.0
+    },
+    {
+      "feature": "x_90_d_activity_rate",
+      "adv_gain": 0.0,
+      "target_gain": 0.0,
+      "ratio": 0.0
+    },
+    {
+      "feature": "smartphone_Yes",
+      "adv_gain": 0.0,
+      "target_gain": 0.0,
+      "ratio": 0.0
+    },
+    {
+      "feature": "smartphone_No",
+      "adv_gain": 0.0,
+      "target_gain": 0.0,
+      "ratio": 0.0
+    },
+    {
+      "feature": "segment_MVC",
+      "adv_gain": 0.0,
+      "target_gain": 0.0,
+      "ratio": 0.0
+    },
+    {
+      "feature": "segment_LVC",
+      "adv_gain": 0.0,
+      "target_gain": 0.0,
+      "ratio": 0.0
+    },
+    {
+      "feature": "segment_HVC",
+      "adv_gain": 0.0,
+      "target_gain": 0.0,
+      "ratio": 0.0
+    },
+    {
+      "feature": "region_Western Zone",
+      "adv_gain": 0.0,
+      "target_gain": 0.0,
+      "ratio": 0.0
+    },
+    {
+      "feature": "region_Southern Highlands",
+      "adv_gain": 0.0,
+      "target_gain": 0.0,
+      "ratio": 0.0
+    },
+    {
+      "feature": "region_Northern Highlands",
+      "adv_gain": 0.0,
+      "target_gain": 0.0,
+      "ratio": 0.0
+    },
+    {
+      "feature": "region_Islander",
+      "adv_gain": 0.0,
+      "target_gain": 0.0,
+      "ratio": 0.0
+    },
+    {
+      "feature": "region_Central Zone",
+      "adv_gain": 0.0,
+      "target_gain": 0.0,
+      "ratio": 0.0
+    },
+    {
+      "feature": "m5_received_volume",
+      "adv_gain": 0.0,
+      "target_gain": 0.0,
+      "ratio": 0.0
+    },
+    {
+      "feature": "m4_withdraw_highest_amount",
+      "adv_gain": 0.0,
+      "target_gain": 0.0,
+      "ratio": 0.0
+    },
+    {
+      "feature": "m3_paybill_companies",
+      "adv_gain": 0.0,
+      "target_gain": 0.0,
+      "ratio": 0.0
+    },
+    {
+      "feature": "m3_mm_send_volume",
+      "adv_gain": 0.0,
+      "target_gain": 0.0,
+      "ratio": 0.0
+    },
+    {
+      "feature": "m3_mm_send_total_value",
+      "adv_gain": 0.0,
+      "target_gain": 0.0,
+      "ratio": 0.0
+    },
+    {
+      "feature": "m3_mm_send_highest_amount",
+      "adv_gain": 0.0,
+      "target_gain": 0.0,
+      "ratio": 0.0
+    },
+    {
+      "feature": "m3_merchantpay_highest_amount",
+      "adv_gain": 0.0,
+      "target_gain": 0.0,
+      "ratio": 0.0
+    },
+    {
+      "feature": "m2_mm_send_volume",
+      "adv_gain": 0.0,
+      "target_gain": 0.0,
+      "ratio": 0.0
+    },
+    {
+      "feature": "m2_deposit_total_value",
+      "adv_gain": 0.0,
+      "target_gain": 0.0,
+      "ratio": 0.0
+    },
+    {
+      "feature": "m1_received_senders",
+      "adv_gain": 0.0,
+      "target_gain": 0.0,
+      "ratio": 0.0
+    },
+    {
+      "feature": "m1_daily_avg_bal",
+      "adv_gain": 0.0,
+      "target_gain": 0.0,
+      "ratio": 0.0
+    },
+    {
+      "feature": "earning_pattern_Weekly Earner",
+      "adv_gain": 0.0,
+      "target_gain": 0.0,
+      "ratio": 0.0
+    },
+    {
+      "feature": "earning_pattern_Monthly Earner",
+      "adv_gain": 0.0,
+      "target_gain": 0.0,
+      "ratio": 0.0
+    },
+    {
+      "feature": "earning_pattern_Irregular Earner",
+      "adv_gain": 0.0,
+      "target_gain": 0.0,
+      "ratio": 0.0
+    },
+    {
+      "feature": "F6",
+      "adv_gain": 0.0,
+      "target_gain": 0.0,
+      "ratio": 0.0
+    }
+  ]
+}

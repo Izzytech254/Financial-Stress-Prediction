@@ -1,0 +1,1027 @@
+{
+  "drop_cols": [
+    "m5_deposit_volume",
+    "m5_deposit_total_value",
+    "m5_deposit_highest_amount",
+    "m5_deposit_agents"
+  ],
+  "elapsed_seconds": 7.3027355670928955,
+  "feature_count": 197,
+  "features": [
+    {
+      "feature": "m3_merchantpay_merchants",
+      "gain": 40.95492482185364,
+      "rank": 1
+    },
+    {
+      "feature": "m2_merchantpay_merchants",
+      "gain": 35.82988739013672,
+      "rank": 2
+    },
+    {
+      "feature": "m3_mm_send_recipients",
+      "gain": 30.08826494216919,
+      "rank": 3
+    },
+    {
+      "feature": "m4_mm_send_recipients",
+      "gain": 21.41924262046814,
+      "rank": 4
+    },
+    {
+      "feature": "m1_withdraw_total_value",
+      "gain": 17.548370122909546,
+      "rank": 5
+    },
+    {
+      "feature": "m4_paybill_companies",
+      "gain": 15.50531268119812,
+      "rank": 6
+    },
+    {
+      "feature": "m5_withdraw_highest_amount",
+      "gain": 14.924647450447083,
+      "rank": 7
+    },
+    {
+      "feature": "m1_withdraw_agents",
+      "gain": 14.434984922409058,
+      "rank": 8
+    },
+    {
+      "feature": "F4",
+      "gain": 14.420959711074829,
+      "rank": 9
+    },
+    {
+      "feature": "m5_mm_send_recipients",
+      "gain": 13.92373526096344,
+      "rank": 10
+    },
+    {
+      "feature": "m4_transfer_from_bank_volume",
+      "gain": 13.591000080108643,
+      "rank": 11
+    },
+    {
+      "feature": "m2_deposit_volume",
+      "gain": 12.944432616233826,
+      "rank": 12
+    },
+    {
+      "feature": "m1_withdraw_volume",
+      "gain": 12.627704858779907,
+      "rank": 13
+    },
+    {
+      "feature": "m5_merchantpay_merchants",
+      "gain": 12.209110140800476,
+      "rank": 14
+    },
+    {
+      "feature": "m6_received_senders",
+      "gain": 11.425187468528748,
+      "rank": 15
+    },
+    {
+      "feature": "m5_daily_avg_bal",
+      "gain": 10.86876380443573,
+      "rank": 16
+    },
+    {
+      "feature": "m4_paybill_highest_amount",
+      "gain": 10.538120031356812,
+      "rank": 17
+    },
+    {
+      "feature": "age",
+      "gain": 9.613854885101318,
+      "rank": 18
+    },
+    {
+      "feature": "F3",
+      "gain": 9.563810348510742,
+      "rank": 19
+    },
+    {
+      "feature": "F2",
+      "gain": 9.172397494316101,
+      "rank": 20
+    },
+    {
+      "feature": "m5_received_senders",
+      "gain": 8.932352423667908,
+      "rank": 21
+    },
+    {
+      "feature": "m6_received_highest_amount",
+      "gain": 8.88829517364502,
+      "rank": 22
+    },
+    {
+      "feature": "F5",
+      "gain": 8.116272449493408,
+      "rank": 23
+    },
+    {
+      "feature": "m6_mm_send_total_value",
+      "gain": 8.045837640762329,
+      "rank": 24
+    },
+    {
+      "feature": "m4_deposit_highest_amount",
+      "gain": 7.710714936256409,
+      "rank": 25
+    },
+    {
+      "feature": "m6_transfer_from_bank_total_value",
+      "gain": 7.610605001449585,
+      "rank": 26
+    },
+    {
+      "feature": "m4_mm_send_volume",
+      "gain": 7.33891236782074,
+      "rank": 27
+    },
+    {
+      "feature": "m3_withdraw_volume",
+      "gain": 6.8196974992752075,
+      "rank": 28
+    },
+    {
+      "feature": "m6_transfer_from_bank_highest_amount",
+      "gain": 6.813165068626404,
+      "rank": 29
+    },
+    {
+      "feature": "m4_paybill_volume",
+      "gain": 6.812337398529053,
+      "rank": 30
+    },
+    {
+      "feature": "m2_paybill_companies",
+      "gain": 6.5233376026153564,
+      "rank": 31
+    },
+    {
+      "feature": "m2_daily_avg_bal",
+      "gain": 6.481642484664917,
+      "rank": 32
+    },
+    {
+      "feature": "m1_paybill_volume",
+      "gain": 6.418299913406372,
+      "rank": 33
+    },
+    {
+      "feature": "m4_paybill_total_value",
+      "gain": 6.163490056991577,
+      "rank": 34
+    },
+    {
+      "feature": "m4_merchantpay_highest_amount",
+      "gain": 6.078602433204651,
+      "rank": 35
+    },
+    {
+      "feature": "m4_withdraw_total_value",
+      "gain": 6.06400990486145,
+      "rank": 36
+    },
+    {
+      "feature": "m5_withdraw_volume",
+      "gain": 5.988767623901367,
+      "rank": 37
+    },
+    {
+      "feature": "m1_mm_send_total_value",
+      "gain": 5.8443074226379395,
+      "rank": 38
+    },
+    {
+      "feature": "arpu",
+      "gain": 5.764520049095154,
+      "rank": 39
+    },
+    {
+      "feature": "m5_received_total_value",
+      "gain": 5.75819993019104,
+      "rank": 40
+    },
+    {
+      "feature": "m4_merchantpay_merchants",
+      "gain": 5.745060086250305,
+      "rank": 41
+    },
+    {
+      "feature": "m5_paybill_highest_amount",
+      "gain": 5.740599989891052,
+      "rank": 42
+    },
+    {
+      "feature": "m4_daily_avg_bal",
+      "gain": 5.627034962177277,
+      "rank": 43
+    },
+    {
+      "feature": "m6_daily_avg_bal",
+      "gain": 5.608647465705872,
+      "rank": 44
+    },
+    {
+      "feature": "m2_withdraw_highest_amount",
+      "gain": 5.59879994392395,
+      "rank": 45
+    },
+    {
+      "feature": "F0",
+      "gain": 5.597219944000244,
+      "rank": 46
+    },
+    {
+      "feature": "m6_mm_send_highest_amount",
+      "gain": 5.578305006027222,
+      "rank": 47
+    },
+    {
+      "feature": "m4_received_senders",
+      "gain": 5.544645071029663,
+      "rank": 48
+    },
+    {
+      "feature": "m2_received_senders",
+      "gain": 5.533455014228821,
+      "rank": 49
+    },
+    {
+      "feature": "m6_withdraw_total_value",
+      "gain": 5.399405002593994,
+      "rank": 50
+    },
+    {
+      "feature": "m5_withdraw_total_value",
+      "gain": 5.378880023956299,
+      "rank": 51
+    },
+    {
+      "feature": "m2_paybill_highest_amount",
+      "gain": 5.246300101280212,
+      "rank": 52
+    },
+    {
+      "feature": "m6_withdraw_volume",
+      "gain": 5.026942491531372,
+      "rank": 53
+    },
+    {
+      "feature": "m3_withdraw_total_value",
+      "gain": 4.360732555389404,
+      "rank": 54
+    },
+    {
+      "feature": "m5_mm_send_highest_amount",
+      "gain": 4.341355085372925,
+      "rank": 55
+    },
+    {
+      "feature": "m3_deposit_volume",
+      "gain": 4.341297388076782,
+      "rank": 56
+    },
+    {
+      "feature": "m4_transfer_from_bank_total_value",
+      "gain": 4.334625005722046,
+      "rank": 57
+    },
+    {
+      "feature": "m2_received_total_value",
+      "gain": 4.2930299043655396,
+      "rank": 58
+    },
+    {
+      "feature": "m4_withdraw_agents",
+      "gain": 4.226712346076965,
+      "rank": 59
+    },
+    {
+      "feature": "m5_mm_send_total_value",
+      "gain": 4.117590069770813,
+      "rank": 60
+    },
+    {
+      "feature": "m5_merchantpay_volume",
+      "gain": 3.9670374393463135,
+      "rank": 61
+    },
+    {
+      "feature": "F1",
+      "gain": 3.9390949010849,
+      "rank": 62
+    },
+    {
+      "feature": "m4_merchantpay_total_value",
+      "gain": 3.8805099725723267,
+      "rank": 63
+    },
+    {
+      "feature": "m3_transfer_from_bank_banks",
+      "gain": 3.852262496948242,
+      "rank": 64
+    },
+    {
+      "feature": "m2_withdraw_volume",
+      "gain": 3.7538750171661377,
+      "rank": 65
+    },
+    {
+      "feature": "m3_withdraw_highest_amount",
+      "gain": 3.752487540245056,
+      "rank": 66
+    },
+    {
+      "feature": "m3_daily_avg_bal",
+      "gain": 3.6136499643325806,
+      "rank": 67
+    },
+    {
+      "feature": "m5_mm_send_volume",
+      "gain": 3.5164600610733032,
+      "rank": 68
+    },
+    {
+      "feature": "m6_transfer_from_bank_volume",
+      "gain": 3.383917450904846,
+      "rank": 69
+    },
+    {
+      "feature": "m2_received_highest_amount",
+      "gain": 3.271239995956421,
+      "rank": 70
+    },
+    {
+      "feature": "m1_paybill_companies",
+      "gain": 3.267549991607666,
+      "rank": 71
+    },
+    {
+      "feature": "m1_mm_send_recipients",
+      "gain": 3.209707498550415,
+      "rank": 72
+    },
+    {
+      "feature": "m3_transfer_from_bank_total_value",
+      "gain": 3.107800006866455,
+      "rank": 73
+    },
+    {
+      "feature": "m3_paybill_total_value",
+      "gain": 2.9764374494552612,
+      "rank": 74
+    },
+    {
+      "feature": "m4_received_volume",
+      "gain": 2.951625108718872,
+      "rank": 75
+    },
+    {
+      "feature": "m6_paybill_volume",
+      "gain": 2.9315249919891357,
+      "rank": 76
+    },
+    {
+      "feature": "m1_paybill_total_value",
+      "gain": 2.863369941711426,
+      "rank": 77
+    },
+    {
+      "feature": "m1_transfer_from_bank_total_value",
+      "gain": 2.7670249938964844,
+      "rank": 78
+    },
+    {
+      "feature": "m2_received_volume",
+      "gain": 2.7413249015808105,
+      "rank": 79
+    },
+    {
+      "feature": "m4_deposit_total_value",
+      "gain": 2.7358325719833374,
+      "rank": 80
+    },
+    {
+      "feature": "m1_mm_send_volume",
+      "gain": 2.6087749004364014,
+      "rank": 81
+    },
+    {
+      "feature": "m1_withdraw_highest_amount",
+      "gain": 2.598900079727173,
+      "rank": 82
+    },
+    {
+      "feature": "m3_paybill_volume",
+      "gain": 2.5748751163482666,
+      "rank": 83
+    },
+    {
+      "feature": "m5_received_highest_amount",
+      "gain": 2.556137442588806,
+      "rank": 84
+    },
+    {
+      "feature": "m1_received_highest_amount",
+      "gain": 2.554194986820221,
+      "rank": 85
+    },
+    {
+      "feature": "m4_transfer_from_bank_banks",
+      "gain": 2.5505499839782715,
+      "rank": 86
+    },
+    {
+      "feature": "m1_transfer_from_bank_highest_amount",
+      "gain": 2.5255749225616455,
+      "rank": 87
+    },
+    {
+      "feature": "m3_deposit_highest_amount",
+      "gain": 2.5053250789642334,
+      "rank": 88
+    },
+    {
+      "feature": "m2_deposit_highest_amount",
+      "gain": 2.460437536239624,
+      "rank": 89
+    },
+    {
+      "feature": "m1_merchantpay_volume",
+      "gain": 2.4172675609588623,
+      "rank": 90
+    },
+    {
+      "feature": "m5_withdraw_agents",
+      "gain": 2.3931100368499756,
+      "rank": 91
+    },
+    {
+      "feature": "m1_merchantpay_merchants",
+      "gain": 2.332427501678467,
+      "rank": 92
+    },
+    {
+      "feature": "m5_paybill_companies",
+      "gain": 2.327589988708496,
+      "rank": 93
+    },
+    {
+      "feature": "m4_transfer_from_bank_highest_amount",
+      "gain": 2.2406349182128906,
+      "rank": 94
+    },
+    {
+      "feature": "m2_withdraw_agents",
+      "gain": 2.2033851146698,
+      "rank": 95
+    },
+    {
+      "feature": "m2_mm_send_highest_amount",
+      "gain": 2.154289960861206,
+      "rank": 96
+    },
+    {
+      "feature": "m1_deposit_volume",
+      "gain": 2.083324909210205,
+      "rank": 97
+    },
+    {
+      "feature": "m6_transfer_from_bank_banks",
+      "gain": 2.0417275428771973,
+      "rank": 98
+    },
+    {
+      "feature": "m3_received_highest_amount",
+      "gain": 2.0254974365234375,
+      "rank": 99
+    },
+    {
+      "feature": "m3_deposit_agents",
+      "gain": 2.002655029296875,
+      "rank": 100
+    },
+    {
+      "feature": "m1_transfer_from_bank_banks",
+      "gain": 1.9757499694824219,
+      "rank": 101
+    },
+    {
+      "feature": "m5_merchantpay_total_value",
+      "gain": 1.8224774599075317,
+      "rank": 102
+    },
+    {
+      "feature": "m4_mm_send_highest_amount",
+      "gain": 1.8106149435043335,
+      "rank": 103
+    },
+    {
+      "feature": "m2_paybill_total_value",
+      "gain": 1.7728824615478516,
+      "rank": 104
+    },
+    {
+      "feature": "m1_transfer_from_bank_volume",
+      "gain": 1.7706650495529175,
+      "rank": 105
+    },
+    {
+      "feature": "m2_transfer_from_bank_total_value",
+      "gain": 1.765757441520691,
+      "rank": 106
+    },
+    {
+      "feature": "region_Coastal & Eastern Corridor",
+      "gain": 1.7487424612045288,
+      "rank": 107
+    },
+    {
+      "feature": "m4_withdraw_volume",
+      "gain": 1.6476025581359863,
+      "rank": 108
+    },
+    {
+      "feature": "m6_paybill_highest_amount",
+      "gain": 1.6079349517822266,
+      "rank": 109
+    },
+    {
+      "feature": "m1_deposit_agents",
+      "gain": 1.5975124835968018,
+      "rank": 110
+    },
+    {
+      "feature": "m1_received_total_value",
+      "gain": 1.5131725072860718,
+      "rank": 111
+    },
+    {
+      "feature": "m3_received_senders",
+      "gain": 1.4510849714279175,
+      "rank": 112
+    },
+    {
+      "feature": "m2_paybill_volume",
+      "gain": 1.4334524869918823,
+      "rank": 113
+    },
+    {
+      "feature": "m2_mm_send_total_value",
+      "gain": 1.4108999967575073,
+      "rank": 114
+    },
+    {
+      "feature": "m3_withdraw_agents",
+      "gain": 1.3947274684906006,
+      "rank": 115
+    },
+    {
+      "feature": "gender_M",
+      "gain": 1.3828999996185303,
+      "rank": 116
+    },
+    {
+      "feature": "m1_deposit_highest_amount",
+      "gain": 1.3250800371170044,
+      "rank": 117
+    },
+    {
+      "feature": "m4_deposit_agents",
+      "gain": 1.3236000537872314,
+      "rank": 118
+    },
+    {
+      "feature": "m5_paybill_total_value",
+      "gain": 1.227929949760437,
+      "rank": 119
+    },
+    {
+      "feature": "m3_merchantpay_volume",
+      "gain": 1.2182199954986572,
+      "rank": 120
+    },
+    {
+      "feature": "m2_mm_send_recipients",
+      "gain": 1.2095675468444824,
+      "rank": 121
+    },
+    {
+      "feature": "m6_withdraw_agents",
+      "gain": 1.206262469291687,
+      "rank": 122
+    },
+    {
+      "feature": "m6_paybill_companies",
+      "gain": 1.1942174434661865,
+      "rank": 123
+    },
+    {
+      "feature": "m6_mm_send_recipients",
+      "gain": 1.1829224824905396,
+      "rank": 124
+    },
+    {
+      "feature": "m6_mm_send_volume",
+      "gain": 1.1609749794006348,
+      "rank": 125
+    },
+    {
+      "feature": "m5_transfer_from_bank_total_value",
+      "gain": 1.146897554397583,
+      "rank": 126
+    },
+    {
+      "feature": "m6_paybill_total_value",
+      "gain": 1.0778474807739258,
+      "rank": 127
+    },
+    {
+      "feature": "gender_F",
+      "gain": 1.042852520942688,
+      "rank": 128
+    },
+    {
+      "feature": "m6_deposit_agents",
+      "gain": 1.0018750429153442,
+      "rank": 129
+    },
+    {
+      "feature": "region_Lake Zone (Northwest)",
+      "gain": 0.8372874855995178,
+      "rank": 130
+    },
+    {
+      "feature": "m1_mm_send_highest_amount",
+      "gain": 0.6137225031852722,
+      "rank": 131
+    },
+    {
+      "feature": "m1_deposit_total_value",
+      "gain": 0.0,
+      "rank": 132
+    },
+    {
+      "feature": "m5_received_volume",
+      "gain": 0.0,
+      "rank": 133
+    },
+    {
+      "feature": "m4_received_highest_amount",
+      "gain": 0.0,
+      "rank": 134
+    },
+    {
+      "feature": "m3_received_volume",
+      "gain": 0.0,
+      "rank": 135
+    },
+    {
+      "feature": "m3_received_total_value",
+      "gain": 0.0,
+      "rank": 136
+    },
+    {
+      "feature": "m1_received_senders",
+      "gain": 0.0,
+      "rank": 137
+    },
+    {
+      "feature": "m6_received_total_value",
+      "gain": 0.0,
+      "rank": 138
+    },
+    {
+      "feature": "m4_received_total_value",
+      "gain": 0.0,
+      "rank": 139
+    },
+    {
+      "feature": "m6_received_volume",
+      "gain": 0.0,
+      "rank": 140
+    },
+    {
+      "feature": "m3_mm_send_total_value",
+      "gain": 0.0,
+      "rank": 141
+    },
+    {
+      "feature": "m3_mm_send_highest_amount",
+      "gain": 0.0,
+      "rank": 142
+    },
+    {
+      "feature": "m3_mm_send_volume",
+      "gain": 0.0,
+      "rank": 143
+    },
+    {
+      "feature": "m4_mm_send_total_value",
+      "gain": 0.0,
+      "rank": 144
+    },
+    {
+      "feature": "m2_mm_send_volume",
+      "gain": 0.0,
+      "rank": 145
+    },
+    {
+      "feature": "m5_transfer_from_bank_volume",
+      "gain": 0.0,
+      "rank": 146
+    },
+    {
+      "feature": "m3_merchantpay_highest_amount",
+      "gain": 0.0,
+      "rank": 147
+    },
+    {
+      "feature": "m5_merchantpay_highest_amount",
+      "gain": 0.0,
+      "rank": 148
+    },
+    {
+      "feature": "m2_merchantpay_total_value",
+      "gain": 0.0,
+      "rank": 149
+    },
+    {
+      "feature": "m3_merchantpay_total_value",
+      "gain": 0.0,
+      "rank": 150
+    },
+    {
+      "feature": "m4_merchantpay_volume",
+      "gain": 0.0,
+      "rank": 151
+    },
+    {
+      "feature": "m2_merchantpay_highest_amount",
+      "gain": 0.0,
+      "rank": 152
+    },
+    {
+      "feature": "m2_transfer_from_bank_volume",
+      "gain": 0.0,
+      "rank": 153
+    },
+    {
+      "feature": "m6_merchantpay_total_value",
+      "gain": 0.0,
+      "rank": 154
+    },
+    {
+      "feature": "m6_merchantpay_highest_amount",
+      "gain": 0.0,
+      "rank": 155
+    },
+    {
+      "feature": "m6_merchantpay_merchants",
+      "gain": 0.0,
+      "rank": 156
+    },
+    {
+      "feature": "m3_transfer_from_bank_volume",
+      "gain": 0.0,
+      "rank": 157
+    },
+    {
+      "feature": "m2_transfer_from_bank_banks",
+      "gain": 0.0,
+      "rank": 158
+    },
+    {
+      "feature": "m2_transfer_from_bank_highest_amount",
+      "gain": 0.0,
+      "rank": 159
+    },
+    {
+      "feature": "m3_transfer_from_bank_highest_amount",
+      "gain": 0.0,
+      "rank": 160
+    },
+    {
+      "feature": "m2_merchantpay_volume",
+      "gain": 0.0,
+      "rank": 161
+    },
+    {
+      "feature": "m6_merchantpay_volume",
+      "gain": 0.0,
+      "rank": 162
+    },
+    {
+      "feature": "m1_merchantpay_total_value",
+      "gain": 0.0,
+      "rank": 163
+    },
+    {
+      "feature": "m5_paybill_volume",
+      "gain": 0.0,
+      "rank": 164
+    },
+    {
+      "feature": "m1_paybill_highest_amount",
+      "gain": 0.0,
+      "rank": 165
+    },
+    {
+      "feature": "x_90_d_activity_rate",
+      "gain": 0.0,
+      "rank": 166
+    },
+    {
+      "feature": "m3_paybill_highest_amount",
+      "gain": 0.0,
+      "rank": 167
+    },
+    {
+      "feature": "m3_paybill_companies",
+      "gain": 0.0,
+      "rank": 168
+    },
+    {
+      "feature": "m1_merchantpay_highest_amount",
+      "gain": 0.0,
+      "rank": 169
+    },
+    {
+      "feature": "m1_received_volume",
+      "gain": 0.0,
+      "rank": 170
+    },
+    {
+      "feature": "m5_transfer_from_bank_highest_amount",
+      "gain": 0.0,
+      "rank": 171
+    },
+    {
+      "feature": "m5_transfer_from_bank_banks",
+      "gain": 0.0,
+      "rank": 172
+    },
+    {
+      "feature": "m3_deposit_total_value",
+      "gain": 0.0,
+      "rank": 173
+    },
+    {
+      "feature": "m2_withdraw_total_value",
+      "gain": 0.0,
+      "rank": 174
+    },
+    {
+      "feature": "m2_deposit_total_value",
+      "gain": 0.0,
+      "rank": 175
+    },
+    {
+      "feature": "m2_deposit_agents",
+      "gain": 0.0,
+      "rank": 176
+    },
+    {
+      "feature": "m4_withdraw_highest_amount",
+      "gain": 0.0,
+      "rank": 177
+    },
+    {
+      "feature": "region_Central Zone",
+      "gain": 0.0,
+      "rank": 178
+    },
+    {
+      "feature": "m6_withdraw_highest_amount",
+      "gain": 0.0,
+      "rank": 179
+    },
+    {
+      "feature": "m1_daily_avg_bal",
+      "gain": 0.0,
+      "rank": 180
+    },
+    {
+      "feature": "region_Southern Highlands",
+      "gain": 0.0,
+      "rank": 181
+    },
+    {
+      "feature": "region_Western Zone",
+      "gain": 0.0,
+      "rank": 182
+    },
+    {
+      "feature": "region_Islander",
+      "gain": 0.0,
+      "rank": 183
+    },
+    {
+      "feature": "region_Northern Highlands",
+      "gain": 0.0,
+      "rank": 184
+    },
+    {
+      "feature": "smartphone_Yes",
+      "gain": 0.0,
+      "rank": 185
+    },
+    {
+      "feature": "smartphone_No",
+      "gain": 0.0,
+      "rank": 186
+    },
+    {
+      "feature": "segment_HVC",
+      "gain": 0.0,
+      "rank": 187
+    },
+    {
+      "feature": "segment_LVC",
+      "gain": 0.0,
+      "rank": 188
+    },
+    {
+      "feature": "m4_deposit_volume",
+      "gain": 0.0,
+      "rank": 189
+    },
+    {
+      "feature": "m6_deposit_volume",
+      "gain": 0.0,
+      "rank": 190
+    },
+    {
+      "feature": "m6_deposit_highest_amount",
+      "gain": 0.0,
+      "rank": 191
+    },
+    {
+      "feature": "m6_deposit_total_value",
+      "gain": 0.0,
+      "rank": 192
+    },
+    {
+      "feature": "earning_pattern_Monthly Earner",
+      "gain": 0.0,
+      "rank": 193
+    },
+    {
+      "feature": "earning_pattern_Weekly Earner",
+      "gain": 0.0,
+      "rank": 194
+    },
+    {
+      "feature": "segment_MVC",
+      "gain": 0.0,
+      "rank": 195
+    },
+    {
+      "feature": "earning_pattern_Irregular Earner",
+      "gain": 0.0,
+      "rank": 196
+    },
+    {
+      "feature": "F6",
+      "gain": 0.0,
+      "rank": 197
+    }
+  ],
+  "model": "v8_feature_importance",
+  "rounds": [
+    25,
+    1,
+    13,
+    21
+  ],
+  "threads": 8,
+  "top20": [
+    "m3_merchantpay_merchants",
+    "m2_merchantpay_merchants",
+    "m3_mm_send_recipients",
+    "m4_mm_send_recipients",
+    "m1_withdraw_total_value",
+    "m4_paybill_companies",
+    "m5_withdraw_highest_amount",
+    "m1_withdraw_agents",
+    "F4",
+    "m5_mm_send_recipients",
+    "m4_transfer_from_bank_volume",
+    "m2_deposit_volume",
+    "m1_withdraw_volume",
+    "m5_merchantpay_merchants",
+    "m6_received_senders",
+    "m5_daily_avg_bal",
+    "m4_paybill_highest_amount",
+    "age",
+    "F3",
+    "F2"
+  ]
+}

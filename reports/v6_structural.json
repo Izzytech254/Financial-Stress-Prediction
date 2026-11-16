@@ -1,0 +1,76 @@
+{
+  "model": "structural_mz",
+  "per_month": [
+    {
+      "auc": 0.919480862745098,
+      "composite": 0.7371874986203939,
+      "log_loss": 0.22868313942366486,
+      "positives": 1500,
+      "rows": 10000,
+      "snapshot": 0
+    },
+    {
+      "auc": 0.9232272156862746,
+      "composite": 0.7401781181226377,
+      "log_loss": 0.2272034950839399,
+      "positives": 1500,
+      "rows": 10000,
+      "snapshot": 1
+    },
+    {
+      "auc": 0.9252925490196079,
+      "composite": 0.744951626074009,
+      "log_loss": 0.2232890152543855,
+      "positives": 1500,
+      "rows": 10000,
+      "snapshot": 2
+    },
+    {
+      "auc": 0.9224706666666667,
+      "composite": 0.7394435340732646,
+      "log_loss": 0.22763185982179038,
+      "positives": 1500,
+      "rows": 10000,
+      "snapshot": 3
+    }
+  ],
+  "reference": {
+    "avg": {
+      "auc": 0.9226818774509803,
+      "composite": 0.7404513473496037,
+      "log_loss": 0.22671622526719856
+    },
+    "global_z": {
+      "auc": 0.9226715441176471,
+      "composite": 0.7404192334338,
+      "log_loss": 0.2267439726781484
+    }
+  },
+  "sigma": 0.35,
+  "submission": "/home/boss/Desktop/zindi/financial-stress/submission_v6_structural.csv",
+  "test": {
+    "max": 0.9999999999939712,
+    "mean": 0.15,
+    "min": 0.00039412352350710157,
+    "rows": 30000,
+    "snapshot_means": [
+      0.15,
+      0.15,
+      0.15
+    ]
+  },
+  "validation": {
+    "auc": 0.9227044607843138,
+    "composite": 0.7404748491245371,
+    "log_loss": 0.22670187739594513
+  },
+  "weights": [
+    5,
+    3,
+    3,
+    2,
+    4,
+    2,
+    1
+  ]
+}

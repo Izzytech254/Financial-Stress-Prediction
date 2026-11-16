@@ -1,0 +1,9 @@
+.venv/
+__pycache__/
+*.py[cod]
+catboost_info/
+data/
+reports/*.npz
+reports/*.npy
+*.log
+.DS_Store

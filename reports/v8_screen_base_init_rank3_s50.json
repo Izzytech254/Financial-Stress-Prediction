@@ -1,0 +1,171 @@
+{
+  "configs": [
+    {},
+    {
+      "max_depth": 4,
+      "num_leaves": 15
+    },
+    {
+      "min_data_in_leaf": 100
+    },
+    {
+      "learning_rate": 0.01
+    },
+    {
+      "learning_rate": 0.05
+    }
+  ],
+  "drop_cols": [
+    "m5_deposit_volume",
+    "m5_deposit_total_value",
+    "m5_deposit_highest_amount",
+    "m5_deposit_agents"
+  ],
+  "elapsed_seconds": 821.3597040176392,
+  "extra_cols": [],
+  "feature_count": 197,
+  "final_rounds": [
+    1,
+    2,
+    1,
+    1,
+    1
+  ],
+  "init_preds": "reports/v7_struct_rank3_10_predictions.npz",
+  "model": "v8_screen",
+  "month_scale": "rank",
+  "n_seeds": 50,
+  "per_month": [
+    {
+      "auc": 0.9201635294117647,
+      "composite": 0.7382017013705651,
+      "log_loss": 0.22794817947418963,
+      "snapshot": 0
+    },
+    {
+      "auc": 0.9239356078431372,
+      "composite": 0.7410681484188312,
+      "log_loss": 0.22660187726243686,
+      "snapshot": 1
+    },
+    {
+      "auc": 0.9256723921568629,
+      "composite": 0.7457553652055114,
+      "log_loss": 0.22264264506009013,
+      "snapshot": 2
+    },
+    {
+      "auc": 0.9232499607843138,
+      "composite": 0.7404625647071501,
+      "log_loss": 0.22693044110985391,
+      "snapshot": 3
+    }
+  ],
+  "preds": "/home/boss/Desktop/zindi/financial-stress/reports/v8_base_init_rank3_s50_predictions.npz",
+  "report": "/home/boss/Desktop/zindi/financial-stress/reports/v8_screen_base_init_rank3_s50.json",
+  "round_scale": 1.0,
+  "rounds": [
+    [
+      1,
+      1,
+      1,
+      21
+    ],
+    [
+      1,
+      1,
+      2,
+      26
+    ],
+    [
+      1,
+      1,
+      1,
+      19
+    ],
+    [
+      1,
+      1,
+      1,
+      67
+    ],
+    [
+      1,
+      1,
+      1,
+      17
+    ]
+  ],
+  "seeds": [
+    909,
+    11,
+    22,
+    33,
+    44,
+    1001,
+    1002,
+    1003,
+    1004,
+    1005,
+    1006,
+    1007,
+    1008,
+    1009,
+    1010,
+    1011,
+    1012,
+    1013,
+    1014,
+    1015,
+    1016,
+    1017,
+    1018,
+    1019,
+    1020,
+    1021,
+    1022,
+    1023,
+    1024,
+    1025,
+    1026,
+    1027,
+    1028,
+    1029,
+    1030,
+    1031,
+    1032,
+    1033,
+    1034,
+    1035,
+    1036,
+    1037,
+    1038,
+    1039,
+    1040,
+    1041,
+    1042,
+    1043,
+    1044,
+    1045
+  ],
+  "submission": "/home/boss/Desktop/zindi/financial-stress/submission_v8_base_init_rank3_s50.csv",
+  "tag": "base_init_rank3_s50",
+  "test": {
+    "max": 0.9999999999970084,
+    "mean": 0.14999999999999983,
+    "min": 0.00031833772637609173,
+    "rows": 30000,
+    "snapshot_means": [
+      0.14999999999999983,
+      0.14999999999999983,
+      0.14999999999999983
+    ]
+  },
+  "threads": 4,
+  "validation": {
+    "auc": 0.9233212058823531,
+    "composite": 0.7413982782588477,
+    "log_loss": 0.22603078572664267
+  },
+  "variant": "base"
+}
