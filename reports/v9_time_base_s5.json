@@ -1,0 +1,56 @@
+{
+  "configs": [
+    {}
+  ],
+  "drop_m5_deposit": true,
+  "elapsed_seconds": 26.772693157196045,
+  "feature_count": 197,
+  "final_rounds": [
+    22
+  ],
+  "model": "v9_time_residual",
+  "n_seeds": 5,
+  "rounds": [
+    [
+      29,
+      14,
+      13,
+      57
+    ]
+  ],
+  "seeds": [
+    909,
+    11,
+    22,
+    33,
+    44
+  ],
+  "slope": 0.5,
+  "submission": "/tmp/opencode/submission_v9_time_base_s5.csv",
+  "test": {
+    "max": 0.9999999999939506,
+    "mean": 0.14999999999999986,
+    "min": 0.00039420768085921454,
+    "rows": 30000,
+    "snapshot_means": [
+      0.14999999999999983,
+      0.14999999999999983,
+      0.14999999999999986
+    ]
+  },
+  "threads": 8,
+  "time_weight": "linear",
+  "validation": {
+    "gain": 1.982221825624908e-05,
+    "residual": {
+      "auc": 0.9227228676470587,
+      "composite": 0.7404946713427933,
+      "log_loss": 0.22668952175172993
+    },
+    "structural": {
+      "auc": 0.9227044607843138,
+      "composite": 0.7404748491245371,
+      "log_loss": 0.22670187739594513
+    }
+  }
+}

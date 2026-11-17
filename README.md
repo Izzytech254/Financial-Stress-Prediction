@@ -60,13 +60,21 @@ all `m5_deposit_*` columns, which were found not to hold on the hidden test set.
 - LOMO LogLoss: `0.226687864`
 - LOMO AUC: `0.922725255`
 - Public score: `0.744632428`
-- 200-seed variance-reduced candidate: `submission_v9_residual_dropm5_s200.csv`
+
+A 200-seed variance-reduced run (`submission_v9_residual_dropm5_s200.csv`) scored
+LOMO `0.740496366`, LogLoss `0.226688141`, AUC `0.922723623`. Its test predictions
+correlate `0.9999999` with the 50-seed model, so the public score is effectively
+unchanged. The 50-seed model is already converged.
 
 ### 3. Structural variants
 
 `v7_common.py` and `v8_screen.py` implement extra liquidity factors, rank transforms,
 month scaling, feature selection, and drop-set variants. These improve LOMO but did not
 improve the public leaderboard, which indicates a train/test distribution shift.
+
+The `drop_m5_all` 50-seed hedge (`submission_v9_drop_m5_all_s50.csv`) scores LOMO
+`0.740465127`, LogLoss `0.226717150`, AUC `0.922718657`. It is the remaining robustness
+bet if the `m5` snapshot features shift on the hidden test set.
 
 ## Validation
 
@@ -90,6 +98,9 @@ The top three are within `0.0002`. We tested the obvious leak paths:
 - exact and near-duplicate rows: none
 - RNG seed recovery: no match across 400k seeds
 - fixed-size sampling correction: no material gain
+- segment-specific probit interactions: worse LOMO
+- adversarial train/test AUC: `~1.0`; feature dropping and density weighting did not help
+- time weighting / snapshot ordering: no reliable gain at 10 seeds
 
 The data is at its Bayes ceiling. A large leaderboard lead is not achievable; the
 realistic target is first place by a small margin.
@@ -103,6 +114,11 @@ pip install -r requirements.txt
 
 python v6_structural.py
 python v6_residual.py --seeds 50 --drop-m5-deposit
+python v8_screen.py --variant drop_m5_all --seeds 50 --threads 8 --test \
+  --tag drop_m5_all_s50 \
+  --out submission_v9_drop_m5_all_s50.csv \
+  --report reports/v9_drop_m5_all_s50.json \
+  --preds reports/v9_drop_m5_all_s50_predictions.npz
 python v9_time_residual.py --seeds 50 --time-weight linear --slope 0.5
 ```
 
