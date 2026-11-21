@@ -1,0 +1,49 @@
+{
+  "candidate": {
+    "members": [
+      "tuned",
+      "final_tuned"
+    ],
+    "name": "lgb_equal_logit",
+    "weights": [
+      0.5,
+      0.5
+    ]
+  },
+  "checks": {
+    "candidate_mapping": true,
+    "id_order": true,
+    "oof_metrics": true,
+    "prediction_match": true,
+    "public_mapping": true,
+    "row_count": true,
+    "submission_hash": true,
+    "target_column": true
+  },
+  "gate_proxy": 0.7418630782405067,
+  "ok": true,
+  "oof": {
+    "auc": 0.922912137254902,
+    "log_loss": 0.22639926185594203,
+    "proxy": 0.7408630782405067
+  },
+  "prediction_max_abs_diff": 0.0,
+  "public": {
+    "auc": 0.925374485,
+    "log_loss": 0.223576399,
+    "score": 0.744694601
+  },
+  "raw_sha256": {
+    "folds": "d99e4142c6603f0e95d23425ad6b24d17c50bc159bcb9a2a4a3253e928a3d24b",
+    "sample": "abe8491a7a01fb2567632589ed2633db62352d4711de29a911fff0c26db45535",
+    "test": "d77a87cd19d06e364cad49404fdd1f60172d35812e6572ffbaf774e8fc0200a6",
+    "train": "d7b5f10e7f7855644337ad2a8f460f8581596ffc787b0a1e11944bf7ed46f185"
+  },
+  "selected": "submission_B.csv",
+  "submission_sha256": "5278fb77528a3701f733cef622b2c19c4df04d4321b893d1e581a98909ff4a2c",
+  "submission_stats": {
+    "max": 0.99999,
+    "mean": 0.14999899097764752,
+    "min": 0.00039987072749399536
+  }
+}

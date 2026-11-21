@@ -1,0 +1,582 @@
+{
+  "purpose": "Offline-only search using frozen CV OOF/test arrays; no public submissions used for training or selection.",
+  "baseline": {
+    "file": "submission_B.csv",
+    "oof_proxy": 0.7408630782405067,
+    "public_score": 0.744694601
+  },
+  "reference": {
+    "file": "submission_I1.csv",
+    "oof_proxy": 0.7409491848263678,
+    "public_score": 0.744733669
+  },
+  "exclusions": {
+    "method_classes": [
+      "isotonic/rank calibration",
+      "probability clipping/sharpening",
+      "target-derived features",
+      "preliminary arrays"
+    ],
+    "prior_rejected_sources": [
+      "final_candidates_v2_predictions.npz (v7/v8 logit families: strict v2 selection did not promote them; public C/D transfer was negative)",
+      "v9_blend_extras_3m_logit_predictions.npz (public E1)",
+      "v9_blend_m6_lgb_cat_predictions.npz (public E2)",
+      "v9_drop_m5_m6_m1paybill_s50_predictions.npz (public E3)"
+    ]
+  },
+  "grid": {
+    "I1_plus_source_weights": [
+      0.02,
+      0.05,
+      0.1,
+      0.2,
+      0.3,
+      0.5
+    ],
+    "B_plus_source_weights": [
+      0.1,
+      0.25,
+      0.5
+    ]
+  },
+  "n_evaluated": 171,
+  "n_eligible": 13,
+  "decision_rule": "Require positive OOF delta vs I1 and non-negative date-3 delta vs I1; do not submit until budget resets.",
+  "top_eligible": [
+    {
+      "oof_proxy": 0.7409746840103728,
+      "oof_delta_vs_B": 0.00011160576986612991,
+      "oof_delta_vs_I1": 2.5499184004962316e-05,
+      "oof_log_loss": 0.22631665807860246,
+      "oof_log_loss_delta_vs_I1": -1.8455857471594284e-05,
+      "oof_auc": 0.9229829068627451,
+      "oof_auc_delta_vs_I1": 1.7220588235278278e-05,
+      "oof_by_date_delta_vs_B": [
+        0.0002561636290931979,
+        9.306303984435438e-05,
+        7.940145082385719e-05,
+        3.33792734289462e-05
+      ],
+      "date3_delta_vs_I1": 1.574590943076437e-06,
+      "source": "calibration_predictions.npz:logistic_features_C1",
+      "source_weight_on_I1": 0.3,
+      "family": "calibration_predictions.npz"
+    },
+    {
+      "oof_proxy": 0.7409743597137923,
+      "oof_delta_vs_B": 0.00011128147328565152,
+      "oof_delta_vs_I1": 2.5174887424483927e-05,
+      "oof_log_loss": 0.22631688439493372,
+      "oof_log_loss_delta_vs_I1": -1.822954114033548e-05,
+      "oof_auc": 0.9229826666666667,
+      "oof_auc_delta_vs_I1": 1.6980392156917823e-05,
+      "oof_by_date_delta_vs_B": [
+        0.00025557916542373604,
+        9.328020263277281e-05,
+        7.849705893425707e-05,
+        3.354985830861246e-05
+      ],
+      "date3_delta_vs_I1": 1.745175822742695e-06,
+      "source": "calibration_predictions.npz:logistic_features_C0.1",
+      "source_weight_on_I1": 0.3,
+      "family": "calibration_predictions.npz"
+    },
+    {
+      "oof_proxy": 0.7409674667156809,
+      "oof_delta_vs_B": 0.0001043884751742441,
+      "oof_delta_vs_I1": 1.8281889313076505e-05,
+      "oof_log_loss": 0.22632208856250535,
+      "oof_log_loss_delta_vs_I1": -1.3025373568703591e-05,
+      "oof_auc": 0.9229785539215687,
+      "oof_auc_delta_vs_I1": 1.286764705887844e-05,
+      "oof_by_date_delta_vs_B": [
+        0.00023479392523895193,
+        8.955214245442988e-05,
+        7.62029457856972e-05,
+        3.522449506077052e-05
+      ],
+      "date3_delta_vs_I1": 3.41981257490076e-06,
+      "source": "calibration_predictions.npz:logistic_features_C1",
+      "source_weight_on_I1": 0.2,
+      "family": "calibration_predictions.npz"
+    },
+    {
+      "oof_proxy": 0.7409672122738729,
+      "oof_delta_vs_B": 0.00010413403336617666,
+      "oof_delta_vs_I1": 1.8027447505009064e-05,
+      "oof_log_loss": 0.22632226310618717,
+      "oof_log_loss_delta_vs_I1": -1.2850829886890125e-05,
+      "oof_auc": 0.9229783578431372,
+      "oof_auc_delta_vs_I1": 1.2671568627387053e-05,
+      "oof_by_date_delta_vs_B": [
+        0.00023506192569133777,
+        8.934734777754638e-05,
+        7.526079712927292e-05,
+        3.511704325898091e-05
+      ],
+      "date3_delta_vs_I1": 3.312360773111145e-06,
+      "source": "calibration_predictions.npz:logistic_features_C0.1",
+      "source_weight_on_I1": 0.2,
+      "family": "calibration_predictions.npz"
+    },
+    {
+      "oof_proxy": 0.7409645775331648,
+      "oof_delta_vs_B": 0.00010149929265812485,
+      "oof_delta_vs_I1": 1.5392706796957256e-05,
+      "oof_log_loss": 0.22632405922405605,
+      "oof_log_loss_delta_vs_I1": -1.1054712018010449e-05,
+      "oof_auc": 0.9229762990196078,
+      "oof_auc_delta_vs_I1": 1.061274509794874e-05,
+      "oof_by_date_delta_vs_B": [
+        0.0002283314199602593,
+        8.705938064201835e-05,
+        7.361093885416281e-05,
+        3.3834646862351825e-05
+      ],
+      "date3_delta_vs_I1": 2.029964376482063e-06,
+      "source": "calibration_predictions.npz:logistic_features_C1",
+      "source_weight_on_B": 0.5,
+      "family": "calibration_predictions.npz"
+    },
+    {
+      "oof_proxy": 0.7409640022833582,
+      "oof_delta_vs_B": 0.00010092404285155787,
+      "oof_delta_vs_I1": 1.4817456990390276e-05,
+      "oof_log_loss": 0.22632452468011424,
+      "oof_log_loss_delta_vs_I1": -1.0589255959814192e-05,
+      "oof_auc": 0.9229760343137257,
+      "oof_auc_delta_vs_I1": 1.034803921584615e-05,
+      "oof_by_date_delta_vs_B": [
+        0.00022707550171219282,
+        8.715991021224223e-05,
+        7.282495136462508e-05,
+        3.292600419557701e-05
+      ],
+      "date3_delta_vs_I1": 1.1213217097072459e-06,
+      "source": "calibration_predictions.npz:logistic_features_C0.1",
+      "source_weight_on_B": 0.5,
+      "family": "calibration_predictions.npz"
+    },
+    {
+      "oof_proxy": 0.7409586351471908,
+      "oof_delta_vs_B": 9.555690668416883e-05,
+      "oof_delta_vs_I1": 9.450320823001235e-06,
+      "oof_log_loss": 0.2263282409790356,
+      "oof_log_loss_delta_vs_I1": -6.872957038467353e-06,
+      "oof_auc": 0.9229719852941176,
+      "oof_auc_delta_vs_I1": 6.299019607802769e-06,
+      "oof_by_date_delta_vs_B": [
+        0.00021307219062072225,
+        8.142382739073639e-05,
+        7.134634705008303e-05,
+        3.218918324454645e-05
+      ],
+      "date3_delta_vs_I1": 3.8450075867668687e-07,
+      "source": "calibration_predictions.npz:logistic_features_C1",
+      "source_weight_on_I1": 0.1,
+      "family": "calibration_predictions.npz"
+    },
+    {
+      "oof_proxy": 0.7409584803893882,
+      "oof_delta_vs_B": 9.54021488814849e-05,
+      "oof_delta_vs_I1": 9.29556302031731e-06,
+      "oof_log_loss": 0.2263283400027456,
+      "oof_log_loss_delta_vs_I1": -6.773933328457771e-06,
+      "oof_auc": 0.9229718480392157,
+      "oof_auc_delta_vs_I1": 6.16176470591423e-06,
+      "oof_by_date_delta_vs_B": [
+        0.00021252069833477272,
+        8.144999431103361e-05,
+        7.101947528098673e-05,
+        3.220274132487155e-05
+      ],
+      "date3_delta_vs_I1": 3.980588390017914e-07,
+      "source": "calibration_predictions.npz:logistic_features_C0.1",
+      "source_weight_on_I1": 0.1,
+      "family": "calibration_predictions.npz"
+    },
+    {
+      "oof_proxy": 0.7409569027697449,
+      "oof_delta_vs_B": 9.382452923822893e-05,
+      "oof_delta_vs_I1": 7.717943377061331e-06,
+      "oof_log_loss": 0.22632961280889177,
+      "oof_log_loss_delta_vs_I1": -5.501127182283572e-06,
+      "oof_auc": 0.922971112745098,
+      "oof_auc_delta_vs_I1": 5.426470588210108e-06,
+      "oof_by_date_delta_vs_B": [
+        0.00020923707171061068,
+        8.246103357056889e-05,
+        6.872648965938755e-05,
+        3.179116907170432e-05
+      ],
+      "date3_delta_vs_I1": -1.3513414165444715e-08,
+      "source": "calibration_predictions.npz:logistic_features_C0.01",
+      "source_weight_on_I1": 0.1,
+      "family": "calibration_predictions.npz"
+    },
+    {
+      "oof_proxy": 0.7409539683744059,
+      "oof_delta_vs_B": 9.089013389917966e-05,
+      "oof_delta_vs_I1": 4.783548038012064e-06,
+      "oof_log_loss": 0.22633158747315865,
+      "oof_log_loss_delta_vs_I1": -3.5264629154041494e-06,
+      "oof_auc": 0.9229687549019608,
+      "oof_auc_delta_vs_I1": 3.0686274510305367e-06,
+      "oof_by_date_delta_vs_B": [
+        0.00020113445554070797,
+        7.774624194567537e-05,
+        6.87163340421515e-05,
+        3.2230170734726116e-05
+      ],
+      "date3_delta_vs_I1": 4.2548824885635383e-07,
+      "source": "calibration_predictions.npz:logistic_features_C1",
+      "source_weight_on_I1": 0.05,
+      "family": "calibration_predictions.npz"
+    },
+    {
+      "oof_proxy": 0.740953890008615,
+      "oof_delta_vs_B": 9.081176810832314e-05,
+      "oof_delta_vs_I1": 4.705182247155548e-06,
+      "oof_log_loss": 0.22633163990812344,
+      "oof_log_loss_delta_vs_I1": -3.4740279506173533e-06,
+      "oof_auc": 0.9229686911764707,
+      "oof_auc_delta_vs_I1": 3.0049019609235117e-06,
+      "oof_by_date_delta_vs_B": [
+        0.00020077754425784633,
+        7.755226565064888e-05,
+        6.884778829097105e-05,
+        3.246947423385382e-05
+      ],
+      "date3_delta_vs_I1": 6.647917479840615e-07,
+      "source": "calibration_predictions.npz:logistic_features_C0.1",
+      "source_weight_on_I1": 0.05,
+      "family": "calibration_predictions.npz"
+    },
+    {
+      "oof_proxy": 0.7409512525619577,
+      "oof_delta_vs_B": 8.817432145102888e-05,
+      "oof_delta_vs_I1": 2.067735589861286e-06,
+      "oof_log_loss": 0.2263336817649475,
+      "oof_log_loss_delta_vs_I1": -1.432171126553028e-06,
+      "oof_auc": 0.9229672450980393,
+      "oof_auc_delta_vs_I1": 1.5588235294794472e-06,
+      "oof_by_date_delta_vs_B": [
+        0.0001938255428026725,
+        7.59546313136017e-05,
+        6.654054587307279e-05,
+        3.189029130512555e-05
+      ],
+      "date3_delta_vs_I1": 8.560881925578911e-08,
+      "source": "calibration_predictions.npz:logistic_features_C1",
+      "source_weight_on_I1": 0.02,
+      "family": "calibration_predictions.npz"
+    },
+    {
+      "oof_proxy": 0.7409512209022409,
+      "oof_delta_vs_B": 8.814266173418073e-05,
+      "oof_delta_vs_I1": 2.0360758730131323e-06,
+      "oof_log_loss": 0.22633370343861126,
+      "oof_log_loss_delta_vs_I1": -1.4104974628004197e-06,
+      "oof_auc": 0.9229672205882353,
+      "oof_auc_delta_vs_I1": 1.5343137255152683e-06,
+      "oof_by_date_delta_vs_B": [
+        0.00019353153544732216,
+        7.58574659713851e-05,
+        6.666766791463274e-05,
+        3.187868348542011e-05
+      ],
+      "date3_delta_vs_I1": 7.400099955034989e-08,
+      "source": "calibration_predictions.npz:logistic_features_C0.1",
+      "source_weight_on_I1": 0.02,
+      "family": "calibration_predictions.npz"
+    }
+  ],
+  "top_overall": [
+    {
+      "oof_proxy": 0.7409860892678213,
+      "oof_delta_vs_B": 0.00012301102731460123,
+      "oof_delta_vs_I1": 3.6904441453433634e-05,
+      "oof_log_loss": 0.22630796897607725,
+      "oof_log_loss_delta_vs_I1": -2.714495999681099e-05,
+      "oof_auc": 0.9229895147058824,
+      "oof_auc_delta_vs_I1": 2.3828431372607817e-05,
+      "oof_by_date_delta_vs_B": [
+        0.00029398464352714537,
+        9.908903720590168e-05,
+        8.241774805073376e-05,
+        2.5015425572538774e-05
+      ],
+      "date3_delta_vs_I1": -6.789256913330988e-06,
+      "source": "calibration_predictions.npz:logistic_features_C1",
+      "source_weight_on_I1": 0.5,
+      "family": "calibration_predictions.npz"
+    },
+    {
+      "oof_proxy": 0.7409856059765625,
+      "oof_delta_vs_B": 0.0001225277360558108,
+      "oof_delta_vs_I1": 3.6421150194643204e-05,
+      "oof_log_loss": 0.22630822657324223,
+      "oof_log_loss_delta_vs_I1": -2.6887362831823358e-05,
+      "oof_auc": 0.9229889558823529,
+      "oof_auc_delta_vs_I1": 2.3269607843046103e-05,
+      "oof_by_date_delta_vs_B": [
+        0.0002932370647289462,
+        9.985107072618682e-05,
+        8.144711537372284e-05,
+        2.5654124766738562e-05
+      ],
+      "date3_delta_vs_I1": -6.1505577191312e-06,
+      "source": "calibration_predictions.npz:logistic_features_C0.1",
+      "source_weight_on_I1": 0.5,
+      "family": "calibration_predictions.npz"
+    },
+    {
+      "oof_proxy": 0.7409790458667572,
+      "oof_delta_vs_B": 0.00011596762625054602,
+      "oof_delta_vs_I1": 2.9861040389378424e-05,
+      "oof_log_loss": 0.22631343895991018,
+      "oof_log_loss_delta_vs_I1": -2.1674976163871262e-05,
+      "oof_auc": 0.9229856960784313,
+      "oof_auc_delta_vs_I1": 2.0009803921472447e-05,
+      "oof_by_date_delta_vs_B": [
+        0.00027543910531369065,
+        0.00010766836247810829,
+        6.886969865449455e-05,
+        2.1948240516600492e-05
+      ],
+      "date3_delta_vs_I1": -9.85644196926927e-06,
+      "source": "calibration_predictions.npz:logistic_features_C0.01",
+      "source_weight_on_I1": 0.5,
+      "family": "calibration_predictions.npz"
+    },
+    {
+      "oof_proxy": 0.7409746840103728,
+      "oof_delta_vs_B": 0.00011160576986612991,
+      "oof_delta_vs_I1": 2.5499184004962316e-05,
+      "oof_log_loss": 0.22631665807860246,
+      "oof_log_loss_delta_vs_I1": -1.8455857471594284e-05,
+      "oof_auc": 0.9229829068627451,
+      "oof_auc_delta_vs_I1": 1.7220588235278278e-05,
+      "oof_by_date_delta_vs_B": [
+        0.0002561636290931979,
+        9.306303984435438e-05,
+        7.940145082385719e-05,
+        3.33792734289462e-05
+      ],
+      "date3_delta_vs_I1": 1.574590943076437e-06,
+      "source": "calibration_predictions.npz:logistic_features_C1",
+      "source_weight_on_I1": 0.3,
+      "family": "calibration_predictions.npz"
+    },
+    {
+      "oof_proxy": 0.7409743597137923,
+      "oof_delta_vs_B": 0.00011128147328565152,
+      "oof_delta_vs_I1": 2.5174887424483927e-05,
+      "oof_log_loss": 0.22631688439493372,
+      "oof_log_loss_delta_vs_I1": -1.822954114033548e-05,
+      "oof_auc": 0.9229826666666667,
+      "oof_auc_delta_vs_I1": 1.6980392156917823e-05,
+      "oof_by_date_delta_vs_B": [
+        0.00025557916542373604,
+        9.328020263277281e-05,
+        7.849705893425707e-05,
+        3.354985830861246e-05
+      ],
+      "date3_delta_vs_I1": 1.745175822742695e-06,
+      "source": "calibration_predictions.npz:logistic_features_C0.1",
+      "source_weight_on_I1": 0.3,
+      "family": "calibration_predictions.npz"
+    },
+    {
+      "oof_proxy": 0.7409701876427395,
+      "oof_delta_vs_B": 0.00010710940223279675,
+      "oof_delta_vs_I1": 2.100281637162915e-05,
+      "oof_log_loss": 0.22632036253206111,
+      "oof_log_loss_delta_vs_I1": -1.4751404012941505e-05,
+      "oof_auc": 0.9229810049019607,
+      "oof_auc_delta_vs_I1": 1.5318627450855438e-05,
+      "oof_by_date_delta_vs_B": [
+        0.0002437379453659183,
+        9.818808813744084e-05,
+        7.14735226070573e-05,
+        3.115569987977018e-05
+      ],
+      "date3_delta_vs_I1": -6.489826060995796e-07,
+      "source": "calibration_predictions.npz:logistic_features_C0.01",
+      "source_weight_on_I1": 0.3,
+      "family": "calibration_predictions.npz"
+    },
+    {
+      "oof_proxy": 0.7409674667156809,
+      "oof_delta_vs_B": 0.0001043884751742441,
+      "oof_delta_vs_I1": 1.8281889313076505e-05,
+      "oof_log_loss": 0.22632208856250535,
+      "oof_log_loss_delta_vs_I1": -1.3025373568703591e-05,
+      "oof_auc": 0.9229785539215687,
+      "oof_auc_delta_vs_I1": 1.286764705887844e-05,
+      "oof_by_date_delta_vs_B": [
+        0.00023479392523895193,
+        8.955214245442988e-05,
+        7.62029457856972e-05,
+        3.522449506077052e-05
+      ],
+      "date3_delta_vs_I1": 3.41981257490076e-06,
+      "source": "calibration_predictions.npz:logistic_features_C1",
+      "source_weight_on_I1": 0.2,
+      "family": "calibration_predictions.npz"
+    },
+    {
+      "oof_proxy": 0.7409672122738729,
+      "oof_delta_vs_B": 0.00010413403336617666,
+      "oof_delta_vs_I1": 1.8027447505009064e-05,
+      "oof_log_loss": 0.22632226310618717,
+      "oof_log_loss_delta_vs_I1": -1.2850829886890125e-05,
+      "oof_auc": 0.9229783578431372,
+      "oof_auc_delta_vs_I1": 1.2671568627387053e-05,
+      "oof_by_date_delta_vs_B": [
+        0.00023506192569133777,
+        8.934734777754638e-05,
+        7.526079712927292e-05,
+        3.511704325898091e-05
+      ],
+      "date3_delta_vs_I1": 3.312360773111145e-06,
+      "source": "calibration_predictions.npz:logistic_features_C0.1",
+      "source_weight_on_I1": 0.2,
+      "family": "calibration_predictions.npz"
+    },
+    {
+      "oof_proxy": 0.7409645775331648,
+      "oof_delta_vs_B": 0.00010149929265812485,
+      "oof_delta_vs_I1": 1.5392706796957256e-05,
+      "oof_log_loss": 0.22632405922405605,
+      "oof_log_loss_delta_vs_I1": -1.1054712018010449e-05,
+      "oof_auc": 0.9229762990196078,
+      "oof_auc_delta_vs_I1": 1.061274509794874e-05,
+      "oof_by_date_delta_vs_B": [
+        0.0002283314199602593,
+        8.705938064201835e-05,
+        7.361093885416281e-05,
+        3.3834646862351825e-05
+      ],
+      "date3_delta_vs_I1": 2.029964376482063e-06,
+      "source": "calibration_predictions.npz:logistic_features_C1",
+      "source_weight_on_B": 0.5,
+      "family": "calibration_predictions.npz"
+    },
+    {
+      "oof_proxy": 0.7409640022833582,
+      "oof_delta_vs_B": 0.00010092404285155787,
+      "oof_delta_vs_I1": 1.4817456990390276e-05,
+      "oof_log_loss": 0.22632452468011424,
+      "oof_log_loss_delta_vs_I1": -1.0589255959814192e-05,
+      "oof_auc": 0.9229760343137257,
+      "oof_auc_delta_vs_I1": 1.034803921584615e-05,
+      "oof_by_date_delta_vs_B": [
+        0.00022707550171219282,
+        8.715991021224223e-05,
+        7.282495136462508e-05,
+        3.292600419557701e-05
+      ],
+      "date3_delta_vs_I1": 1.1213217097072459e-06,
+      "source": "calibration_predictions.npz:logistic_features_C0.1",
+      "source_weight_on_B": 0.5,
+      "family": "calibration_predictions.npz"
+    },
+    {
+      "oof_proxy": 0.7409637430978621,
+      "oof_delta_vs_B": 0.00010066485735538144,
+      "oof_delta_vs_I1": 1.4558271494213848e-05,
+      "oof_log_loss": 0.22632469615017575,
+      "oof_log_loss_delta_vs_I1": -1.0417785898303444e-05,
+      "oof_auc": 0.922975818627451,
+      "oof_auc_delta_vs_I1": 1.0132352941227829e-05,
+      "oof_by_date_delta_vs_B": [
+        0.00022757948090479374,
+        9.134518700337768e-05,
+        7.007150510185411e-05,
+        3.0110315234588292e-05
+      ],
+      "date3_delta_vs_I1": -1.69436725128147e-06,
+      "source": "calibration_predictions.npz:logistic_features_C0.01",
+      "source_weight_on_I1": 0.2,
+      "family": "calibration_predictions.npz"
+    },
+    {
+      "oof_proxy": 0.7409586351471908,
+      "oof_delta_vs_B": 9.555690668416883e-05,
+      "oof_delta_vs_I1": 9.450320823001235e-06,
+      "oof_log_loss": 0.2263282409790356,
+      "oof_log_loss_delta_vs_I1": -6.872957038467353e-06,
+      "oof_auc": 0.9229719852941176,
+      "oof_auc_delta_vs_I1": 6.299019607802769e-06,
+      "oof_by_date_delta_vs_B": [
+        0.00021307219062072225,
+        8.142382739073639e-05,
+        7.134634705008303e-05,
+        3.218918324454645e-05
+      ],
+      "date3_delta_vs_I1": 3.8450075867668687e-07,
+      "source": "calibration_predictions.npz:logistic_features_C1",
+      "source_weight_on_I1": 0.1,
+      "family": "calibration_predictions.npz"
+    },
+    {
+      "oof_proxy": 0.7409584803893882,
+      "oof_delta_vs_B": 9.54021488814849e-05,
+      "oof_delta_vs_I1": 9.29556302031731e-06,
+      "oof_log_loss": 0.2263283400027456,
+      "oof_log_loss_delta_vs_I1": -6.773933328457771e-06,
+      "oof_auc": 0.9229718480392157,
+      "oof_auc_delta_vs_I1": 6.16176470591423e-06,
+      "oof_by_date_delta_vs_B": [
+        0.00021252069833477272,
+        8.144999431103361e-05,
+        7.101947528098673e-05,
+        3.220274132487155e-05
+      ],
+      "date3_delta_vs_I1": 3.980588390017914e-07,
+      "source": "calibration_predictions.npz:logistic_features_C0.1",
+      "source_weight_on_I1": 0.1,
+      "family": "calibration_predictions.npz"
+    },
+    {
+      "oof_proxy": 0.7409569027697449,
+      "oof_delta_vs_B": 9.382452923822893e-05,
+      "oof_delta_vs_I1": 7.717943377061331e-06,
+      "oof_log_loss": 0.22632961280889177,
+      "oof_log_loss_delta_vs_I1": -5.501127182283572e-06,
+      "oof_auc": 0.922971112745098,
+      "oof_auc_delta_vs_I1": 5.426470588210108e-06,
+      "oof_by_date_delta_vs_B": [
+        0.00020923707171061068,
+        8.246103357056889e-05,
+        6.872648965938755e-05,
+        3.179116907170432e-05
+      ],
+      "date3_delta_vs_I1": -1.3513414165444715e-08,
+      "source": "calibration_predictions.npz:logistic_features_C0.01",
+      "source_weight_on_I1": 0.1,
+      "family": "calibration_predictions.npz"
+    },
+    {
+      "oof_proxy": 0.7409545253529152,
+      "oof_delta_vs_B": 9.144711240849368e-05,
+      "oof_delta_vs_I1": 5.3405265473260854e-06,
+      "oof_log_loss": 0.22633177791391476,
+      "oof_log_loss_delta_vs_I1": -3.336022159294849e-06,
+      "oof_auc": 0.9229706274509805,
+      "oof_auc_delta_vs_I1": 4.941176470651953e-06,
+      "oof_by_date_delta_vs_B": [
+        0.00020565165456165602,
+        9.136941503906648e-05,
+        6.077889400979419e-05,
+        2.6937505630875158e-05
+      ],
+      "date3_delta_vs_I1": -4.867176854994604e-06,
+      "source": "calibration_predictions.npz:logistic_features_C0.01",
+      "source_weight_on_B": 0.5,
+      "family": "calibration_predictions.npz"
+    }
+  ],
+  "conclusion": "Higher-OOF extension found at 58% C1 (J3), but the public response curve is near its optimum around 45-50% C1; J1 remains the public-fit-first backup, J3 the higher-OOF hedge, and J2 the diversity hedge."
+}

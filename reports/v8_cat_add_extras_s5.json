@@ -1,0 +1,90 @@
+{
+  "drop_cols": [
+    "m5_deposit_volume",
+    "m5_deposit_total_value",
+    "m5_deposit_highest_amount",
+    "m5_deposit_agents"
+  ],
+  "elapsed_seconds": 49.49655723571777,
+  "extra_cols": [
+    "m5_deposit_agents",
+    "m2_merchantpay_merchants",
+    "m4_transfer_from_bank_volume",
+    "m5_withdraw_highest_amount",
+    "m4_paybill_volume",
+    "m4_transfer_from_bank_banks",
+    "m6_mm_send_total_value",
+    "m6_transfer_from_bank_banks",
+    "m3_withdraw_agents",
+    "m5_merchantpay_highest_amount"
+  ],
+  "feature_count": 207,
+  "final_rounds": [
+    84
+  ],
+  "model": "v8_cat",
+  "month_scale": "rank",
+  "n_seeds": 5,
+  "params": {
+    "allow_writing_files": false,
+    "bootstrap_type": "Bernoulli",
+    "depth": 3,
+    "eval_metric": "Logloss",
+    "l2_leaf_reg": 50.0,
+    "learning_rate": 0.02,
+    "loss_function": "Logloss",
+    "rsm": 0.7,
+    "subsample": 0.8
+  },
+  "per_month": [
+    {
+      "auc": 0.9194800784313726,
+      "composite": 0.7371888959942461,
+      "log_loss": 0.22868144258348366,
+      "snapshot": 0
+    },
+    {
+      "auc": 0.9232355294117647,
+      "composite": 0.7401962730181,
+      "log_loss": 0.22718878925705085,
+      "snapshot": 1
+    },
+    {
+      "auc": 0.9253280784313724,
+      "composite": 0.7449512198943677,
+      "log_loss": 0.2233035113825297,
+      "snapshot": 2
+    },
+    {
+      "auc": 0.9225503529411765,
+      "composite": 0.7395709753348905,
+      "log_loss": 0.227537089459567,
+      "snapshot": 3
+    }
+  ],
+  "preds": "/home/boss/Desktop/zindi/financial-stress/reports/v8_cat_add_extras_s5_predictions.npz",
+  "report": "/home/boss/Desktop/zindi/financial-stress/reports/v8_cat_add_extras_s5.json",
+  "round_scale": 1.0,
+  "rounds": [
+    1,
+    8,
+    161,
+    170
+  ],
+  "seeds": [
+    909,
+    11,
+    22,
+    33,
+    44
+  ],
+  "submission": null,
+  "tag": "add_extras_s5",
+  "threads": 8,
+  "validation": {
+    "auc": 0.9227345196078431,
+    "composite": 0.7405112449819697,
+    "log_loss": 0.22667770817065785
+  },
+  "variant": "add_extras"
+}

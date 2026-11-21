@@ -1,0 +1,93 @@
+{
+  "drop_cols": [
+    "m5_deposit_volume",
+    "m5_deposit_total_value",
+    "m5_deposit_highest_amount",
+    "m5_deposit_agents"
+  ],
+  "elapsed_seconds": 63.892289876937866,
+  "extra_cols": [
+    "m5_deposit_agents",
+    "m2_merchantpay_merchants",
+    "m4_transfer_from_bank_volume",
+    "m5_withdraw_highest_amount",
+    "m4_paybill_volume",
+    "m4_transfer_from_bank_banks",
+    "m6_mm_send_total_value",
+    "m6_transfer_from_bank_banks",
+    "m3_withdraw_agents",
+    "m5_merchantpay_highest_amount"
+  ],
+  "feature_count": 207,
+  "final_rounds": [
+    10
+  ],
+  "model": "v8_xgb",
+  "month_scale": "rank",
+  "n_seeds": 5,
+  "params": {
+    "base_score": 0.5,
+    "colsample_bytree": 0.7,
+    "eta": 0.02,
+    "eval_metric": "logloss",
+    "lambda": 50.0,
+    "max_bin": 256,
+    "max_depth": 3,
+    "min_child_weight": 75.0,
+    "objective": "binary:logistic",
+    "subsample": 0.8,
+    "tree_method": "hist",
+    "verbosity": 0
+  },
+  "per_month": [
+    {
+      "auc": 0.9194844705882352,
+      "composite": 0.7371993336120686,
+      "log_loss": 0.22867283416803208,
+      "snapshot": 0
+    },
+    {
+      "auc": 0.9232686274509804,
+      "composite": 0.7402302097485791,
+      "log_loss": 0.227168264221548,
+      "snapshot": 1
+    },
+    {
+      "auc": 0.9253154901960786,
+      "composite": 0.7449818303984983,
+      "log_loss": 0.22326816263260035,
+      "snapshot": 2
+    },
+    {
+      "auc": 0.9225422745098039,
+      "composite": 0.7395031481014446,
+      "log_loss": 0.227601147021623,
+      "snapshot": 3
+    }
+  ],
+  "preds": "/home/boss/Desktop/zindi/financial-stress/reports/v8_xgb_add_extras_s5_predictions.npz",
+  "report": "/home/boss/Desktop/zindi/financial-stress/reports/v8_xgb_add_extras_s5.json",
+  "round_scale": 1.0,
+  "rounds": [
+    3,
+    12,
+    8,
+    103
+  ],
+  "seeds": [
+    909,
+    11,
+    22,
+    33,
+    44
+  ],
+  "submission": null,
+  "tag": "add_extras_s5",
+  "threads": 8,
+  "validation": {
+    "auc": 0.922738012254902,
+    "composite": 0.7405127490925986,
+    "log_loss": 0.22667760201095088
+  },
+  "variant": "add_extras"
+}

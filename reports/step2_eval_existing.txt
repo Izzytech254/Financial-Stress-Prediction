@@ -1,0 +1,46 @@
+=== Existing frozen-CV models (from saved predictions) ===
+baseline_cv_drop_m5_all_s50: proxy=0.740672775 ll=0.226546251 auc=0.922806941 fold_std=0.004797203 fold_se=0.001238633
+  per-repeat proxy: ['0.740377848', '0.740598742', '0.740407871'] mean=0.740461487 std=0.000119810
+  per-snapshot proxy (0-3): ['0.737268489', '0.740334720', '0.745124693', '0.739830273'] std=0.003277622
+feat_trend_conc_s5: proxy=0.740809508 ll=0.226444309 auc=0.922891775 fold_std=0.004777306 fold_se=0.001233495
+  per-repeat proxy: ['0.740464513', '0.740631951', '0.740649849'] mean=0.740582104 std=0.000102229
+  per-snapshot proxy (0-3): ['0.737469603', '0.740340285', '0.745206360', '0.740081312'] std=0.003226597
+tuned_trend_conc_s10: proxy=0.740891250 ll=0.226379500 auc=0.922932745 fold_std=0.004819776 fold_se=0.001244461
+  per-repeat proxy: ['0.740609470', '0.740780890', '0.740594639'] mean=0.740661666 std=0.000103517
+  per-snapshot proxy (0-3): ['0.737663057', '0.740375734', '0.745238778', '0.740149265'] std=0.003169319
+feat_trend_conc_s50_predsfile: proxy=0.740809508 ll=0.226444309 auc=0.922891775 fold_std=0.004777306 fold_se=0.001233495
+  per-repeat proxy: ['0.740464513', '0.740631951', '0.740649849'] mean=0.740582104 std=0.000102229
+  per-snapshot proxy (0-3): ['0.737469603', '0.740340285', '0.745206360', '0.740081312'] std=0.003226597
+ensemble_three_way_raw_preds: proxy=0.740874655 ll=0.226392745 auc=0.922924652 fold_std=0.004800904 fold_se=0.001239588
+  per-snapshot proxy (0-3): ['0.737605082', '0.740371669', '0.745238676', '0.740136239'] std=0.003189966
+ensemble_baseline_trendconc_preds: proxy=0.741136423 ll=0.226094578 auc=0.922827387 fold_std=0.004775725 fold_se=0.001233087
+  per-snapshot proxy (0-3): ['0.737728607', '0.740617474', '0.745715456', '0.740351079'] std=0.003339781
+
+=== Key submission stats ===
+submission_baseline_cv_drop_m5_all_s50.csv: id_ok=True mean=0.150000 min=0.000391908 max=1 std=0.244188
+submission_feat_trend_conc_s50.csv: id_ok=True mean=0.150000 min=0.00039544 max=1 std=0.244268
+submission_tuned_trend_conc_s10.csv: id_ok=True mean=0.150000 min=0.00039677 max=1 std=0.244171
+submission_ensemble_three_way_raw.csv: id_ok=True mean=0.150000 min=0.000396282 max=1 std=0.244201
+submission_ensemble_baseline_trendconc.csv: id_ok=True mean=0.149895 min=1e-12 max=1 std=0.245016
+submission_rankcal_best.csv: id_ok=True mean=0.150000 min=0.000972384 max=1 std=0.243960
+submission_rankcal_tuned.csv: id_ok=True mean=0.150000 min=0.000899281 max=1 std=0.244044
+submission_hedge_best_raw3_25.csv: id_ok=True mean=0.150000 min=0.000395064 max=1 std=0.244192
+submission_hedge_best_tune_50.csv: id_ok=True mean=0.150000 min=0.000394089 max=1 std=0.244170
+submission_v9_drop_m5_m6_s50.csv: id_ok=True mean=0.150000 min=0.000390624 max=1 std=0.244202
+submission_v9_blend_m6_lgb_xgb_cat.csv: id_ok=True mean=0.150000 min=0.000394835 max=1 std=0.244176
+submission_v6_residual.csv: id_ok=True mean=0.150000 min=0.00040123 max=1 std=0.244177
+submission_v6_structural.csv: id_ok=True mean=0.150000 min=0.000394124 max=1 std=0.244203
+
+Pairwise corr (selected):
+corr submission_baseline_cv_drop_m5_all_s50.csv vs submission_feat_trend_conc_s50.csv: 0.999870321
+corr submission_baseline_cv_drop_m5_all_s50.csv vs submission_tuned_trend_conc_s10.csv: 0.999885215
+corr submission_baseline_cv_drop_m5_all_s50.csv vs submission_ensemble_three_way_raw.csv: 0.999904932
+corr submission_baseline_cv_drop_m5_all_s50.csv vs submission_ensemble_baseline_trendconc.csv: 0.999109311
+corr submission_baseline_cv_drop_m5_all_s50.csv vs submission_rankcal_best.csv: 0.999082419
+corr submission_baseline_cv_drop_m5_all_s50.csv vs submission_rankcal_tuned.csv: 0.998993092
+corr submission_baseline_cv_drop_m5_all_s50.csv vs submission_hedge_best_raw3_25.csv: 0.999944635
+corr submission_baseline_cv_drop_m5_all_s50.csv vs submission_hedge_best_tune_50.csv: 0.999969427
+corr submission_baseline_cv_drop_m5_all_s50.csv vs submission_v9_drop_m5_m6_s50.csv: 0.999995516
+corr submission_baseline_cv_drop_m5_all_s50.csv vs submission_v9_blend_m6_lgb_xgb_cat.csv: 0.999985163
+corr submission_baseline_cv_drop_m5_all_s50.csv vs submission_v6_residual.csv: 0.999965401
+corr submission_baseline_cv_drop_m5_all_s50.csv vs submission_v6_structural.csv: 0.999977515

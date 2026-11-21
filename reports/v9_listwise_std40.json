@@ -1,0 +1,71 @@
+{
+  "best_epochs": [
+    40,
+    40,
+    40,
+    40,
+    40,
+    40,
+    40,
+    40,
+    40,
+    40,
+    40,
+    40,
+    40,
+    40,
+    39,
+    40,
+    40,
+    40,
+    40,
+    40
+  ],
+  "elapsed_seconds": 229.434672832489,
+  "feature_count": 173,
+  "model": "v9_listwise",
+  "n_seeds": 5,
+  "per_month": [
+    {
+      "auc": 0.9087568627450981,
+      "composite": 0.6955621706741104,
+      "log_loss": 0.26570773630372935,
+      "snapshot": 0
+    },
+    {
+      "auc": 0.916439137254902,
+      "composite": 0.7085629501639631,
+      "log_loss": 0.25586259886518103,
+      "snapshot": 1
+    },
+    {
+      "auc": 0.9165737254901962,
+      "composite": 0.708028051146379,
+      "log_loss": 0.25644642705761866,
+      "snapshot": 2
+    },
+    {
+      "auc": 0.9154458039215686,
+      "composite": 0.7070129850254829,
+      "log_loss": 0.25700562540528504,
+      "snapshot": 3
+    }
+  ],
+  "preds": "/home/boss/Desktop/zindi/financial-stress/reports/v9_listwise_std40_predictions.npz",
+  "seeds": [
+    909,
+    11,
+    22,
+    33,
+    44
+  ],
+  "submission": null,
+  "tag": "listwise_std40",
+  "temperature": 2.35,
+  "validation": {
+    "auc": 0.9143365441176472,
+    "composite": 0.7048046039583662,
+    "log_loss": 0.2587555969079535
+  },
+  "variant": "drop_m5_all"
+}

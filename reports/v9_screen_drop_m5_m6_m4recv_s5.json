@@ -1,0 +1,178 @@
+{
+  "configs": [
+    {},
+    {
+      "max_depth": 4,
+      "num_leaves": 15
+    },
+    {
+      "min_data_in_leaf": 100
+    },
+    {
+      "learning_rate": 0.01
+    },
+    {
+      "learning_rate": 0.05
+    }
+  ],
+  "drop_cols": [
+    "m5_paybill_volume",
+    "m5_paybill_total_value",
+    "m5_paybill_highest_amount",
+    "m5_paybill_companies",
+    "m6_paybill_volume",
+    "m6_paybill_total_value",
+    "m6_paybill_highest_amount",
+    "m6_paybill_companies",
+    "m5_merchantpay_volume",
+    "m5_merchantpay_total_value",
+    "m5_merchantpay_highest_amount",
+    "m5_merchantpay_merchants",
+    "m6_merchantpay_volume",
+    "m6_merchantpay_total_value",
+    "m6_merchantpay_highest_amount",
+    "m6_merchantpay_merchants",
+    "m4_transfer_from_bank_volume",
+    "m4_transfer_from_bank_total_value",
+    "m4_transfer_from_bank_highest_amount",
+    "m4_transfer_from_bank_banks",
+    "m5_transfer_from_bank_volume",
+    "m5_transfer_from_bank_total_value",
+    "m5_transfer_from_bank_highest_amount",
+    "m5_transfer_from_bank_banks",
+    "m6_transfer_from_bank_volume",
+    "m6_transfer_from_bank_total_value",
+    "m6_transfer_from_bank_highest_amount",
+    "m6_transfer_from_bank_banks",
+    "m5_mm_send_volume",
+    "m5_mm_send_total_value",
+    "m5_mm_send_highest_amount",
+    "m5_mm_send_recipients",
+    "m6_mm_send_volume",
+    "m6_mm_send_total_value",
+    "m6_mm_send_highest_amount",
+    "m6_mm_send_recipients",
+    "m4_received_volume",
+    "m4_received_total_value",
+    "m4_received_highest_amount",
+    "m4_received_senders",
+    "m5_received_volume",
+    "m5_received_total_value",
+    "m5_received_highest_amount",
+    "m5_received_senders",
+    "m6_received_volume",
+    "m6_received_total_value",
+    "m6_received_highest_amount",
+    "m6_received_senders",
+    "m5_deposit_volume",
+    "m5_deposit_total_value",
+    "m5_deposit_highest_amount",
+    "m5_deposit_agents",
+    "m6_deposit_volume",
+    "m6_deposit_total_value",
+    "m6_deposit_highest_amount",
+    "m6_deposit_agents",
+    "m5_withdraw_volume",
+    "m5_withdraw_total_value",
+    "m5_withdraw_highest_amount",
+    "m5_withdraw_agents",
+    "m6_withdraw_volume",
+    "m6_withdraw_total_value",
+    "m6_withdraw_highest_amount",
+    "m6_withdraw_agents",
+    "m5_daily_avg_bal",
+    "m6_daily_avg_bal"
+  ],
+  "elapsed_seconds": 54.85860562324524,
+  "extra_cols": [],
+  "feature_count": 135,
+  "final_rounds": [
+    3,
+    8,
+    15,
+    16,
+    4
+  ],
+  "init_preds": null,
+  "model": "v8_screen",
+  "month_scale": "rank",
+  "n_seeds": 5,
+  "per_month": [
+    {
+      "auc": 0.9194826666666667,
+      "composite": 0.7371902864261421,
+      "log_loss": 0.2286810904051868,
+      "snapshot": 0
+    },
+    {
+      "auc": 0.9232335686274509,
+      "composite": 0.740185682919122,
+      "log_loss": 0.22719851332742627,
+      "snapshot": 1
+    },
+    {
+      "auc": 0.9252979607843137,
+      "composite": 0.7449295224917947,
+      "log_loss": 0.223313081306748,
+      "snapshot": 2
+    },
+    {
+      "auc": 0.9225301176470588,
+      "composite": 0.7395127266952211,
+      "log_loss": 0.22758682602723906,
+      "snapshot": 3
+    }
+  ],
+  "preds": "/home/boss/Desktop/zindi/financial-stress/reports/v9_screen_drop_m5_m6_m4recv_s5_predictions.npz",
+  "report": "/home/boss/Desktop/zindi/financial-stress/reports/v9_screen_drop_m5_m6_m4recv_s5.json",
+  "round_scale": 1.0,
+  "rounds": [
+    [
+      1,
+      1,
+      5,
+      25
+    ],
+    [
+      1,
+      3,
+      30,
+      13
+    ],
+    [
+      1,
+      1,
+      29,
+      45
+    ],
+    [
+      3,
+      1,
+      29,
+      36
+    ],
+    [
+      1,
+      1,
+      6,
+      13
+    ]
+  ],
+  "seeds": [
+    909,
+    11,
+    22,
+    33,
+    44
+  ],
+  "stack_preds": [],
+  "submission": null,
+  "tag": "drop_m5_m6_m4recv_s5",
+  "threads": 8,
+  "validation": {
+    "auc": 0.9227201421568627,
+    "composite": 0.7404881801232661,
+    "log_loss": 0.22669487776665
+  },
+  "variant": "drop_m5_m6_m4recv"
+}

@@ -1,0 +1,162 @@
+{
+  "baseline_file": "submission_B.csv",
+  "public_best": "submission_N2.csv",
+  "public_best_metrics": {
+    "score": 0.744792129,
+    "log_loss": 0.223489094,
+    "auc": 0.925398208
+  },
+  "public_target": {
+    "score": 0.744833171,
+    "log_loss": 0.2234888,
+    "auc": 0.925500072
+  },
+  "public_results": {
+    "L1": {
+      "code": "ar8SRghK",
+      "score": 0.744777292,
+      "log_loss": 0.22349962,
+      "auc": 0.925387654
+    },
+    "L2": {
+      "code": "efW9RyBB",
+      "score": 0.744778268,
+      "log_loss": 0.223499728,
+      "auc": 0.925390365
+    },
+    "M1": {
+      "code": "ehzN18rG",
+      "score": 0.744707523,
+      "log_loss": 0.223562049,
+      "auc": 0.925370612,
+      "mapping_assumed": true
+    },
+    "M2": {
+      "code": "iJwydspA",
+      "score": 0.744659467,
+      "log_loss": 0.223593918,
+      "auc": 0.925330815,
+      "mapping_assumed": true
+    },
+    "M3": {
+      "code": "Nz7VPVQ3",
+      "score": 0.744548276,
+      "log_loss": 0.223675875,
+      "auc": 0.925259452,
+      "mapping_assumed": true
+    },
+    "N1": {
+      "code": "dSy93RPW",
+      "score": 0.744782951,
+      "log_loss": null,
+      "auc": null,
+      "mapping_confirmed": true
+    },
+    "N2": {
+      "code": "DLVqDUUK",
+      "score": 0.744792129,
+      "log_loss": 0.223489094,
+      "auc": 0.925398208,
+      "mapping_confirmed": true
+    }
+  },
+  "verified_hashes": {
+    "submission_B.csv": "5278fb77528a3701f733cef622b2c19c4df04d4321b893d1e581a98909ff4a2c",
+    "submission_H1.csv": "c78844098e46556389caefcdad90f9fa3489a7d321049caa2306d03e71fb0959",
+    "submission_I1.csv": "10782ddcb411be2488c7ef7a85ea3d3b40d8612cae96e010abcf6f913b65f5a3",
+    "submission_K1.csv": "062e2dc7fa18a886529e3305ae4de304b4faf516ba13915cc96552f134159cbe",
+    "submission_K2.csv": "fd06e018caefe4d35bd1a93015a93e96f2093aa75f7b755126092ee241a0d8e6",
+    "submission_L1.csv": "684fb9d44118f025664c0d167e63dd14ab67f2585ac78932195d02fb1c377594",
+    "submission_L2.csv": "0f08a674de1f15cf9e66e782ca088ed83c0e2b61bbc31534a567f0dd0f42beed",
+    "submission_M1.csv": "4d5e2273d3f21fb98133c2db93ffdd8516e771dfb6a769a0a439620c1ccffeb9",
+    "submission_M2.csv": "c59245ce923bcb49047347f48d51622f7c0c391e51498cf571411c721470e01f",
+    "submission_M3.csv": "e369d639369d6d04d52fc70672875a05b7494f0f9a7e2fbc4357fa44c81cd52b"
+  },
+  "submissions_available": 2,
+  "source": "logistic_ix_all_C3",
+  "submit_when_reset": [
+    "submission_N1.csv",
+    "submission_N2.csv"
+  ],
+  "candidates": [
+    {
+      "name": "N1",
+      "file": "submission_N1.csv",
+      "construction": "0.95 K2 + 0.05 logistic_ix_all_C3",
+      "expanded_weight": 0.05,
+      "effective_weights": {
+        "B": 0.475,
+        "logistic_interactions_C3": 0.475,
+        "logistic_ix_all_C3": 0.05
+      },
+      "oof_proxy": 0.7410371005621064,
+      "oof_delta_vs_B": 0.00017402232159968722,
+      "oof_delta_vs_K2": 1.764769796164245e-05,
+      "oof_log_loss": 0.2262662416648001,
+      "oof_log_loss_delta_vs_B": -0.00013302019114191932,
+      "oof_log_loss_delta_vs_K2": -1.2769800478595883e-05,
+      "oof_auc": 0.9230118480392158,
+      "oof_auc_delta_vs_B": 9.97107843138112e-05,
+      "oof_auc_delta_vs_K2": 1.1926470588452531e-05,
+      "oof_date3_delta_vs_B": 1.2812589790689444e-05,
+      "oof_date3_delta_vs_K2": 1.1799677819279708e-05,
+      "paired_delta": 0.00017373604708991556,
+      "paired_se": 3.3943803063425875e-05,
+      "paired_accept": true,
+      "test_mean_by_date": {
+        "4": 0.14999951847521384,
+        "5": 0.1499995442314566,
+        "6": 0.1499994994364771
+      },
+      "test_mad_vs_B": 0.0021561941840078447,
+      "test_mad_vs_K2": 0.00021769152728791345,
+      "validation": {
+        "rows": 30000,
+        "mean": 0.1499995207143825,
+        "min": 0.0003596759882985545,
+        "max": 0.9999952499999877
+      },
+      "sha256": "348993192927d9e669a5d603c7da0e1d7b9d449d69c620f601c2cfd3848f1b64"
+    },
+    {
+      "name": "N2",
+      "file": "submission_N2.csv",
+      "construction": "0.90 K2 + 0.10 logistic_ix_all_C3",
+      "expanded_weight": 0.1,
+      "effective_weights": {
+        "B": 0.45,
+        "logistic_interactions_C3": 0.45,
+        "logistic_ix_all_C3": 0.1
+      },
+      "oof_proxy": 0.7410538695229805,
+      "oof_delta_vs_B": 0.00019079128247379007,
+      "oof_delta_vs_K2": 3.4416658835745295e-05,
+      "oof_log_loss": 0.22625412550082213,
+      "oof_log_loss_delta_vs_B": -0.00014513635511989587,
+      "oof_log_loss_delta_vs_K2": -2.488596445657243e-05,
+      "oof_auc": 0.9230232254901962,
+      "oof_auc_delta_vs_B": 0.00011108823529426548,
+      "oof_auc_delta_vs_K2": 2.3303921568906816e-05,
+      "oof_date3_delta_vs_B": 2.4614948239243262e-05,
+      "oof_date3_delta_vs_K2": 2.3602036267833526e-05,
+      "paired_delta": 0.00019012723018629145,
+      "paired_se": 3.618025966993174e-05,
+      "paired_accept": true,
+      "test_mean_by_date": {
+        "4": 0.14999954381862363,
+        "5": 0.14999956821927468,
+        "6": 0.14999952578192569
+      },
+      "test_mad_vs_B": 0.0021656641536942495,
+      "test_mad_vs_K2": 0.00043538305457581984,
+      "validation": {
+        "rows": 30000,
+        "mean": 0.14999954593994133,
+        "min": 0.00035921058758960804,
+        "max": 0.9999954999999847
+      },
+      "sha256": "9f3bf90d951a715c19278891d58e75324c6f8f883ec14dad5ec3c80208c4a5b7"
+    }
+  ],
+  "public_best_code": "DLVqDUUK"
+}

@@ -1,0 +1,116 @@
+{
+  "configs": [
+    {},
+    {
+      "max_depth": 4,
+      "num_leaves": 15
+    },
+    {
+      "min_data_in_leaf": 100
+    },
+    {
+      "learning_rate": 0.01
+    },
+    {
+      "learning_rate": 0.05
+    }
+  ],
+  "drop_cols": [
+    "m5_deposit_volume",
+    "m5_deposit_total_value",
+    "m5_deposit_highest_amount",
+    "m5_deposit_agents",
+    "m5_withdraw_highest_amount",
+    "m5_merchantpay_highest_amount"
+  ],
+  "elapsed_seconds": 200.08736038208008,
+  "extra_cols": [],
+  "feature_count": 195,
+  "final_rounds": [
+    25,
+    14,
+    25,
+    25,
+    4
+  ],
+  "model": "v8_screen",
+  "month_scale": "rank",
+  "n_seeds": 5,
+  "per_month": [
+    {
+      "auc": 0.9194877647058823,
+      "composite": 0.7372055101884851,
+      "log_loss": 0.2286680157297523,
+      "snapshot": 0
+    },
+    {
+      "auc": 0.9232323921568627,
+      "composite": 0.7401890123267658,
+      "log_loss": 0.22719474499817943,
+      "snapshot": 1
+    },
+    {
+      "auc": 0.9252944313725491,
+      "composite": 0.7449227473571258,
+      "log_loss": 0.22331839998196137,
+      "snapshot": 2
+    },
+    {
+      "auc": 0.9225116862745097,
+      "composite": 0.7394994995864403,
+      "log_loss": 0.22759263179900213,
+      "snapshot": 3
+    }
+  ],
+  "preds": "/home/boss/Desktop/zindi/financial-stress/reports/v8_drop_target_m5_s5_predictions.npz",
+  "report": "/home/boss/Desktop/zindi/financial-stress/reports/v8_screen_drop_target_m5_s5.json",
+  "round_scale": 1.0,
+  "rounds": [
+    [
+      19,
+      1,
+      33,
+      31
+    ],
+    [
+      20,
+      1,
+      17,
+      10
+    ],
+    [
+      19,
+      1,
+      33,
+      31
+    ],
+    [
+      19,
+      1,
+      82,
+      31
+    ],
+    [
+      7,
+      1,
+      1,
+      10
+    ]
+  ],
+  "seeds": [
+    909,
+    11,
+    22,
+    33,
+    44
+  ],
+  "submission": null,
+  "tag": "drop_target_m5_s5",
+  "threads": 2,
+  "validation": {
+    "auc": 0.922721338235294,
+    "composite": 0.7404901002078415,
+    "log_loss": 0.22669344812722383
+  },
+  "variant": "drop_target_m5"
+}

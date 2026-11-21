@@ -1,0 +1,66 @@
+{
+  "blends": {
+    "logit": {
+      "proxy": 0.7408095078970582,
+      "weights": [
+        5.551115123125783e-17,
+        1.0
+      ]
+    },
+    "prob": {
+      "proxy": 0.7408095078970582,
+      "weights": [
+        5.551115123125783e-17,
+        1.0
+      ]
+    },
+    "rank": {
+      "proxy": 0.32044451301708154,
+      "weights": [
+        0.5,
+        0.5
+      ]
+    }
+  },
+  "calibration": {
+    "iso": {
+      "delta_vs_uncalibrated": {
+        "accept": true,
+        "delta": 0.0003302366911541584,
+        "n": 15,
+        "se": 2.8430142835799483e-05
+      },
+      "nested_proxy": 0.7411364226927875
+    },
+    "platt": {
+      "delta_vs_uncalibrated": {
+        "accept": false,
+        "delta": -3.6278946616471096e-07,
+        "n": 15,
+        "se": 2.922674237967157e-06
+      },
+      "nested_proxy": 0.7408090921664156
+    },
+    "temp": {
+      "delta_vs_uncalibrated": {
+        "accept": false,
+        "delta": -0.6820492818571513,
+        "n": 15,
+        "se": 0.0016489004318347084
+      },
+      "nested_proxy": 0.05876066656278267
+    }
+  },
+  "names": [
+    "baseline",
+    "trend_conc"
+  ],
+  "selected": "prob+iso",
+  "selected_proxy": 0.7411364226927875,
+  "validation": {
+    "max": 0.999999999999,
+    "mean": 0.14989459800651334,
+    "min": 1e-12,
+    "rows": 30000
+  }
+}

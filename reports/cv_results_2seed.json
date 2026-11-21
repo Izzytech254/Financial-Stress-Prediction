@@ -1,0 +1,63 @@
+{
+  "models": {
+    "xgb": {
+      "oof_auc": 0.9058229117647059,
+      "oof_logloss": 0.25046115535135177
+    },
+    "lgb": {
+      "oof_auc": 0.9060761225490197,
+      "oof_logloss": 0.24999840255402778
+    },
+    "hist": {
+      "oof_auc": 0.9046529705882352,
+      "oof_logloss": 0.25158068569481973
+    }
+  },
+  "blend_comparison": {
+    "mean_prob": {
+      "auc_oof": 0.9065007843137254,
+      "logloss_oof": 0.2495555532265773
+    },
+    "mean_logit": {
+      "auc_oof": 0.9064559313725491,
+      "logloss_oof": 0.24956059609631492
+    },
+    "mean_rank": {
+      "auc_oof": 0.9064377696078432,
+      "logloss_oof": 0.656873325429102
+    },
+    "logistic_stack": {
+      "auc_oof": 0.9063692107843137,
+      "logloss_oof": 0.2492296320081753
+    },
+    "weighted_prob": {
+      "auc_oof": 0.9065903333333334,
+      "logloss_oof": 0.24946765823954198,
+      "auc_cv_estimate": 0.9066026470588235
+    }
+  },
+  "blend_selected": "weighted_prob",
+  "blend_weights": {
+    "xgb": 0.3578011268514959,
+    "lgb": 0.49201389634833886,
+    "hist": 0.15018497680016513
+  },
+  "calibration": {
+    "coef": 1.070684284974727,
+    "intercept": 0.12727656979532953,
+    "auc_before": 0.9065903333333334,
+    "auc_after": 0.9065903333333334,
+    "logloss_before": 0.24946765823954198,
+    "logloss_after": 0.24899487641014034,
+    "applied": true
+  },
+  "final_oof_auc": 0.9065903333333334,
+  "final_oof_logloss": 0.24899487641014034,
+  "test_prediction_stats": {
+    "mean": 0.15334809586556664,
+    "std": 0.23375978332793595,
+    "min": 0.001681734759374208,
+    "max": 0.9971366156700303
+  },
+  "runtime_seconds": 347.5
+}

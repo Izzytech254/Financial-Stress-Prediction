@@ -1,0 +1,109 @@
+{
+  "baseline_file": "submission_B.csv",
+  "public_i1_actual": 0.744733669,
+  "verified_hashes": {
+    "submission_B.csv": "5278fb77528a3701f733cef622b2c19c4df04d4321b893d1e581a98909ff4a2c",
+    "submission_H1.csv": "c78844098e46556389caefcdad90f9fa3489a7d321049caa2306d03e71fb0959",
+    "submission_I1.csv": "10782ddcb411be2488c7ef7a85ea3d3b40d8612cae96e010abcf6f913b65f5a3",
+    "submission_K1.csv": "062e2dc7fa18a886529e3305ae4de304b4faf516ba13915cc96552f134159cbe"
+  },
+  "submissions_available": 0,
+  "source": "logistic_ix_all_C3",
+  "submit_when_reset": [
+    "submission_M1.csv",
+    "submission_M2.csv",
+    "submission_M3.csv"
+  ],
+  "candidates": [
+    {
+      "name": "M1",
+      "file": "submission_M1.csv",
+      "source": "logistic_ix_all_C3",
+      "weight_source": 0.6,
+      "oof_proxy": 0.7411461674514035,
+      "oof_delta_vs_B": 0.00028308921089681416,
+      "oof_delta_vs_L1": 0.00012388829591492012,
+      "oof_log_loss": 0.22618834894402481,
+      "oof_log_loss_delta_vs_B": -0.00021091291191721595,
+      "oof_auc": 0.9230881470588235,
+      "oof_auc_delta_vs_B": 0.00017600980392151744,
+      "oof_date3_delta_vs_B": 0.00012736732875140433,
+      "paired_delta": 0.00028406437429563024,
+      "paired_se": 5.167774205757553e-05,
+      "paired_accept": true,
+      "test_mean_by_date": {
+        "4": 0.14999959450544334,
+        "5": 0.14999961619491092,
+        "6": 0.14999957847282275
+      },
+      "test_mad_vs_B": 0.0027547355856158123,
+      "validation": {
+        "rows": 30000,
+        "mean": 0.149999596391059,
+        "min": 0.0003704483158947406,
+        "max": 0.9999959999999569
+      },
+      "sha256": "4d5e2273d3f21fb98133c2db93ffdd8516e771dfb6a769a0a439620c1ccffeb9"
+    },
+    {
+      "name": "M2",
+      "file": "submission_M2.csv",
+      "source": "logistic_ix_all_C3",
+      "weight_source": 0.75,
+      "oof_proxy": 0.7411796206448018,
+      "oof_delta_vs_B": 0.00031654240429512814,
+      "oof_delta_vs_L1": 0.0001573414893132341,
+      "oof_log_loss": 0.22616339952723818,
+      "oof_log_loss_delta_vs_B": -0.00023586232870384527,
+      "oof_auc": 0.9231088823529412,
+      "oof_auc_delta_vs_B": 0.00019674509803924156,
+      "oof_date3_delta_vs_B": 0.00012064907331821306,
+      "paired_delta": 0.0003165044957984679,
+      "paired_se": 6.43457804363637e-05,
+      "paired_accept": true,
+      "test_mean_by_date": {
+        "4": 0.1499997465659021,
+        "5": 0.14999976012181931,
+        "6": 0.1499997365455142
+      },
+      "test_mad_vs_B": 0.0034434194820197666,
+      "validation": {
+        "rows": 30000,
+        "mean": 0.14999974774441185,
+        "min": 0.00036309271299492685,
+        "max": 0.9999974999999461
+      },
+      "sha256": "c59245ce923bcb49047347f48d51622f7c0c391e51498cf571411c721470e01f"
+    },
+    {
+      "name": "M3",
+      "file": "submission_M3.csv",
+      "source": "logistic_ix_all_C3",
+      "weight_source": 1.0,
+      "oof_proxy": 0.7412044621935745,
+      "oof_delta_vs_B": 0.00034138395306781977,
+      "oof_delta_vs_L1": 0.00018218303808592573,
+      "oof_log_loss": 0.22614628610248314,
+      "oof_log_loss_delta_vs_B": -0.000252975753458895,
+      "oof_auc": 0.923127843137255,
+      "oof_auc_delta_vs_B": 0.00021570588235308996,
+      "oof_date3_delta_vs_B": 8.017209450417173e-05,
+      "paired_delta": 0.0003426571556821874,
+      "paired_se": 8.568066236882612e-05,
+      "paired_accept": true,
+      "test_mean_by_date": {
+        "4": 0.15,
+        "5": 0.15,
+        "6": 0.15
+      },
+      "test_mad_vs_B": 0.004591225976026354,
+      "validation": {
+        "rows": 30000,
+        "mean": 0.15,
+        "min": 0.00035083337482857074,
+        "max": 0.9999999999999282
+      },
+      "sha256": "e369d639369d6d04d52fc70672875a05b7494f0f9a7e2fbc4357fa44c81cd52b"
+    }
+  ]
+}

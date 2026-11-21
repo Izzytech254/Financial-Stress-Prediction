@@ -1,0 +1,19 @@
+{
+  "delta_vs_raw": {
+    "accept": true,
+    "delta": 0.00027394379692714154,
+    "n": 15,
+    "se": 4.686481461408066e-05
+  },
+  "kind": "iso",
+  "nested_proxy": 0.7410812173802599,
+  "raw_proxy": 0.7408095078970582,
+  "source": "reports/feat_trend_conc_s50_predictions.npz",
+  "submission": "submission_rankcal_feat_trend_conc_s50.csv",
+  "test": {
+    "max": 0.999999999999999,
+    "mean": 0.15,
+    "min": 0.0009908838684106222,
+    "rows": 30000
+  }
+}

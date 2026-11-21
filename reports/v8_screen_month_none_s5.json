@@ -1,0 +1,114 @@
+{
+  "configs": [
+    {},
+    {
+      "max_depth": 4,
+      "num_leaves": 15
+    },
+    {
+      "min_data_in_leaf": 100
+    },
+    {
+      "learning_rate": 0.01
+    },
+    {
+      "learning_rate": 0.05
+    }
+  ],
+  "drop_cols": [
+    "m5_deposit_volume",
+    "m5_deposit_total_value",
+    "m5_deposit_highest_amount",
+    "m5_deposit_agents"
+  ],
+  "elapsed_seconds": 161.3042769432068,
+  "extra_cols": [],
+  "feature_count": 197,
+  "final_rounds": [
+    18,
+    18,
+    18,
+    20,
+    8
+  ],
+  "model": "v8_screen",
+  "month_scale": "none",
+  "n_seeds": 5,
+  "per_month": [
+    {
+      "auc": 0.9194976470588236,
+      "composite": 0.7372118301252186,
+      "log_loss": 0.22866566845915817,
+      "snapshot": 0
+    },
+    {
+      "auc": 0.923234431372549,
+      "composite": 0.7401924250710187,
+      "log_loss": 0.22719216958235092,
+      "snapshot": 1
+    },
+    {
+      "auc": 0.9252781960784314,
+      "composite": 0.7449148376513907,
+      "log_loss": 0.2233198037734821,
+      "snapshot": 2
+    },
+    {
+      "auc": 0.9225197647058823,
+      "composite": 0.739491528114367,
+      "log_loss": 0.227603741286586,
+      "snapshot": 3
+    }
+  ],
+  "preds": "/home/boss/Desktop/zindi/financial-stress/reports/v8_month_none_s5_predictions.npz",
+  "report": "/home/boss/Desktop/zindi/financial-stress/reports/v8_screen_month_none_s5.json",
+  "round_scale": 1.0,
+  "rounds": [
+    [
+      26,
+      3,
+      14,
+      23
+    ],
+    [
+      24,
+      5,
+      14,
+      23
+    ],
+    [
+      26,
+      3,
+      14,
+      23
+    ],
+    [
+      26,
+      3,
+      14,
+      106
+    ],
+    [
+      2,
+      3,
+      13,
+      17
+    ]
+  ],
+  "seeds": [
+    909,
+    11,
+    22,
+    33,
+    44
+  ],
+  "submission": null,
+  "tag": "month_none_s5",
+  "threads": 2,
+  "validation": {
+    "auc": 0.9227200147058823,
+    "composite": 0.7404876572012831,
+    "log_loss": 0.2266953457753943
+  },
+  "variant": "month_none"
+}

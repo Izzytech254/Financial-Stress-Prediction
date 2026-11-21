@@ -1,0 +1,128 @@
+{
+  "configs": [
+    {},
+    {
+      "max_depth": 4,
+      "num_leaves": 15
+    },
+    {
+      "min_data_in_leaf": 100
+    },
+    {
+      "learning_rate": 0.01
+    },
+    {
+      "learning_rate": 0.05
+    }
+  ],
+  "drop_cols": [
+    "m5_deposit_volume",
+    "m5_deposit_total_value",
+    "m5_deposit_highest_amount",
+    "m5_deposit_agents",
+    "m5_withdraw_highest_amount",
+    "m5_merchantpay_highest_amount"
+  ],
+  "elapsed_seconds": 255.14503002166748,
+  "extra_cols": [
+    "m5_deposit_agents",
+    "m2_merchantpay_merchants",
+    "m4_transfer_from_bank_volume",
+    "m5_withdraw_highest_amount",
+    "m4_paybill_volume",
+    "m4_transfer_from_bank_banks",
+    "m6_mm_send_total_value",
+    "m6_transfer_from_bank_banks",
+    "m3_withdraw_agents",
+    "m5_merchantpay_highest_amount"
+  ],
+  "feature_count": 205,
+  "final_rounds": [
+    7,
+    8,
+    7,
+    12,
+    4
+  ],
+  "init_preds": "reports/v7_struct_rank3_10_nom5_predictions.npz",
+  "model": "v8_screen",
+  "month_scale": "rank",
+  "n_seeds": 5,
+  "per_month": [
+    {
+      "auc": 0.9200356078431372,
+      "composite": 0.7379279310683012,
+      "log_loss": 0.2281689261350457,
+      "snapshot": 0
+    },
+    {
+      "auc": 0.9237247843137254,
+      "composite": 0.740772794010994,
+      "log_loss": 0.22681114371687527,
+      "snapshot": 1
+    },
+    {
+      "auc": 0.925689568627451,
+      "composite": 0.7457371941220214,
+      "log_loss": 0.22266747805121767,
+      "snapshot": 2
+    },
+    {
+      "auc": 0.9231020392156863,
+      "composite": 0.7402443299695938,
+      "log_loss": 0.2270881816690417,
+      "snapshot": 3
+    }
+  ],
+  "preds": "/home/boss/Desktop/zindi/financial-stress/reports/v8_add_extras_drop_target_init_nom5_s5_predictions.npz",
+  "report": "/home/boss/Desktop/zindi/financial-stress/reports/v8_screen_add_extras_drop_target_init_nom5_s5.json",
+  "round_scale": 1.0,
+  "rounds": [
+    [
+      1,
+      7,
+      7,
+      23
+    ],
+    [
+      1,
+      8,
+      8,
+      25
+    ],
+    [
+      1,
+      7,
+      7,
+      23
+    ],
+    [
+      1,
+      7,
+      17,
+      88
+    ],
+    [
+      1,
+      1,
+      7,
+      17
+    ]
+  ],
+  "seeds": [
+    909,
+    11,
+    22,
+    33,
+    44
+  ],
+  "submission": null,
+  "tag": "add_extras_drop_target_init_nom5_s5",
+  "threads": 2,
+  "validation": {
+    "auc": 0.9232107794117647,
+    "composite": 0.7411996740574335,
+    "log_loss": 0.2261839323930451
+  },
+  "variant": "add_extras_drop_target"
+}

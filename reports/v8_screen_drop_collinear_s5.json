@@ -1,0 +1,116 @@
+{
+  "configs": [
+    {},
+    {
+      "max_depth": 4,
+      "num_leaves": 15
+    },
+    {
+      "min_data_in_leaf": 100
+    },
+    {
+      "learning_rate": 0.01
+    },
+    {
+      "learning_rate": 0.05
+    }
+  ],
+  "drop_cols": [
+    "m5_deposit_volume",
+    "m5_deposit_total_value",
+    "m5_deposit_highest_amount",
+    "m5_deposit_agents",
+    "m4_transfer_from_bank_volume",
+    "m4_transfer_from_bank_banks"
+  ],
+  "elapsed_seconds": 177.33291864395142,
+  "extra_cols": [],
+  "feature_count": 195,
+  "final_rounds": [
+    16,
+    6,
+    16,
+    17,
+    4
+  ],
+  "model": "v8_screen",
+  "month_scale": "rank",
+  "n_seeds": 5,
+  "per_month": [
+    {
+      "auc": 0.9194956862745098,
+      "composite": 0.7372060724934657,
+      "log_loss": 0.22867060033286865,
+      "snapshot": 0
+    },
+    {
+      "auc": 0.9232622745098038,
+      "composite": 0.7402255339587818,
+      "log_loss": 0.2271703810464302,
+      "snapshot": 1
+    },
+    {
+      "auc": 0.925292,
+      "composite": 0.7449469438725942,
+      "log_loss": 0.22329344065967743,
+      "snapshot": 2
+    },
+    {
+      "auc": 0.9224879215686276,
+      "composite": 0.7394645138424754,
+      "log_loss": 0.2276178993284342,
+      "snapshot": 3
+    }
+  ],
+  "preds": "/home/boss/Desktop/zindi/financial-stress/reports/v8_drop_collinear_s5_predictions.npz",
+  "report": "/home/boss/Desktop/zindi/financial-stress/reports/v8_screen_drop_collinear_s5.json",
+  "round_scale": 1.0,
+  "rounds": [
+    [
+      20,
+      13,
+      11,
+      46
+    ],
+    [
+      3,
+      9,
+      1,
+      32
+    ],
+    [
+      20,
+      9,
+      13,
+      46
+    ],
+    [
+      20,
+      14,
+      11,
+      81
+    ],
+    [
+      1,
+      1,
+      7,
+      19
+    ]
+  ],
+  "seeds": [
+    909,
+    11,
+    22,
+    33,
+    44
+  ],
+  "submission": null,
+  "tag": "drop_collinear_s5",
+  "threads": 2,
+  "validation": {
+    "auc": 0.9227223137254903,
+    "composite": 0.7404959032967313,
+    "log_loss": 0.22668808034185262
+  },
+  "variant": "drop_collinear"
+}

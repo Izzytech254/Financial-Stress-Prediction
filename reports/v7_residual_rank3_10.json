@@ -1,0 +1,177 @@
+{
+  "configs": [
+    {},
+    {
+      "max_depth": 4,
+      "num_leaves": 15
+    },
+    {
+      "min_data_in_leaf": 100
+    },
+    {
+      "learning_rate": 0.01
+    },
+    {
+      "learning_rate": 0.05
+    }
+  ],
+  "drop_cols": [],
+  "drop_m5_deposit": false,
+  "elapsed_seconds": 335.2853055000305,
+  "extra_columns": [
+    "m5_deposit_agents",
+    "m2_merchantpay_merchants",
+    "m4_transfer_from_bank_volume",
+    "m5_withdraw_highest_amount",
+    "m4_paybill_volume",
+    "m4_transfer_from_bank_banks",
+    "m6_mm_send_total_value",
+    "m6_transfer_from_bank_banks",
+    "m3_withdraw_agents",
+    "m5_merchantpay_highest_amount"
+  ],
+  "feature_count": 201,
+  "final_rounds": [
+    1,
+    7,
+    1,
+    1,
+    2
+  ],
+  "fit_mode": "fixed",
+  "model": "v7_residual_extra",
+  "month_scale": "rank",
+  "n_seeds": 5,
+  "per_month": [
+    {
+      "base_auc": 0.919480862745098,
+      "base_composite": 0.7371874986203939,
+      "base_log_loss": 0.22868313942366486,
+      "extra_auc": 0.9200943529411765,
+      "extra_composite": 0.7380715953183985,
+      "extra_log_loss": 0.22804976130925483,
+      "gain_vs_base": 0.0008853816320688601,
+      "gain_vs_extra": 1.2849340642606677e-06,
+      "residual_auc": 0.9200936470588236,
+      "residual_composite": 0.7380728802524628,
+      "residual_log_loss": 0.22804820708297444,
+      "snapshot": 0
+    },
+    {
+      "base_auc": 0.9232272156862746,
+      "base_composite": 0.7401781181226377,
+      "base_log_loss": 0.2272034950839399,
+      "extra_auc": 0.9237931764705883,
+      "extra_composite": 0.7408256875895001,
+      "extra_log_loss": 0.22678581980707913,
+      "gain_vs_base": 0.0006614213883462394,
+      "gain_vs_extra": 1.3851921483842844e-05,
+      "residual_auc": 0.923802117647059,
+      "residual_composite": 0.7408395395109839,
+      "residual_log_loss": 0.22677562998494105,
+      "snapshot": 1
+    },
+    {
+      "base_auc": 0.9252925490196079,
+      "base_composite": 0.744951626074009,
+      "base_log_loss": 0.2232890152543855,
+      "extra_auc": 0.9254861960784314,
+      "extra_composite": 0.7455036390194207,
+      "extra_log_loss": 0.2228184157501856,
+      "gain_vs_base": 0.0005515372671398566,
+      "gain_vs_extra": -4.756782718828845e-07,
+      "residual_auc": 0.9254845490196079,
+      "residual_composite": 0.7455031633411489,
+      "residual_log_loss": 0.22281823413113844,
+      "snapshot": 2
+    },
+    {
+      "base_auc": 0.9224706666666667,
+      "base_composite": 0.7394435340732646,
+      "base_log_loss": 0.22763185982179038,
+      "extra_auc": 0.9231566274509805,
+      "extra_composite": 0.7403272864640018,
+      "extra_log_loss": 0.22702756981208713,
+      "gain_vs_base": 0.0008066155850329215,
+      "gain_vs_extra": -7.713680570431425e-05,
+      "residual_auc": 0.9231381960784313,
+      "residual_composite": 0.7402501496582975,
+      "residual_log_loss": 0.22709675269996604,
+      "snapshot": 3
+    }
+  ],
+  "round_scale": 1.0,
+  "rounds": [
+    [
+      1,
+      1,
+      1,
+      29
+    ],
+    [
+      1,
+      1,
+      13,
+      16
+    ],
+    [
+      1,
+      1,
+      1,
+      29
+    ],
+    [
+      1,
+      1,
+      1,
+      87
+    ],
+    [
+      1,
+      2,
+      1,
+      14
+    ]
+  ],
+  "seeds": [
+    909,
+    11,
+    22,
+    33,
+    44
+  ],
+  "submission": "/home/boss/Desktop/zindi/financial-stress/submission_v7_residual_rank3_10.csv",
+  "test": {
+    "max": 0.9999999999970096,
+    "mean": 0.14999999999999986,
+    "min": 0.00031837350945431093,
+    "rows": 30000,
+    "snapshot_means": [
+      0.14999999999999983,
+      0.14999999999999983,
+      0.14999999999999983
+    ]
+  },
+  "threads": 6,
+  "transform": "rank3",
+  "validation": {
+    "gain_vs_base": 0.0007196919093234166,
+    "gain_vs_extra": -1.5883612989320284e-05,
+    "residual": {
+      "auc": 0.9231998970588234,
+      "composite": 0.7411945410338605,
+      "log_loss": 0.22618470597475498
+    },
+    "structural_base": {
+      "auc": 0.9227044607843138,
+      "composite": 0.7404748491245371,
+      "log_loss": 0.22670187739594513
+    },
+    "structural_extra": {
+      "auc": 0.9232035196078431,
+      "composite": 0.7412104246468498,
+      "log_loss": 0.2261703916696517
+    }
+  },
+  "variant": "rank3_10"
+}

@@ -1,0 +1,127 @@
+{
+  "configs": [
+    {},
+    {
+      "max_depth": 4,
+      "num_leaves": 15
+    },
+    {
+      "min_data_in_leaf": 100
+    },
+    {
+      "learning_rate": 0.01
+    },
+    {
+      "learning_rate": 0.05
+    }
+  ],
+  "drop_cols": [
+    "m5_deposit_volume",
+    "m5_deposit_total_value",
+    "m5_deposit_highest_amount",
+    "m5_deposit_agents",
+    "m5_withdraw_highest_amount",
+    "m5_merchantpay_highest_amount"
+  ],
+  "elapsed_seconds": 345.25961565971375,
+  "extra_cols": [
+    "m5_deposit_agents",
+    "m2_merchantpay_merchants",
+    "m4_transfer_from_bank_volume",
+    "m5_withdraw_highest_amount",
+    "m4_paybill_volume",
+    "m4_transfer_from_bank_banks",
+    "m6_mm_send_total_value",
+    "m6_transfer_from_bank_banks",
+    "m3_withdraw_agents",
+    "m5_merchantpay_highest_amount"
+  ],
+  "feature_count": 205,
+  "final_rounds": [
+    17,
+    26,
+    24,
+    28,
+    12
+  ],
+  "model": "v8_screen",
+  "month_scale": "rank",
+  "n_seeds": 5,
+  "per_month": [
+    {
+      "auc": 0.919564705882353,
+      "composite": 0.7373577541785913,
+      "log_loss": 0.22854756043956367,
+      "snapshot": 0
+    },
+    {
+      "auc": 0.9233,
+      "composite": 0.740275202894807,
+      "log_loss": 0.22713609046264982,
+      "snapshot": 1
+    },
+    {
+      "auc": 0.9253539607843139,
+      "composite": 0.7450349502182723,
+      "log_loss": 0.22323074547799107,
+      "snapshot": 2
+    },
+    {
+      "auc": 0.9225988235294117,
+      "composite": 0.7396068208868325,
+      "log_loss": 0.22752076928722445,
+      "snapshot": 3
+    }
+  ],
+  "preds": "/home/boss/Desktop/zindi/financial-stress/reports/v8_add_extras_drop_target_s5_predictions.npz",
+  "report": "/home/boss/Desktop/zindi/financial-stress/reports/v8_screen_add_extras_drop_target_s5.json",
+  "round_scale": 1.0,
+  "rounds": [
+    [
+      35,
+      10,
+      13,
+      21
+    ],
+    [
+      30,
+      11,
+      21,
+      46
+    ],
+    [
+      35,
+      10,
+      13,
+      59
+    ],
+    [
+      38,
+      10,
+      17,
+      133
+    ],
+    [
+      30,
+      7,
+      7,
+      17
+    ]
+  ],
+  "seeds": [
+    909,
+    11,
+    22,
+    33,
+    44
+  ],
+  "submission": null,
+  "tag": "add_extras_drop_target_s5",
+  "threads": 2,
+  "validation": {
+    "auc": 0.9227897990196079,
+    "composite": 0.7406028526328612,
+    "log_loss": 0.22660879141685722
+  },
+  "variant": "add_extras_drop_target"
+}

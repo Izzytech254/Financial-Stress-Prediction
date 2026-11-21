@@ -1,0 +1,496 @@
+{
+  "base": {
+    "auc": 0.9229116029411764,
+    "log_loss": 0.2263996565067945,
+    "proxy": 0.7408624665477702
+  },
+  "leave_one_out": {
+    "baseline": {
+      "delta_vs_full": -4.972688927296076e-11,
+      "proxy": 0.7408605748919488,
+      "weights": {
+        "cat": 1.4777201195907888e-19,
+        "final_tuned": 0.2136127893190701,
+        "trend_conc": 0.16556101689115132,
+        "tuned": 0.6040385967278333,
+        "xgb": 0.016787597061945193
+      }
+    },
+    "cat": {
+      "delta_vs_full": -1.5040371276975328e-05,
+      "proxy": 0.7408455345703987,
+      "weights": {
+        "baseline": 2.6222881832569915e-19,
+        "final_tuned": 0.21361278931976826,
+        "trend_conc": 0.16556101689164773,
+        "tuned": 0.604038596727835,
+        "xgb": 0.016787597060749098
+      }
+    },
+    "final_tuned": {
+      "delta_vs_full": 1.3641113615348033e-05,
+      "proxy": 0.740874216055291,
+      "weights": {
+        "baseline": 1.1685864046518784e-06,
+        "cat": 1.1696711844507986e-06,
+        "trend_conc": 0.21689756302257196,
+        "tuned": 0.7751209349658637,
+        "xgb": 0.00797916375397539
+      }
+    },
+    "trend_conc": {
+      "delta_vs_full": 1.822412277463492e-05,
+      "proxy": 0.7408787990644503,
+      "weights": {
+        "baseline": 2.512952544102991e-18,
+        "cat": 7.78229068126184e-19,
+        "final_tuned": 0.2698440762487789,
+        "tuned": 0.7300980277729293,
+        "xgb": 5.789597829182687e-05
+      }
+    },
+    "tuned": {
+      "delta_vs_full": -6.515136385831788e-05,
+      "proxy": 0.7407954235778174,
+      "weights": {
+        "baseline": 8.936765516147766e-21,
+        "cat": 2.3371870520963564e-24,
+        "final_tuned": 0.5639818941197695,
+        "trend_conc": 0.4355831225979885,
+        "xgb": 0.00043498328224202235
+      }
+    },
+    "xgb": {
+      "delta_vs_full": 5.053598020055006e-07,
+      "proxy": 0.7408610803014777,
+      "weights": {
+        "baseline": 0.0,
+        "cat": 0.0,
+        "final_tuned": 0.223325,
+        "trend_conc": 0.172521,
+        "tuned": 0.604154
+      }
+    }
+  },
+  "models": [
+    "baseline",
+    "trend_conc",
+    "tuned",
+    "final_tuned",
+    "cat",
+    "xgb"
+  ],
+  "results": {
+    "B": {
+      "accept": false,
+      "auc": 0.9229116029411764,
+      "by_date": [
+        {
+          "date": 0,
+          "delta_auc": 0.0,
+          "delta_ll": 0.0,
+          "delta_proxy": 0.0
+        },
+        {
+          "date": 1,
+          "delta_auc": 0.0,
+          "delta_ll": 0.0,
+          "delta_proxy": 0.0
+        },
+        {
+          "date": 2,
+          "delta_auc": 0.0,
+          "delta_ll": 0.0,
+          "delta_proxy": 0.0
+        },
+        {
+          "date": 3,
+          "delta_auc": 0.0,
+          "delta_ll": 0.0,
+          "delta_proxy": 0.0
+        }
+      ],
+      "delta_auc": 0.0,
+      "delta_ll": 0.0,
+      "delta_proxy": 0.0,
+      "fitting": "identity",
+      "fold_std": 0.004825562423081914,
+      "log_loss": 0.2263996565067945,
+      "paired_proxy_delta": 0.0,
+      "paired_proxy_se": 0.0,
+      "params": {},
+      "proxy": 0.7408624665477702
+    },
+    "blend_baseline_trend_conc_tuned_final_tuned": {
+      "accept": false,
+      "auc": 0.9229135098039217,
+      "by_date": [
+        {
+          "date": 0,
+          "delta_auc": 5.490196078317133e-06,
+          "delta_ll": 1.307304778438989e-05,
+          "delta_proxy": -1.0986826897485535e-05
+        },
+        {
+          "date": 1,
+          "delta_auc": -1.2156862744916452e-05,
+          "delta_ll": 1.5237577387333667e-05,
+          "delta_proxy": -2.0228369354113873e-05
+        },
+        {
+          "date": 2,
+          "delta_auc": 8.549019607895225e-06,
+          "delta_ll": -1.2434688558299323e-05,
+          "delta_proxy": 1.5958789582493083e-05
+        },
+        {
+          "date": 3,
+          "delta_auc": 9.254901960908946e-06,
+          "delta_ll": -7.3516040970111884e-06,
+          "delta_proxy": 1.111534306708073e-05
+        }
+      ],
+      "delta_auc": 1.9068627453711073e-06,
+      "delta_ll": 2.1310831290477505e-06,
+      "delta_proxy": -1.3862462925340324e-06,
+      "fitting": "nonnegative_logit_blend",
+      "fold_std": 0.004816154716793281,
+      "log_loss": 0.22640178758992355,
+      "paired_proxy_delta": -1.1261155737019025e-06,
+      "paired_proxy_se": 6.669321845141433e-06,
+      "params": {
+        "models": [
+          "baseline",
+          "trend_conc",
+          "tuned",
+          "final_tuned"
+        ],
+        "weights": {
+          "baseline": 0.0,
+          "final_tuned": 0.223325,
+          "trend_conc": 0.172521,
+          "tuned": 0.604154
+        }
+      },
+      "proxy": 0.7408610803014777
+    },
+    "blend_baseline_trend_conc_tuned_final_tuned_cat": {
+      "accept": false,
+      "auc": 0.9229135098039217,
+      "by_date": [
+        {
+          "date": 0,
+          "delta_auc": 5.490196078317133e-06,
+          "delta_ll": 1.307304778438989e-05,
+          "delta_proxy": -1.0986826897485535e-05
+        },
+        {
+          "date": 1,
+          "delta_auc": -1.2156862744916452e-05,
+          "delta_ll": 1.5237577387333667e-05,
+          "delta_proxy": -2.0228369354113873e-05
+        },
+        {
+          "date": 2,
+          "delta_auc": 8.549019607895225e-06,
+          "delta_ll": -1.2434688558299323e-05,
+          "delta_proxy": 1.5958789582493083e-05
+        },
+        {
+          "date": 3,
+          "delta_auc": 9.254901960908946e-06,
+          "delta_ll": -7.3516040970111884e-06,
+          "delta_proxy": 1.111534306708073e-05
+        }
+      ],
+      "delta_auc": 1.9068627453711073e-06,
+      "delta_ll": 2.1310831290477505e-06,
+      "delta_proxy": -1.3862462925340324e-06,
+      "fitting": "nonnegative_logit_blend",
+      "fold_std": 0.00481615471679329,
+      "log_loss": 0.22640178758992355,
+      "paired_proxy_delta": -1.1261155737093039e-06,
+      "paired_proxy_se": 6.669321845142107e-06,
+      "params": {
+        "models": [
+          "baseline",
+          "trend_conc",
+          "tuned",
+          "final_tuned",
+          "cat"
+        ],
+        "weights": {
+          "baseline": 0.0,
+          "cat": 0.0,
+          "final_tuned": 0.223325,
+          "trend_conc": 0.172521,
+          "tuned": 0.604154
+        }
+      },
+      "proxy": 0.7408610803014777
+    },
+    "blend_baseline_trend_conc_tuned_final_tuned_cat_xgb": {
+      "accept": false,
+      "auc": 0.9229131225490196,
+      "by_date": [
+        {
+          "date": 0,
+          "delta_auc": 3.921568627385241e-06,
+          "delta_ll": 5.690318575946041e-06,
+          "delta_proxy": -4.16950892812018e-06
+        },
+        {
+          "date": 1,
+          "delta_auc": -1.2549019607899226e-05,
+          "delta_ll": 1.5786685434393544e-05,
+          "delta_proxy": -2.093895449972738e-05
+        },
+        {
+          "date": 2,
+          "delta_auc": 7.607843137247272e-06,
+          "delta_ll": -7.064289728075934e-06,
+          "delta_proxy": 1.0166790762156097e-05
+        },
+        {
+          "date": 3,
+          "delta_auc": 9.568627450939893e-06,
+          "delta_ll": -4.4982323293141224e-06,
+          "delta_proxy": 8.363483581463882e-06
+        }
+      ],
+      "delta_auc": 1.5196078432255788e-06,
+      "delta_ll": 2.4786204881888096e-06,
+      "delta_proxy": -1.891606094539533e-06,
+      "fitting": "nonnegative_logit_blend",
+      "fold_std": 0.004808721991618961,
+      "log_loss": 0.2264021351272827,
+      "paired_proxy_delta": -1.7608871403451688e-06,
+      "paired_proxy_se": 7.643244727598056e-06,
+      "params": {
+        "models": [
+          "baseline",
+          "trend_conc",
+          "tuned",
+          "final_tuned",
+          "cat",
+          "xgb"
+        ],
+        "weights": {
+          "baseline": 7.559808633121425e-19,
+          "cat": 9.704896702721552e-19,
+          "final_tuned": 0.213612789319768,
+          "trend_conc": 0.16556101689164757,
+          "tuned": 0.604038596727835,
+          "xgb": 0.016787597060749504
+        }
+      },
+      "proxy": 0.7408605749416757
+    },
+    "blend_tuned_final_tuned_baseline_cat": {
+      "accept": true,
+      "auc": 0.9229245588235295,
+      "by_date": [
+        {
+          "date": 0,
+          "delta_auc": 3.498039215676929e-05,
+          "delta_ll": -2.2259500878446525e-05,
+          "delta_proxy": 3.643871237046792e-05
+        },
+        {
+          "date": 1,
+          "delta_auc": 2.35294117745255e-07,
+          "delta_ll": 1.4827934605998738e-05,
+          "delta_proxy": -1.4858421451435788e-05
+        },
+        {
+          "date": 2,
+          "delta_auc": 1.0980392156967334e-05,
+          "delta_ll": -2.1781979825274966e-05,
+          "delta_proxy": 2.6357178535274528e-05
+        },
+        {
+          "date": 3,
+          "delta_auc": 2.282352941185284e-05,
+          "delta_ll": -2.2696760398344118e-05,
+          "delta_proxy": 3.201690124221557e-05
+        }
+      ],
+      "delta_auc": 1.2955882353171688e-05,
+      "delta_ll": -1.2977576624051412e-05,
+      "delta_proxy": 1.8268984831038004e-05,
+      "fitting": "nonnegative_logit_blend",
+      "fold_std": 0.0048223150728599435,
+      "log_loss": 0.22638667893017045,
+      "paired_proxy_delta": 1.8191207053116127e-05,
+      "paired_proxy_se": 8.029803819469001e-06,
+      "params": {
+        "models": [
+          "tuned",
+          "final_tuned",
+          "baseline",
+          "cat"
+        ],
+        "weights": {
+          "baseline": 0.0,
+          "cat": 0.0,
+          "final_tuned": 0.26988600314932465,
+          "tuned": 0.7301139968506754
+        }
+      },
+      "proxy": 0.7408807355326013
+    },
+    "stack_C0.01": {
+      "accept": false,
+      "auc": 0.9228684166666667,
+      "by_date": [
+        {
+          "date": 0,
+          "delta_auc": -6.15686274509919e-05,
+          "delta_ll": 5.8204507689729734e-05,
+          "delta_proxy": -8.33210721801203e-05
+        },
+        {
+          "date": 1,
+          "delta_auc": -4.564705882337261e-05,
+          "delta_ll": 4.322407862136779e-05,
+          "delta_proxy": -6.184612970216996e-05
+        },
+        {
+          "date": 2,
+          "delta_auc": -1.2549019607899226e-06,
+          "delta_ll": 2.7998725332684105e-05,
+          "delta_proxy": -2.8735969523241423e-05
+        },
+        {
+          "date": 3,
+          "delta_auc": -5.0588235294024564e-05,
+          "delta_ll": 7.650925553279175e-05,
+          "delta_proxy": -9.738748457077673e-05
+        }
+      ],
+      "delta_auc": -4.31862745096101e-05,
+      "delta_ll": 5.148414179417804e-05,
+      "delta_proxy": -6.919129144511427e-05,
+      "fitting": "logistic_stacker",
+      "fold_std": 0.004782615844107988,
+      "log_loss": 0.22645114064858868,
+      "paired_proxy_delta": -6.875991889610707e-05,
+      "paired_proxy_se": 1.7468096177935404e-05,
+      "params": {
+        "C": 0.01,
+        "coefficients": {
+          "baseline": 0.17382760586807489,
+          "cat": 0.17446417672521553,
+          "final_tuned": 0.17836581056573494,
+          "trend_conc": 0.17813006720993113,
+          "tuned": 0.18086074023373663,
+          "xgb": 0.13463039806462898
+        },
+        "intercept": 0.026132046868459217
+      },
+      "proxy": 0.7407932752563251
+    },
+    "stack_C0.1": {
+      "accept": false,
+      "auc": 0.9228816617647058,
+      "by_date": [
+        {
+          "date": 0,
+          "delta_auc": -5.0039215686359384e-05,
+          "delta_ll": 5.736747252071961e-05,
+          "delta_proxy": -7.786523839625747e-05
+        },
+        {
+          "date": 1,
+          "delta_auc": -3.607843137254374e-05,
+          "delta_ll": 3.4157878882057346e-05,
+          "delta_proxy": -4.887629243011116e-05
+        },
+        {
+          "date": 2,
+          "delta_auc": 1.364705882345163e-05,
+          "delta_ll": 3.3872733577466896e-06,
+          "delta_proxy": 2.043085689629187e-06
+        },
+        {
+          "date": 3,
+          "delta_auc": -3.3960784313724623e-05,
+          "delta_ll": 5.456007371701377e-05,
+          "delta_proxy": -6.860287545684685e-05
+        }
+      ],
+      "delta_auc": -2.994117647059369e-05,
+      "delta_ll": 3.73681746193566e-05,
+      "delta_proxy": -4.965866348172199e-05,
+      "fitting": "logistic_stacker",
+      "fold_std": 0.004793734251303614,
+      "log_loss": 0.22643702468141386,
+      "paired_proxy_delta": -4.93815392987873e-05,
+      "paired_proxy_se": 1.4752020781275328e-05,
+      "params": {
+        "C": 0.1,
+        "coefficients": {
+          "baseline": 0.17404852443180163,
+          "cat": 0.17468702930095742,
+          "final_tuned": 0.17858230189304863,
+          "trend_conc": 0.178347871265838,
+          "tuned": 0.18107510001508084,
+          "xgb": 0.1343633065241398
+        },
+        "intercept": 0.027099314215064164
+      },
+      "proxy": 0.7408128078842885
+    },
+    "stack_C1": {
+      "accept": false,
+      "auc": 0.9229097254901961,
+      "by_date": [
+        {
+          "date": 0,
+          "delta_auc": -3.29411764699028e-06,
+          "delta_ll": -4.787377698184381e-06,
+          "delta_proxy": 3.5099607040844916e-06
+        },
+        {
+          "date": 1,
+          "delta_auc": -2.4000000000024002e-05,
+          "delta_ll": 3.9366690810865856e-05,
+          "delta_proxy": -4.929750333881877e-05
+        },
+        {
+          "date": 2,
+          "delta_auc": 4.1960784313843646e-05,
+          "delta_ll": -2.3087945961758338e-05,
+          "delta_proxy": 4.006627603980739e-05
+        },
+        {
+          "date": 3,
+          "delta_auc": 1.8039215685661247e-06,
+          "delta_ll": 1.9974542790512917e-05,
+          "delta_proxy": -1.9420827463756396e-05
+        }
+      ],
+      "delta_auc": -1.8774509802366168e-06,
+      "delta_ll": 7.86647748537983e-06,
+      "delta_proxy": -8.683562730316119e-06,
+      "fitting": "logistic_stacker",
+      "fold_std": 0.004785926895066292,
+      "log_loss": 0.22640752298427988,
+      "paired_proxy_delta": -7.341079070240693e-06,
+      "paired_proxy_se": 1.6741365738512966e-05,
+      "params": {
+        "C": 1.0,
+        "coefficients": {
+          "baseline": 0.17407054121160406,
+          "cat": 0.1747092699126168,
+          "final_tuned": 0.1786041158879315,
+          "trend_conc": 0.17836979349709503,
+          "tuned": 0.18109683321400016,
+          "xgb": 0.13433633005101175
+        },
+        "intercept": 0.02719654626031851
+      },
+      "proxy": 0.7408537829850399
+    }
+  }
+}

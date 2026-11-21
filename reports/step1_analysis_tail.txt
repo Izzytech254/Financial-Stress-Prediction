@@ -1,0 +1,25 @@
+Sample dtypes: {'ID': <StringDtype(storage='python', na_value=nan)>, 'Target': dtype('float64')}
+ID order match test: True
+Sample Target unique/sample: [0.5] min/max 0.5 0.5
+
+3) Metric
+README metric: score = 0.6 * (1 - LogLoss / 0.595) + 0.4 * ROC_AUC
+Competition page (SPA) not readable via fetch; must confirm live. Using README/proxy formula.
+
+4) Entities / repeated structure
+Each consecutive 4 train rows same profile (10k customers): True
+Unique customer profiles: 10000
+Train cust range: 0 9999 Test cust range: 0 9999
+Same customers in train/test? True
+Per-snapshot positives train: {0: 1500, 1: 1500, 2: 1500, 3: 1500} rates: {0: 0.15, 1: 0.15, 2: 0.15, 3: 0.15}
+=> Repeated entity: customer (static profile). Temporal: 4 train snapshots (0-3) then 3 test snapshots (4-6) per same customer. Leakage risk if rows from same customer/snapshot ordering mixed naively; time-aware/LOMO validation recommended. Frozen harness uses stratified 5x3 row folds (repeated entity leakage possible across rows of same customer) - must interpret alongside LOMO.
+
+5) Adversarial validation (train vs test)
+Adv features: 182 dropped const: []
+Adversarial AUC (RF, row-stratified): 0.5000837858333333
+Top 15 adv features: {'m3_daily_avg_bal': 0.011693312547797053, 'm6_daily_avg_bal': 0.01102379229328124, 'm5_daily_avg_bal': 0.010576926111374415, 'm5_mm_send_highest_amount': 0.01050025204574653, 'm3_withdraw_highest_amount': 0.010109773367298083, 'm1_daily_avg_bal': 0.009995419510399768, 'm4_daily_avg_bal': 0.009839261657176704, 'm2_daily_avg_bal': 0.009776337027505636, 'm2_withdraw_highest_amount': 0.009444414655127359, 'm3_withdraw_total_value': 0.009334596031698384, 'm1_received_highest_amount': 0.00918679895375657, 'm4_deposit_highest_amount': 0.009186368346021632, 'm6_deposit_highest_amount': 0.00908444435666543, 'm3_mm_send_highest_amount': 0.009052652280246893, 'm5_received_highest_amount': 0.008714767756657188}
+Adversarial pred mean train rows: 0.42868326861506884 test rows: 0.42869635252596877
+Top 15 standardized mean diffs (train vs test): {'m1_mm_send_recipients': 0.019568607911185528, 'm3_deposit_agents': 0.017818994354822565, 'm3_withdraw_agents': 0.01567081978028467, 'm3_paybill_companies': 0.014986874337495466, 'm3_received_senders': 0.01439270463165392, 'm3_deposit_volume': 0.01395412251566605, 'm4_paybill_volume': 0.01358644845908531, 'm5_deposit_agents': 0.013322658762497193, 'm6_deposit_highest_amount': 0.012658943686654095, 'm4_received_senders': 0.012628809968040026, 'm1_paybill_volume': 0.01139700629914745, 'm2_withdraw_volume': 0.011261031566193153, 'm1_merchantpay_merchants': 0.010947154740565516, 'm1_received_highest_amount': 0.010862053112114753, 'm1_paybill_companies': 0.010634003608846131}
+Interpretation: test rows are future snapshots (4-6) of same customers; temporal shift in monthly behavior is structural, not sample drift to "drop" naively. High adv signal would need snapshot-label leakage or genuine covariate shift; investigate top features.
+
+=== STEP 1 DONE ===

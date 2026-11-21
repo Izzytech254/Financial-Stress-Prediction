@@ -1,0 +1,115 @@
+{
+  "configs": [
+    {},
+    {
+      "max_depth": 4,
+      "num_leaves": 15
+    },
+    {
+      "min_data_in_leaf": 100
+    },
+    {
+      "learning_rate": 0.01
+    },
+    {
+      "learning_rate": 0.05
+    }
+  ],
+  "drop_cols": [
+    "m5_deposit_volume",
+    "m5_deposit_total_value",
+    "m5_deposit_highest_amount",
+    "m5_deposit_agents"
+  ],
+  "elapsed_seconds": 233.61334371566772,
+  "extra_cols": [],
+  "feature_count": 197,
+  "final_rounds": [
+    1,
+    8,
+    1,
+    1,
+    1
+  ],
+  "init_preds": "reports/v7_struct_rank3_10_nom5_predictions.npz",
+  "model": "v8_screen",
+  "month_scale": "rank",
+  "n_seeds": 5,
+  "per_month": [
+    {
+      "auc": 0.9200354509803923,
+      "composite": 0.7379297593752765,
+      "log_loss": 0.22816705084173972,
+      "snapshot": 0
+    },
+    {
+      "auc": 0.92370831372549,
+      "composite": 0.7407513407171324,
+      "log_loss": 0.22682588489995464,
+      "snapshot": 1
+    },
+    {
+      "auc": 0.925663843137255,
+      "composite": 0.745706742794852,
+      "log_loss": 0.2226874711728829,
+      "snapshot": 2
+    },
+    {
+      "auc": 0.923061725490196,
+      "composite": 0.7401847484471318,
+      "log_loss": 0.2271312755677054,
+      "snapshot": 3
+    }
+  ],
+  "preds": "/home/boss/Desktop/zindi/financial-stress/reports/v8_base_init_nom5_s5_predictions.npz",
+  "report": "/home/boss/Desktop/zindi/financial-stress/reports/v8_screen_base_init_nom5_s5.json",
+  "round_scale": 1.0,
+  "rounds": [
+    [
+      1,
+      1,
+      1,
+      22
+    ],
+    [
+      1,
+      1,
+      14,
+      19
+    ],
+    [
+      1,
+      1,
+      1,
+      22
+    ],
+    [
+      1,
+      1,
+      1,
+      67
+    ],
+    [
+      1,
+      1,
+      1,
+      17
+    ]
+  ],
+  "seeds": [
+    909,
+    11,
+    22,
+    33,
+    44
+  ],
+  "submission": null,
+  "tag": "base_init_nom5_s5",
+  "threads": 2,
+  "validation": {
+    "auc": 0.9231917352941177,
+    "composite": 0.741172908617912,
+    "log_loss": 0.22620292062057065
+  },
+  "variant": "base"
+}

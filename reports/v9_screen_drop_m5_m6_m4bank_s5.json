@@ -1,0 +1,174 @@
+{
+  "configs": [
+    {},
+    {
+      "max_depth": 4,
+      "num_leaves": 15
+    },
+    {
+      "min_data_in_leaf": 100
+    },
+    {
+      "learning_rate": 0.01
+    },
+    {
+      "learning_rate": 0.05
+    }
+  ],
+  "drop_cols": [
+    "m5_paybill_volume",
+    "m5_paybill_total_value",
+    "m5_paybill_highest_amount",
+    "m5_paybill_companies",
+    "m6_paybill_volume",
+    "m6_paybill_total_value",
+    "m6_paybill_highest_amount",
+    "m6_paybill_companies",
+    "m5_merchantpay_volume",
+    "m5_merchantpay_total_value",
+    "m5_merchantpay_highest_amount",
+    "m5_merchantpay_merchants",
+    "m6_merchantpay_volume",
+    "m6_merchantpay_total_value",
+    "m6_merchantpay_highest_amount",
+    "m6_merchantpay_merchants",
+    "m4_transfer_from_bank_volume",
+    "m4_transfer_from_bank_total_value",
+    "m4_transfer_from_bank_highest_amount",
+    "m4_transfer_from_bank_banks",
+    "m5_transfer_from_bank_volume",
+    "m5_transfer_from_bank_total_value",
+    "m5_transfer_from_bank_highest_amount",
+    "m5_transfer_from_bank_banks",
+    "m6_transfer_from_bank_volume",
+    "m6_transfer_from_bank_total_value",
+    "m6_transfer_from_bank_highest_amount",
+    "m6_transfer_from_bank_banks",
+    "m5_mm_send_volume",
+    "m5_mm_send_total_value",
+    "m5_mm_send_highest_amount",
+    "m5_mm_send_recipients",
+    "m6_mm_send_volume",
+    "m6_mm_send_total_value",
+    "m6_mm_send_highest_amount",
+    "m6_mm_send_recipients",
+    "m5_received_volume",
+    "m5_received_total_value",
+    "m5_received_highest_amount",
+    "m5_received_senders",
+    "m6_received_volume",
+    "m6_received_total_value",
+    "m6_received_highest_amount",
+    "m6_received_senders",
+    "m5_deposit_volume",
+    "m5_deposit_total_value",
+    "m5_deposit_highest_amount",
+    "m5_deposit_agents",
+    "m6_deposit_volume",
+    "m6_deposit_total_value",
+    "m6_deposit_highest_amount",
+    "m6_deposit_agents",
+    "m5_withdraw_volume",
+    "m5_withdraw_total_value",
+    "m5_withdraw_highest_amount",
+    "m5_withdraw_agents",
+    "m6_withdraw_volume",
+    "m6_withdraw_total_value",
+    "m6_withdraw_highest_amount",
+    "m6_withdraw_agents",
+    "m5_daily_avg_bal",
+    "m6_daily_avg_bal"
+  ],
+  "elapsed_seconds": 50.95234489440918,
+  "extra_cols": [],
+  "feature_count": 139,
+  "final_rounds": [
+    8,
+    4,
+    8,
+    32,
+    3
+  ],
+  "init_preds": null,
+  "model": "v8_screen",
+  "month_scale": "rank",
+  "n_seeds": 5,
+  "per_month": [
+    {
+      "auc": 0.9194836862745098,
+      "composite": 0.7371866862644745,
+      "log_loss": 0.22868506500995173,
+      "snapshot": 0
+    },
+    {
+      "auc": 0.9232336470588236,
+      "composite": 0.7401862360023861,
+      "log_loss": 0.2271979959643005,
+      "snapshot": 1
+    },
+    {
+      "auc": 0.925290431372549,
+      "composite": 0.7449118984779417,
+      "log_loss": 0.2233275717871523,
+      "snapshot": 2
+    },
+    {
+      "auc": 0.9225218823529411,
+      "composite": 0.7395024357901778,
+      "log_loss": 0.2275937645080736,
+      "snapshot": 3
+    }
+  ],
+  "preds": "/home/boss/Desktop/zindi/financial-stress/reports/v9_screen_drop_m5_m6_m4bank_s5_predictions.npz",
+  "report": "/home/boss/Desktop/zindi/financial-stress/reports/v9_screen_drop_m5_m6_m4bank_s5.json",
+  "round_scale": 1.0,
+  "rounds": [
+    [
+      4,
+      2,
+      13,
+      15
+    ],
+    [
+      3,
+      1,
+      4,
+      15
+    ],
+    [
+      4,
+      1,
+      13,
+      15
+    ],
+    [
+      4,
+      2,
+      127,
+      59
+    ],
+    [
+      1,
+      2,
+      4,
+      15
+    ]
+  ],
+  "seeds": [
+    909,
+    11,
+    22,
+    33,
+    44
+  ],
+  "stack_preds": [],
+  "submission": null,
+  "tag": "drop_m5_m6_m4bank_s5",
+  "threads": 8,
+  "validation": {
+    "auc": 0.922715161764706,
+    "composite": 0.740479914133745,
+    "log_loss": 0.2267010993173695
+  },
+  "variant": "drop_m5_m6_m4bank"
+}

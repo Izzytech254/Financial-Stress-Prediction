@@ -1,0 +1,53 @@
+{
+  "baseline": {
+    "auc": 0.9228065931372549,
+    "log_loss": 0.22654910617950264,
+    "proxy": 0.7406697570738908
+  },
+  "experiments": [
+    {
+      "accept": false,
+      "auc": 0.922787612745098,
+      "delta": -2.9719593479238248e-05,
+      "group": "liquidity",
+      "log_loss": 0.22657022996155474,
+      "months": "1,2,3,4,5,6",
+      "preds": "/home/boss/Desktop/zindi/financial-stress/reports/feat_liquidity_s5_predictions.npz",
+      "proxy": 0.7406408636242025,
+      "se": 1.2376571588840215e-05
+    },
+    {
+      "accept": true,
+      "auc": 0.9228705637254903,
+      "delta": 0.00010337093696372405,
+      "group": "trend",
+      "log_loss": 0.22647176101886551,
+      "months": "1,2,3,4,5,6",
+      "preds": "/home/boss/Desktop/zindi/financial-stress/reports/feat_trend_s5_predictions.npz",
+      "proxy": 0.7407733404291552,
+      "se": 2.0328921928507575e-05
+    },
+    {
+      "accept": false,
+      "auc": 0.9228036176470588,
+      "delta": -2.448157340702769e-06,
+      "group": "stress",
+      "log_loss": 0.22655031217627292,
+      "months": "1,2,3,4,5,6",
+      "preds": "/home/boss/Desktop/zindi/financial-stress/reports/feat_stress_s5_predictions.npz",
+      "proxy": 0.7406673507466155,
+      "se": 6.18581968921404e-06
+    },
+    {
+      "accept": true,
+      "auc": 0.9228130539215686,
+      "delta": 1.2974290988461886e-05,
+      "group": "concentration",
+      "log_loss": 0.22653844047056873,
+      "months": "1,2,3,4,5,6",
+      "preds": "/home/boss/Desktop/zindi/financial-stress/reports/feat_concentration_s5_predictions.npz",
+      "proxy": 0.7406830967243565,
+      "se": 7.56086389116215e-06
+    }
+  ]
+}

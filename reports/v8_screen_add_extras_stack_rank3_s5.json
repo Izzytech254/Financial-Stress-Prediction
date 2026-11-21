@@ -1,0 +1,129 @@
+{
+  "configs": [
+    {},
+    {
+      "max_depth": 4,
+      "num_leaves": 15
+    },
+    {
+      "min_data_in_leaf": 100
+    },
+    {
+      "learning_rate": 0.01
+    },
+    {
+      "learning_rate": 0.05
+    }
+  ],
+  "drop_cols": [
+    "m5_deposit_volume",
+    "m5_deposit_total_value",
+    "m5_deposit_highest_amount",
+    "m5_deposit_agents"
+  ],
+  "elapsed_seconds": 677.4051673412323,
+  "extra_cols": [
+    "m5_deposit_agents",
+    "m2_merchantpay_merchants",
+    "m4_transfer_from_bank_volume",
+    "m5_withdraw_highest_amount",
+    "m4_paybill_volume",
+    "m4_transfer_from_bank_banks",
+    "m6_mm_send_total_value",
+    "m6_transfer_from_bank_banks",
+    "m3_withdraw_agents",
+    "m5_merchantpay_highest_amount"
+  ],
+  "feature_count": 208,
+  "final_rounds": [
+    14,
+    20,
+    14,
+    52,
+    11
+  ],
+  "init_preds": null,
+  "model": "v8_screen",
+  "month_scale": "rank",
+  "n_seeds": 5,
+  "per_month": [
+    {
+      "auc": 0.919512705882353,
+      "composite": 0.7372346716562508,
+      "log_loss": 0.22864899060755134,
+      "snapshot": 0
+    },
+    {
+      "auc": 0.9233364705882354,
+      "composite": 0.740317898005012,
+      "log_loss": 0.22710821781169643,
+      "snapshot": 1
+    },
+    {
+      "auc": 0.9253400784313726,
+      "composite": 0.7450051823349928,
+      "log_loss": 0.2232547586289099,
+      "snapshot": 2
+    },
+    {
+      "auc": 0.9226203921568629,
+      "composite": 0.7396302134260768,
+      "log_loss": 0.2275061272413627,
+      "snapshot": 3
+    }
+  ],
+  "preds": "/home/boss/Desktop/zindi/financial-stress/reports/v8_add_extras_stack_rank3_s5_predictions.npz",
+  "report": "/home/boss/Desktop/zindi/financial-stress/reports/v8_screen_add_extras_stack_rank3_s5.json",
+  "round_scale": 1.0,
+  "rounds": [
+    [
+      1,
+      14,
+      13,
+      83
+    ],
+    [
+      26,
+      15,
+      13,
+      80
+    ],
+    [
+      1,
+      14,
+      13,
+      83
+    ],
+    [
+      20,
+      14,
+      84,
+      125
+    ],
+    [
+      1,
+      9,
+      13,
+      14
+    ]
+  ],
+  "seeds": [
+    909,
+    11,
+    22,
+    33,
+    44
+  ],
+  "stack_preds": [
+    "reports/v7_struct_rank3_10_predictions.npz"
+  ],
+  "submission": null,
+  "tag": "add_extras_stack_rank3_s5",
+  "threads": 2,
+  "validation": {
+    "auc": 0.9227824362745101,
+    "composite": 0.7405790011595048,
+    "log_loss": 0.2266295235723801
+  },
+  "variant": "add_extras"
+}

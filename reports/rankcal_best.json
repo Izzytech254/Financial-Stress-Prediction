@@ -1,0 +1,11 @@
+{
+  "kind": "iso",
+  "source_oof": "reports/baseline_cv_drop_m5_all_s50_predictions.npz",
+  "source_test": "reports/v9_drop_m5_all_s200_predictions.npz",
+  "test": {
+    "max": 0.999999999999999,
+    "mean": 0.15,
+    "min": 0.0009723842862699338,
+    "rows": 30000
+  }
+}

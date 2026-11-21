@@ -1,0 +1,19 @@
+{
+  "delta_vs_raw": {
+    "accept": false,
+    "delta": -0.0009822184571336582,
+    "n": 15,
+    "se": 0.00015297112743722783
+  },
+  "kind": "logit",
+  "nested_proxy": 0.7399079082541582,
+  "raw_proxy": 0.7408912495871088,
+  "source": "reports/tuned_trend_conc_s10_predictions.npz",
+  "submission": "submission_ranklog_tuned.csv",
+  "test": {
+    "max": 0.9999998303442922,
+    "mean": 0.15001820760194776,
+    "min": 2.1242973425008955e-10,
+    "rows": 30000
+  }
+}

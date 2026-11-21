@@ -1,0 +1,61 @@
+=== STEP 1: DATA UNDERSTANDING ===
+
+1) Shapes/dtypes/target
+Train shape: (40000, 184)
+Test shape: (30000, 183)
+SampleSubmission shape: (30000, 2)
+Train dtypes:
+ float64    134
+int64       44
+str          6
+Name: count, dtype: int64
+Target column: ['liquidity_stress_next_30d']
+Target balance counts: {0: 34000, 1: 6000} rate: 0.15
+Missing train: 0 Missing test: 0
+Duplicate rows train: 0 test: 0
+Duplicate rows excl ID train: 0 test: 0
+Duplicate IDs train: 0 test: 0
+Train IDs in test: 0
+Constant cols: []
+
+Cardinalities (selected):
+  gender: train=2 test=2 vals=['F', 'M']
+  region: train=7 test=7 vals=['Central Zone', 'Coastal & Eastern Corridor', 'Islander', 'Lake Zone (Northwest)', 'Northern Highlands', 'Southern Highlands', 'Western Zone']
+  smartphone: train=2 test=2 vals=['No', 'Yes']
+  segment: train=3 test=3 vals=['HVC', 'LVC', 'MVC']
+  earning_pattern: train=3 test=3 vals=['Irregular Earner', 'Monthly Earner', 'Weekly Earner']
+  age min/max: 18 70
+  x_90_d_activity_rate nunique train: 5803
+  Lowest nunique: {'gender': 2, 'smartphone': 2, 'liquidity_stress_next_30d': 2, 'segment': 3, 'earning_pattern': 3, 'm5_withdraw_agents': 6, 'm6_withdraw_agents': 6, 'm3_withdraw_agents': 6, 'm3_deposit_agents': 6, 'm6_deposit_agents': 6, 'm2_withdraw_agents': 6, 'm1_withdraw_agents': 6}
+  Highest nunique: {'m3_withdraw_total_value': 26290, 'm5_daily_avg_bal': 39263, 'm1_daily_avg_bal': 39266, 'm3_daily_avg_bal': 39286, 'm6_daily_avg_bal': 39317, 'm2_daily_avg_bal': 39321, 'm4_daily_avg_bal': 39326, 'ID': 40000}
+
+2) Submission format
+Sample columns: ['ID', 'Target']
+Sample dtypes: {'ID': <StringDtype(storage='python', na_value=nan)>, 'Target': dtype('float64')}
+ID order match test: True
+Sample Target unique/sample: [0.5] min/max 0.5 0.5
+
+3) Metric
+README metric: score = 0.6 * (1 - LogLoss / 0.595) + 0.4 * ROC_AUC
+Competition page (SPA) not readable via fetch; must confirm live. Using README/proxy formula.
+
+4) Entities / repeated structure
+Each consecutive 4 train rows same profile (10k customers): True
+Unique customer profiles: 10000
+Train cust range: 0 9999 Test cust range: 0 9999
+Same customers in train/test? True
+Per-snapshot positives train: {0: 1500, 1: 1500, 2: 1500, 3: 1500} rates: {0: 0.15, 1: 0.15, 2: 0.15, 3: 0.15}
+=> Repeated entity: customer (static profile). Temporal: 4 train snapshots (0-3) then 3 test snapshots (4-6) per same customer. Leakage risk if rows from same customer/snapshot ordering mixed naively; time-aware/LOMO validation recommended. Frozen harness uses stratified 5x3 row folds (repeated entity leakage possible across rows of same customer) - must interpret alongside LOMO.
+
+5) Adversarial validation (train vs test)
+Adv features: 182 dropped const: []
+Adversarial AUC (RF, row-stratified): 0.5000837858333333
+Top 15 adv features: {'m3_daily_avg_bal': 0.011693312547797053, 'm6_daily_avg_bal': 0.01102379229328124, 'm5_daily_avg_bal': 0.010576926111374415, 'm5_mm_send_highest_amount': 0.01050025204574653, 'm3_withdraw_highest_amount': 0.010109773367298083, 'm1_daily_avg_bal': 0.009995419510399768, 'm4_daily_avg_bal': 0.009839261657176704, 'm2_daily_avg_bal': 0.009776337027505636, 'm2_withdraw_highest_amount': 0.009444414655127359, 'm3_withdraw_total_value': 0.009334596031698384, 'm1_received_highest_amount': 0.00918679895375657, 'm4_deposit_highest_amount': 0.009186368346021632, 'm6_deposit_highest_amount': 0.00908444435666543, 'm3_mm_send_highest_amount': 0.009052652280246893, 'm5_received_highest_amount': 0.008714767756657188}
+Adversarial pred mean train rows: 0.42868326861506884 test rows: 0.42869635252596877
+Traceback (most recent call last):
+  File "/home/boss/Desktop/zindi/financial-stress/step1_analysis.py", line 120, in <module>
+    drifts = {c: ks_like(train[c].values.astype(float), test[c].values.astype(float)) for c in num_cols}
+                         ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^
+  File "/home/boss/Desktop/zindi/financial-stress/.venv/lib/python3.13/site-packages/pandas/core/arrays/string_.py", line 953, in astype
+    values = arr.astype(dtype)
+ValueError: could not convert string to float: 'F'

@@ -42,6 +42,16 @@ VARIANTS = [
     "month_z",
     "month_none",
     "drop_m5_all",
+    "drop_m5_m4",
+    "drop_m5_m6",
+    "drop_m5_m6_m4bank",
+    "drop_m5_m6_top5adv",
+    "drop_m5_m6_m4recv",
+    "drop_m5_m6_m1paybill",
+    "drop_m5_m4m6",
+    "drop_m5_top5adv",
+    "drop_m5_abs",
+    "drop_m5_m4bank",
     "drop_target_m5",
     "drop_collinear",
     "add_extras",
@@ -51,6 +61,13 @@ VARIANTS = [
     "add_extras_global",
     "add_extras_drop_target",
     "add_extras_drop_m5_all",
+    "add_extras_rank2_drop_m5_all",
+    "add_extras_rank4_drop_m5_all",
+    "add_extras_global_drop_m5_all",
+    "add_extras_rank3_8_drop_m5_all",
+    "add_extras_rank3_6_drop_m5_all",
+    "add_m5extras_drop_m5_all",
+    "add_allm5rank_drop_m5_all",
     "add_extras_rank3_8",
     "add_extras_rank3_6",
     "top100",
@@ -97,6 +114,67 @@ def build_variant(
         month_scale = "none"
     elif variant == "drop_m5_all":
         drop_cols = [c for c in all_rows.columns if c.startswith("m5_")]
+    elif variant == "drop_m5_m4":
+        drop_cols = [c for c in all_rows.columns if c.startswith(("m5_", "m4_"))]
+    elif variant == "drop_m5_m6":
+        drop_cols = [c for c in all_rows.columns if c.startswith(("m5_", "m6_"))]
+    elif variant == "drop_m5_m6_m4bank":
+        drop_cols = [
+            c
+            for c in all_rows.columns
+            if c.startswith(("m5_", "m6_")) or c.startswith("m4_transfer_from_bank")
+        ]
+    elif variant == "drop_m5_m6_top5adv":
+        drop_cols = [c for c in all_rows.columns if c.startswith(("m5_", "m6_"))] + [
+            "m1_paybill_volume",
+            "m4_transfer_from_bank_volume",
+            "m1_paybill_total_value",
+            "m1_mm_send_volume",
+            "m1_transfer_from_bank_volume",
+        ]
+    elif variant == "drop_m5_m6_m4recv":
+        drop_cols = [
+            c
+            for c in all_rows.columns
+            if c.startswith(("m5_", "m6_"))
+            or c.startswith("m4_received")
+            or c.startswith("m4_transfer_from_bank")
+        ]
+    elif variant == "drop_m5_m6_m1paybill":
+        drop_cols = [
+            c
+            for c in all_rows.columns
+            if c.startswith(("m5_", "m6_")) or c.startswith("m1_paybill")
+        ]
+    elif variant == "drop_m5_m4m6":
+        drop_cols = [
+            c
+            for c in all_rows.columns
+            if c.startswith(("m4_", "m5_", "m6_"))
+        ]
+    elif variant == "drop_m5_top5adv":
+        drop_cols = [c for c in all_rows.columns if c.startswith("m5_")] + [
+            "m1_paybill_volume",
+            "m4_transfer_from_bank_volume",
+            "m1_paybill_total_value",
+            "m1_mm_send_volume",
+            "m1_transfer_from_bank_volume",
+        ]
+    elif variant == "drop_m5_abs":
+        drop_cols = [
+            c
+            for c in all_rows.columns
+            if c.startswith("m5_")
+            or c.endswith(
+                ("_volume", "_total_value", "_highest_amount", "_agents", "daily_avg_bal")
+            )
+        ]
+    elif variant == "drop_m5_m4bank":
+        drop_cols = [
+            c
+            for c in all_rows.columns
+            if c.startswith("m5_") or c.startswith("m4_transfer_from_bank")
+        ]
     elif variant == "drop_target_m5":
         drop_cols = base_drop + [
             "m5_withdraw_highest_amount",
@@ -129,6 +207,30 @@ def build_variant(
     elif variant == "add_extras_drop_m5_all":
         drop_cols = [c for c in all_rows.columns if c.startswith("m5_")]
         extra_cols = list(RANK3_10)
+    elif variant == "add_extras_rank2_drop_m5_all":
+        drop_cols = [c for c in all_rows.columns if c.startswith("m5_")]
+        extra_cols = list(RANK3_10)
+        extra_kind = "rank2"
+    elif variant == "add_extras_rank4_drop_m5_all":
+        drop_cols = [c for c in all_rows.columns if c.startswith("m5_")]
+        extra_cols = list(RANK3_10)
+        extra_kind = "rank4"
+    elif variant == "add_extras_global_drop_m5_all":
+        drop_cols = [c for c in all_rows.columns if c.startswith("m5_")]
+        extra_cols = list(RANK3_10)
+        extra_kind = "global_rank"
+    elif variant == "add_extras_rank3_8_drop_m5_all":
+        drop_cols = [c for c in all_rows.columns if c.startswith("m5_")]
+        extra_cols = list(RANK3_10[:8])
+    elif variant == "add_extras_rank3_6_drop_m5_all":
+        drop_cols = [c for c in all_rows.columns if c.startswith("m5_")]
+        extra_cols = list(RANK3_10[:6])
+    elif variant == "add_m5extras_drop_m5_all":
+        drop_cols = [c for c in all_rows.columns if c.startswith("m5_")]
+        extra_cols = [c for c in RANK3_10 if c.startswith("m5_")]
+    elif variant == "add_allm5rank_drop_m5_all":
+        drop_cols = [c for c in all_rows.columns if c.startswith("m5_")]
+        extra_cols = [c for c in all_rows.columns if c.startswith("m5_")]
     elif variant == "add_extras_rank3_8":
         extra_cols = list(RANK3_10[:8])
     elif variant == "add_extras_rank3_6":

@@ -1,0 +1,29 @@
+{
+  "baseline_preserved": "submission_B.csv",
+  "candidates": [
+    {
+      "file": "submission_E1.csv",
+      "source": "v9_blend_extras_3m_logit",
+      "weight_source": 0.05,
+      "oof_proxy": 0.7408585584198348,
+      "oof_delta_vs_B": -4.519820671844421e-06,
+      "sha256": "dd1b31b16b43deded824e0c8d1627210bd288f3955bd17565a5a370c3d2c23dc"
+    },
+    {
+      "file": "submission_E2.csv",
+      "source": "v9_blend_m6_lgb_cat",
+      "weight_source": 0.2,
+      "oof_proxy": 0.7408197906144689,
+      "oof_delta_vs_B": -4.3287626037780136e-05,
+      "sha256": "05ece47188454b99028f4e1eff684e64ecf67b4cfd04424bd0bd6dae5ed15fea"
+    },
+    {
+      "file": "submission_E3.csv",
+      "source": "v9_drop_m5_m6_m1paybill_s50",
+      "weight_source": 0.3,
+      "oof_proxy": 0.7407885085007602,
+      "oof_delta_vs_B": -7.45697397465106e-05,
+      "sha256": "48fe826eda676150adcc04076d73ab80945d1d09ddb4417f694fe707cc444747"
+    }
+  ]
+}

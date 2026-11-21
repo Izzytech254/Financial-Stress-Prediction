@@ -1,0 +1,118 @@
+{
+  "configs": [
+    {},
+    {
+      "max_depth": 4,
+      "num_leaves": 15
+    },
+    {
+      "min_data_in_leaf": 100
+    },
+    {
+      "learning_rate": 0.01
+    },
+    {
+      "learning_rate": 0.05
+    }
+  ],
+  "drop_cols": [
+    "m5_deposit_volume",
+    "m5_deposit_total_value",
+    "m5_deposit_highest_amount",
+    "m5_deposit_agents"
+  ],
+  "elapsed_seconds": 565.0773057937622,
+  "extra_cols": [],
+  "feature_count": 198,
+  "final_rounds": [
+    16,
+    16,
+    16,
+    20,
+    10
+  ],
+  "init_preds": null,
+  "model": "v8_screen",
+  "month_scale": "rank",
+  "n_seeds": 5,
+  "per_month": [
+    {
+      "auc": 0.9195179607843138,
+      "composite": 0.7372422213933607,
+      "log_loss": 0.22864358822936184,
+      "snapshot": 0
+    },
+    {
+      "auc": 0.9232605490196079,
+      "composite": 0.7402185275449539,
+      "log_loss": 0.2271766446290318,
+      "snapshot": 1
+    },
+    {
+      "auc": 0.9253014117647058,
+      "composite": 0.7449490923858677,
+      "log_loss": 0.22329504338401457,
+      "snapshot": 2
+    },
+    {
+      "auc": 0.9224885490196079,
+      "composite": 0.7394743510864332,
+      "log_loss": 0.22760839295039823,
+      "snapshot": 3
+    }
+  ],
+  "preds": "/home/boss/Desktop/zindi/financial-stress/reports/v8_base_stack_nom5_s5_predictions.npz",
+  "report": "/home/boss/Desktop/zindi/financial-stress/reports/v8_screen_base_stack_nom5_s5.json",
+  "round_scale": 1.0,
+  "rounds": [
+    [
+      18,
+      5,
+      15,
+      29
+    ],
+    [
+      20,
+      11,
+      13,
+      49
+    ],
+    [
+      18,
+      5,
+      13,
+      29
+    ],
+    [
+      18,
+      13,
+      22,
+      61
+    ],
+    [
+      16,
+      1,
+      4,
+      19
+    ]
+  ],
+  "seeds": [
+    909,
+    11,
+    22,
+    33,
+    44
+  ],
+  "stack_preds": [
+    "reports/v7_struct_rank3_10_nom5_predictions.npz"
+  ],
+  "submission": null,
+  "tag": "base_stack_nom5_s5",
+  "threads": 2,
+  "validation": {
+    "auc": 0.9227287352941177,
+    "composite": 0.7405056951614775,
+    "log_loss": 0.2266809172982016
+  },
+  "variant": "base"
+}

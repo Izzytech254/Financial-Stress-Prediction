@@ -1,0 +1,18 @@
+{
+  "model": "v7_blend_struct_v6res",
+  "base": "v7p",
+  "kind": "prob",
+  "w_base": 0.925,
+  "validation": {
+    "score": 0.741283035330758,
+    "log_loss": 0.22611144690810953,
+    "auc": 0.9232364460784314
+  },
+  "test": {
+    "rows": 30000,
+    "mean": 0.14999999999999997,
+    "min": 0.000327650589648792,
+    "max": 0.9999999999962085
+  },
+  "submission": "submission_v7_blend_struct_v6res.csv"
+}

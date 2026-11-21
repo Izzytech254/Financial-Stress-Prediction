@@ -1,0 +1,123 @@
+{
+  "configs": [
+    {},
+    {
+      "max_depth": 4,
+      "num_leaves": 15
+    },
+    {
+      "min_data_in_leaf": 100
+    },
+    {
+      "learning_rate": 0.01
+    },
+    {
+      "learning_rate": 0.05
+    }
+  ],
+  "drop_cols": [
+    "m5_deposit_volume",
+    "m5_deposit_total_value",
+    "m5_deposit_highest_amount",
+    "m5_deposit_agents"
+  ],
+  "elapsed_seconds": 353.6946635246277,
+  "extra_cols": [
+    "m5_deposit_agents",
+    "m2_merchantpay_merchants",
+    "m4_transfer_from_bank_volume",
+    "m5_withdraw_highest_amount",
+    "m4_paybill_volume",
+    "m4_transfer_from_bank_banks",
+    "m6_mm_send_total_value",
+    "m6_transfer_from_bank_banks"
+  ],
+  "feature_count": 205,
+  "final_rounds": [
+    21,
+    12,
+    21,
+    65,
+    7
+  ],
+  "model": "v8_screen",
+  "month_scale": "rank",
+  "n_seeds": 5,
+  "per_month": [
+    {
+      "auc": 0.9195455686274508,
+      "composite": 0.7373082498487186,
+      "log_loss": 0.22858906112224295,
+      "snapshot": 0
+    },
+    {
+      "auc": 0.9232825098039216,
+      "composite": 0.7402513856478048,
+      "log_loss": 0.2271527714548157,
+      "snapshot": 1
+    },
+    {
+      "auc": 0.9253715294117647,
+      "composite": 0.745052926665775,
+      "log_loss": 0.2232198877231064,
+      "snapshot": 2
+    },
+    {
+      "auc": 0.9226050196078432,
+      "composite": 0.7396131157602803,
+      "log_loss": 0.22751698464883321,
+      "snapshot": 3
+    }
+  ],
+  "preds": "/home/boss/Desktop/zindi/financial-stress/reports/v8_add_extras_rank3_8_s5_predictions.npz",
+  "report": "/home/boss/Desktop/zindi/financial-stress/reports/v8_screen_add_extras_rank3_8_s5.json",
+  "round_scale": 1.0,
+  "rounds": [
+    [
+      45,
+      10,
+      13,
+      29
+    ],
+    [
+      7,
+      11,
+      13,
+      62
+    ],
+    [
+      45,
+      5,
+      13,
+      29
+    ],
+    [
+      95,
+      29,
+      35,
+      132
+    ],
+    [
+      1,
+      1,
+      13,
+      19
+    ]
+  ],
+  "seeds": [
+    909,
+    11,
+    22,
+    33,
+    44
+  ],
+  "submission": null,
+  "tag": "add_extras_rank3_8_s5",
+  "threads": 2,
+  "validation": {
+    "auc": 0.9227841519607843,
+    "composite": 0.7405896175198603,
+    "log_loss": 0.22661967623724957
+  },
+  "variant": "add_extras_rank3_8"
+}

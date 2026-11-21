@@ -73,8 +73,18 @@ month scaling, feature selection, and drop-set variants. These improve LOMO but 
 improve the public leaderboard, which indicates a train/test distribution shift.
 
 The `drop_m5_all` 50-seed hedge (`submission_v9_drop_m5_all_s50.csv`) scores LOMO
-`0.740465127`, LogLoss `0.226717150`, AUC `0.922718657`. It is the remaining robustness
-bet if the `m5` snapshot features shift on the hidden test set.
+`0.740465127`, LogLoss `0.226717150`, AUC `0.922718657`, and public `0.744671189`.
+Dropping both `m5_*` and `m6_*` improves both LOMO and the month-3 holdout:
+`drop_m5_m6` 50-seed (`submission_v9_drop_m5_m6_s50.csv`) scores LOMO
+`0.740498576`, LogLoss `0.226688815`, AUC `0.922730848`, month-3 `0.739527356`.
+The `drop_m5_m6_m1paybill` variant, which also drops the top adversarial
+`m1_paybill_*` block, scores LOMO `0.740495869` and month-3 `0.739534977`.
+
+A LightGBM + XGBoost + CatBoost logit blend on `drop_m5_m6` scores LOMO
+`0.740512887` and month-3 `0.739502099`; the two-model LightGBM + CatBoost blend
+scores LOMO `0.740511625` and month-3 `0.739514120`. These are small,
+within-noise gains. Transductive hard pseudo-labelling was negative (month-0
+`-0.000574`) and was discarded.
 
 ## Validation
 
@@ -82,13 +92,47 @@ All model selection uses leave-one-month-out (LOMO) out-of-fold predictions on t
 40,000 training rows. Test predictions are calibrated so each of the three test
 snapshots has mean `0.15`.
 
+## Frozen repeated-CV workflow
+
+Leaderboard differences of `~0.0002` are within noise, so final selection uses a frozen
+5-fold x 3-seed split in `reports/folds_v2.npz` (`42/2026/7`). The selection score is
+`0.6*(1-LogLoss/0.595)+0.4*AUC`. Every accepted change must have a paired proxy delta
+greater than one standard error over the 15 fold/repeat estimates. The manifest and
+hashes are written to `reports/frozen_cv_manifest.json`.
+
+`pipeline.py` runs the canonical stages:
+
+```bash
+PYTHONDONTWRITEBYTECODE=1 .venv/bin/python pipeline.py --stage manifest
+PYTHONDONTWRITEBYTECODE=1 .venv/bin/python pipeline.py --stage baseline
+PYTHONDONTWRITEBYTECODE=1 .venv/bin/python pipeline.py --stage features
+PYTHONDONTWRITEBYTECODE=1 .venv/bin/python pipeline.py --stage features_test
+PYTHONDONTWRITEBYTECODE=1 .venv/bin/python pipeline.py --stage features_preds
+PYTHONDONTWRITEBYTECODE=1 .venv/bin/python pipeline.py --stage ensemble2
+PYTHONDONTWRITEBYTECODE=1 .venv/bin/python pipeline.py --stage tune
+PYTHONDONTWRITEBYTECODE=1 .venv/bin/python pipeline.py --stage ensemble
+```
+
+Current frozen-CV results are in `reports/experiment_log_cv.md`. The trend and
+concentration feature groups were accepted; liquidity and stress were rejected. The
+selected raw model is `submission_feat_trend_conc_s50.csv`. A 50-trial Optuna sweep produces
+`submission_tuned_trend_conc_s10.csv` (OOF proxy `0.740891250`). Nested isotonic calibration
+of the three-way blend reaches OOF proxy `0.741244871`, but its public score collapsed to
+`0.739335283`; post-hoc isotonic/temperature calibration is therefore rejected. The
+public-safe candidates are `submission_tuned_trend_conc_s10.csv`,
+`submission_feat_trend_conc_s50.csv`, and `submission_ensemble_three_way_raw.csv`.
+Within-date rank isotonic calibration (`rank_calibrate_cv.py`) improves nested proxy to
+`0.741156608` without extreme clipping; `submission_rankcal_best.csv`,
+`submission_rankcal_baseline_cv_drop_m5_all_s50.csv`, and `submission_rankcal_tuned.csv`
+are the next public tests.
+
 ## Leaderboard context
 
 | Rank | Public score |
 |---:|---:|
 | 1 | `0.744833171` |
 | 2 | `0.744763066` |
-| 3 (this repo) | `0.744632428` |
+| 3 (this repo) | `0.744671204` |
 
 The top three are within `0.0002`. We tested the obvious leak paths:
 
@@ -99,7 +143,7 @@ The top three are within `0.0002`. We tested the obvious leak paths:
 - RNG seed recovery: no match across 400k seeds
 - fixed-size sampling correction: no material gain
 - segment-specific probit interactions: worse LOMO
-- adversarial train/test AUC: `~1.0`; feature dropping and density weighting did not help
+- adversarial train/test AUC: `0.500376`; no train/test drift was detected
 - time weighting / snapshot ordering: no reliable gain at 10 seeds
 
 The data is at its Bayes ceiling. A large leaderboard lead is not achievable; the
@@ -119,6 +163,32 @@ python v8_screen.py --variant drop_m5_all --seeds 50 --threads 8 --test \
   --out submission_v9_drop_m5_all_s50.csv \
   --report reports/v9_drop_m5_all_s50.json \
   --preds reports/v9_drop_m5_all_s50_predictions.npz
+python v8_screen.py --variant drop_m5_m6 --seeds 50 --threads 8 --test \
+  --tag drop_m5_m6_s50 \
+  --out submission_v9_drop_m5_m6_s50.csv \
+  --report reports/v9_drop_m5_m6_s50.json \
+  --preds reports/v9_drop_m5_m6_s50_predictions.npz
+python v8_screen.py --variant drop_m5_m6_m1paybill --seeds 50 --threads 8 --test \
+  --tag drop_m5_m6_m1paybill_s50 \
+  --out submission_v9_drop_m5_m6_m1paybill_s50.csv \
+  --report reports/v9_drop_m5_m6_m1paybill_s50.json \
+  --preds reports/v9_drop_m5_m6_m1paybill_s50_predictions.npz
+python v8_xgb.py --variant drop_m5_m6 --seeds 50 --threads 8 --test \
+  --tag xgb_drop_m5_m6_s50 \
+  --report reports/v9_xgb_drop_m5_m6_s50.json \
+  --preds reports/v9_xgb_drop_m5_m6_s50_predictions.npz
+python v8_cat.py --variant drop_m5_m6 --seeds 50 --threads 8 --test \
+  --tag cat_drop_m5_m6_s50 \
+  --report reports/v9_cat_drop_m5_m6_s50.json \
+  --preds reports/v9_cat_drop_m5_m6_s50_predictions.npz
+python v9_blend.py \
+  --preds reports/v9_drop_m5_m6_s50_predictions.npz \
+  --preds reports/v9_xgb_drop_m5_m6_s50_predictions.npz \
+  --preds reports/v9_cat_drop_m5_m6_s50_predictions.npz \
+  --names lgb_m6,xgb_m6,cat_m6 --mode logit \
+  --out submission_v9_blend_m6_lgb_xgb_cat.csv \
+  --report reports/v9_blend_m6_lgb_xgb_cat.json \
+  --blend-preds reports/v9_blend_m6_lgb_xgb_cat_predictions.npz
 python v9_time_residual.py --seeds 50 --time-weight linear --slope 0.5
 ```
 

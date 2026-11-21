@@ -1,0 +1,31 @@
+{
+  "mode": "logit",
+  "model": "v9_blend",
+  "names": [
+    "lgb_m6",
+    "xgb_m6",
+    "cat_m6"
+  ],
+  "preds": [
+    "/home/boss/Desktop/zindi/financial-stress/reports/v9_drop_m5_m6_s50_predictions.npz",
+    "/home/boss/Desktop/zindi/financial-stress/reports/v9_xgb_drop_m5_m6_s50_predictions.npz",
+    "/home/boss/Desktop/zindi/financial-stress/reports/v9_cat_drop_m5_m6_s50_predictions.npz"
+  ],
+  "submission": "/home/boss/Desktop/zindi/financial-stress/submission_v9_blend_m6_lgb_xgb_cat.csv",
+  "test": {
+    "max": 0.9999999999963967,
+    "mean": 0.14999999999999997,
+    "min": 0.00039483484319427086,
+    "rows": 30000
+  },
+  "validation": {
+    "auc": 0.9227331715686273,
+    "composite": 0.7405128868140516,
+    "log_loss": 0.22667554529828762
+  },
+  "weights": [
+    0.05,
+    0.28500000000000003,
+    0.6649999999999999
+  ]
+}

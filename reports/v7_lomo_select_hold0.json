@@ -1,0 +1,296 @@
+{
+  "heldout": 0,
+  "candidates": [
+    "m5_deposit_agents",
+    "m2_merchantpay_merchants",
+    "m5_deposit_total_value",
+    "m5_withdraw_highest_amount",
+    "m5_deposit_highest_amount",
+    "m4_paybill_volume",
+    "m1_paybill_companies",
+    "m4_transfer_from_bank_volume",
+    "m4_transfer_from_bank_total_value",
+    "m5_deposit_volume",
+    "m4_mm_send_recipients",
+    "m4_transfer_from_bank_highest_amount",
+    "m6_mm_send_total_value",
+    "m4_paybill_total_value",
+    "m1_paybill_volume",
+    "m6_transfer_from_bank_banks",
+    "m3_withdraw_agents",
+    "m6_mm_send_volume",
+    "m6_transfer_from_bank_highest_amount",
+    "m4_paybill_companies",
+    "m4_paybill_highest_amount",
+    "m1_withdraw_agents",
+    "m6_mm_send_highest_amount",
+    "m1_paybill_total_value",
+    "m5_merchantpay_volume",
+    "m6_mm_send_recipients",
+    "m1_paybill_highest_amount",
+    "m6_transfer_from_bank_volume",
+    "m5_merchantpay_merchants",
+    "m5_merchantpay_total_value",
+    "m6_transfer_from_bank_total_value",
+    "m5_merchantpay_highest_amount",
+    "m4_transfer_from_bank_banks",
+    "m1_withdraw_volume",
+    "m4_received_senders",
+    "m5_withdraw_total_value",
+    "m3_received_senders",
+    "m1_withdraw_highest_amount",
+    "m3_deposit_volume",
+    "m1_withdraw_total_value"
+  ],
+  "selected": [
+    "m2_merchantpay_merchants",
+    "m5_deposit_agents",
+    "m4_paybill_companies",
+    "m1_withdraw_volume",
+    "m6_transfer_from_bank_banks",
+    "m4_received_senders",
+    "m4_transfer_from_bank_total_value",
+    "m4_transfer_from_bank_banks",
+    "m5_withdraw_highest_amount",
+    "m1_paybill_companies"
+  ],
+  "history": [
+    {
+      "step": 1,
+      "added": "m2_merchantpay_merchants",
+      "selected": [
+        "m2_merchantpay_merchants"
+      ],
+      "train_score": 0.7417132743451345,
+      "train_gain": 0.0001431523945976121,
+      "holdout_score": 0.7372036274514029,
+      "holdout_gain": 1.6128831008987987e-05,
+      "gamma_last": [
+        -0.06774028414977525
+      ]
+    },
+    {
+      "step": 2,
+      "added": "m5_deposit_agents",
+      "selected": [
+        "m2_merchantpay_merchants",
+        "m5_deposit_agents"
+      ],
+      "train_score": 0.7418999258851503,
+      "train_gain": 0.0001866515400158475,
+      "holdout_score": 0.737531231739865,
+      "holdout_gain": 0.0003437331194711124,
+      "gamma_last": [
+        -0.11784921841093829,
+        0.10808885901010594
+      ]
+    },
+    {
+      "step": 3,
+      "added": "m4_paybill_companies",
+      "selected": [
+        "m2_merchantpay_merchants",
+        "m5_deposit_agents",
+        "m4_paybill_companies"
+      ],
+      "train_score": 0.7420310141924145,
+      "train_gain": 0.00013108830726416,
+      "holdout_score": 0.7373049986117775,
+      "holdout_gain": 0.00011749999138355172,
+      "gamma_last": [
+        -0.08879511504583032,
+        0.1373465150662343,
+        -0.09734605559494663
+      ]
+    },
+    {
+      "step": 4,
+      "added": "m1_withdraw_volume",
+      "selected": [
+        "m2_merchantpay_merchants",
+        "m5_deposit_agents",
+        "m4_paybill_companies",
+        "m1_withdraw_volume"
+      ],
+      "train_score": 0.7422409929938676,
+      "train_gain": 0.00020997880145312564,
+      "holdout_score": 0.7367388716594816,
+      "holdout_gain": -0.0004486269609123017,
+      "gamma_last": [
+        -0.1270958522585422,
+        0.1091966683161435,
+        -0.13786421794889803,
+        0.12065572395509046
+      ]
+    },
+    {
+      "step": 5,
+      "added": "m6_transfer_from_bank_banks",
+      "selected": [
+        "m2_merchantpay_merchants",
+        "m5_deposit_agents",
+        "m4_paybill_companies",
+        "m1_withdraw_volume",
+        "m6_transfer_from_bank_banks"
+      ],
+      "train_score": 0.7423968093879492,
+      "train_gain": 0.000155816394081576,
+      "holdout_score": 0.7365524039128393,
+      "holdout_gain": -0.0006350947075546287,
+      "gamma_last": [
+        -0.11038978453583097,
+        0.12581443759706645,
+        -0.12280659469244706,
+        0.14737549742740558,
+        -0.1073982341862207
+      ]
+    },
+    {
+      "step": 6,
+      "added": "m4_received_senders",
+      "selected": [
+        "m2_merchantpay_merchants",
+        "m5_deposit_agents",
+        "m4_paybill_companies",
+        "m1_withdraw_volume",
+        "m6_transfer_from_bank_banks",
+        "m4_received_senders"
+      ],
+      "train_score": 0.7424766529339148,
+      "train_gain": 7.984354596568544e-05,
+      "holdout_score": 0.7362834552575162,
+      "holdout_gain": -0.0009040433628777489,
+      "gamma_last": [
+        -0.12146137049181857,
+        0.1117731122295053,
+        -0.13509539803957749,
+        0.13198378666131974,
+        -0.11777248146537259,
+        0.07895314289364938
+      ]
+    },
+    {
+      "step": 7,
+      "added": "m4_transfer_from_bank_total_value",
+      "selected": [
+        "m2_merchantpay_merchants",
+        "m5_deposit_agents",
+        "m4_paybill_companies",
+        "m1_withdraw_volume",
+        "m6_transfer_from_bank_banks",
+        "m4_received_senders",
+        "m4_transfer_from_bank_total_value"
+      ],
+      "train_score": 0.7425501615331687,
+      "train_gain": 7.350859925381314e-05,
+      "holdout_score": 0.7362950988458947,
+      "holdout_gain": -0.0008923997744991752,
+      "gamma_last": [
+        -0.11229081683463125,
+        0.11797437130405232,
+        -0.12664687750779002,
+        0.15197341023463298,
+        -0.10975726000989304,
+        0.08651783699594982,
+        -0.07228173206945614
+      ]
+    },
+    {
+      "step": 8,
+      "added": "m4_transfer_from_bank_banks",
+      "selected": [
+        "m2_merchantpay_merchants",
+        "m5_deposit_agents",
+        "m4_paybill_companies",
+        "m1_withdraw_volume",
+        "m6_transfer_from_bank_banks",
+        "m4_received_senders",
+        "m4_transfer_from_bank_total_value",
+        "m4_transfer_from_bank_banks"
+      ],
+      "train_score": 0.7426619217993523,
+      "train_gain": 0.00011176026618364698,
+      "holdout_score": 0.7362864685311057,
+      "holdout_gain": -0.0009010300892882128,
+      "gamma_last": [
+        -0.11288890294797241,
+        0.11126923787309058,
+        -0.1273029216590033,
+        0.16336029024410445,
+        -0.10978590607765946,
+        0.08300963234911958,
+        -0.2641380483961821,
+        0.20669222931356016
+      ]
+    },
+    {
+      "step": 9,
+      "added": "m5_withdraw_highest_amount",
+      "selected": [
+        "m2_merchantpay_merchants",
+        "m5_deposit_agents",
+        "m4_paybill_companies",
+        "m1_withdraw_volume",
+        "m6_transfer_from_bank_banks",
+        "m4_received_senders",
+        "m4_transfer_from_bank_total_value",
+        "m4_transfer_from_bank_banks",
+        "m5_withdraw_highest_amount"
+      ],
+      "train_score": 0.7427297138120375,
+      "train_gain": 6.779201268514168e-05,
+      "holdout_score": 0.736653762703573,
+      "holdout_gain": -0.0005337359168209321,
+      "gamma_last": [
+        -0.12199645116615146,
+        0.10586306548183133,
+        -0.1370708848724583,
+        0.13470500841254196,
+        -0.12013983109016482,
+        0.07573447984431175,
+        -0.297972642741611,
+        0.22553984163146845,
+        0.0844359875589655
+      ]
+    },
+    {
+      "step": 10,
+      "added": "m1_paybill_companies",
+      "selected": [
+        "m2_merchantpay_merchants",
+        "m5_deposit_agents",
+        "m4_paybill_companies",
+        "m1_withdraw_volume",
+        "m6_transfer_from_bank_banks",
+        "m4_received_senders",
+        "m4_transfer_from_bank_total_value",
+        "m4_transfer_from_bank_banks",
+        "m5_withdraw_highest_amount",
+        "m1_paybill_companies"
+      ],
+      "train_score": 0.742784460628303,
+      "train_gain": 5.474681626549405e-05,
+      "holdout_score": 0.7366054394351914,
+      "holdout_gain": -0.0005820591852024881,
+      "gamma_last": [
+        -0.12820713769327255,
+        0.09874020690304412,
+        -0.14247994792622715,
+        0.12787484185075387,
+        -0.12525005260996225,
+        0.06965842089159745,
+        -0.2974745081938115,
+        0.21931194549524496,
+        0.07681602943788188,
+        0.05874667553876958
+      ]
+    }
+  ],
+  "base_train": 0.7415701219505368,
+  "base_holdout": 0.7371874986203939,
+  "selected_holdout": 0.7366054394351914,
+  "selected_holdout_gain": -0.0005820591852024881,
+  "full_rank3_10_holdout": 0.7380715953183985,
+  "full_rank3_10_holdout_gain": 0.0008840966980045994,
+  "missing_full_features": []
+}

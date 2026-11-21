@@ -1,0 +1,51 @@
+{
+  "baseline_file": "submission_B.csv",
+  "baseline_sha256": "5278fb77528a3701f733cef622b2c19c4df04d4321b893d1e581a98909ff4a2c",
+  "public_baseline_score": 0.744694601,
+  "public_g1_reference": 0.744711831,
+  "g1_file": "submission_G1.csv",
+  "g1_sha256": "e4e84a79fb38b76363a7ccb15ce321c7fa38b0cb45737fcb2c503644336f919c",
+  "submit_order": [
+    "submission_H1.csv"
+  ],
+  "candidates": [
+    {
+      "name": "H1",
+      "file": "submission_H1.csv",
+      "source": "logistic_features_C1",
+      "weight_source": 0.25,
+      "oof_proxy": 0.7409213522209332,
+      "oof_delta_vs_B": 5.827398042657084e-05,
+      "oof_delta_vs_G1": 3.24481709756963e-05,
+      "oof_log_loss": 0.22635544043646347,
+      "oof_log_loss_delta_vs_B": -4.382141947856244e-05,
+      "oof_auc": 0.9229473480392157,
+      "oof_auc_delta_vs_B": 3.5210784313788324e-05,
+      "oof_by_date_delta_vs_B": [
+        0.00012356650018818804,
+        4.974633884136104e-05,
+        4.673454203507621e-05,
+        2.7487756327770896e-05
+      ],
+      "test_mean_by_date": {
+        "4": 0.14999923969770623,
+        "5": 0.14999928036545793,
+        "6": 0.14999920963654262
+      },
+      "test_mad_vs_B": 0.0007062403329517227,
+      "public_g1_reference": 0.744711831,
+      "transfer_ratios_from_G1": {
+        "log_loss": 0.5511389401810753,
+        "auc": 1.0019522264858494
+      },
+      "extrapolated_public_score": 0.7447330674555601,
+      "validation": {
+        "rows": 30000,
+        "mean": 0.1499992432332356,
+        "min": 0.00039205074583791466,
+        "max": 0.99999249999852
+      },
+      "sha256": "c78844098e46556389caefcdad90f9fa3489a7d321049caa2306d03e71fb0959"
+    }
+  ]
+}

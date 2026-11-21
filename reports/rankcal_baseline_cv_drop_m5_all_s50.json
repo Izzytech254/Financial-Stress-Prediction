@@ -1,0 +1,19 @@
+{
+  "delta_vs_raw": {
+    "accept": true,
+    "delta": 0.0004251240761735664,
+    "n": 15,
+    "se": 5.84289029244574e-05
+  },
+  "kind": "iso",
+  "nested_proxy": 0.741095147296571,
+  "raw_proxy": 0.7406727751811817,
+  "source": "reports/baseline_cv_drop_m5_all_s50_predictions.npz",
+  "submission": "submission_rankcal_baseline_cv_drop_m5_all_s50.csv",
+  "test": {
+    "max": 0.999999999999999,
+    "mean": 0.14999999999999997,
+    "min": 0.0009723842862699338,
+    "rows": 30000
+  }
+}

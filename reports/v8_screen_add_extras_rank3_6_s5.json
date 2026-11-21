@@ -1,0 +1,121 @@
+{
+  "configs": [
+    {},
+    {
+      "max_depth": 4,
+      "num_leaves": 15
+    },
+    {
+      "min_data_in_leaf": 100
+    },
+    {
+      "learning_rate": 0.01
+    },
+    {
+      "learning_rate": 0.05
+    }
+  ],
+  "drop_cols": [
+    "m5_deposit_volume",
+    "m5_deposit_total_value",
+    "m5_deposit_highest_amount",
+    "m5_deposit_agents"
+  ],
+  "elapsed_seconds": 339.9953191280365,
+  "extra_cols": [
+    "m5_deposit_agents",
+    "m2_merchantpay_merchants",
+    "m4_transfer_from_bank_volume",
+    "m5_withdraw_highest_amount",
+    "m4_paybill_volume",
+    "m4_transfer_from_bank_banks"
+  ],
+  "feature_count": 203,
+  "final_rounds": [
+    24,
+    23,
+    16,
+    52,
+    16
+  ],
+  "model": "v8_screen",
+  "month_scale": "rank",
+  "n_seeds": 5,
+  "per_month": [
+    {
+      "auc": 0.9195389019607842,
+      "composite": 0.7372967117443268,
+      "log_loss": 0.22859785863132034,
+      "snapshot": 0
+    },
+    {
+      "auc": 0.9232934117647058,
+      "composite": 0.7402643911517146,
+      "log_loss": 0.2271441987745497,
+      "snapshot": 1
+    },
+    {
+      "auc": 0.9253741176470589,
+      "composite": 0.7450454249166548,
+      "log_loss": 0.22322835362431734,
+      "snapshot": 2
+    },
+    {
+      "auc": 0.9225923137254901,
+      "composite": 0.7395981990270382,
+      "log_loss": 0.22752673707596485,
+      "snapshot": 3
+    }
+  ],
+  "preds": "/home/boss/Desktop/zindi/financial-stress/reports/v8_add_extras_rank3_6_s5_predictions.npz",
+  "report": "/home/boss/Desktop/zindi/financial-stress/reports/v8_screen_add_extras_rank3_6_s5.json",
+  "round_scale": 1.0,
+  "rounds": [
+    [
+      19,
+      13,
+      35,
+      28
+    ],
+    [
+      18,
+      8,
+      35,
+      28
+    ],
+    [
+      19,
+      13,
+      13,
+      28
+    ],
+    [
+      19,
+      13,
+      84,
+      127
+    ],
+    [
+      18,
+      7,
+      13,
+      26
+    ]
+  ],
+  "seeds": [
+    909,
+    11,
+    22,
+    33,
+    44
+  ],
+  "submission": null,
+  "tag": "add_extras_rank3_6_s5",
+  "threads": 2,
+  "validation": {
+    "auc": 0.9227830539215688,
+    "composite": 0.7405845287687571,
+    "log_loss": 0.22662428702653806
+  },
+  "variant": "add_extras_rank3_6"
+}

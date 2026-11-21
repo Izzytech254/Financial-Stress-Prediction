@@ -1,0 +1,145 @@
+{
+  "configs": [
+    {},
+    {
+      "max_depth": 4,
+      "num_leaves": 15
+    },
+    {
+      "min_data_in_leaf": 100
+    },
+    {
+      "learning_rate": 0.01
+    },
+    {
+      "learning_rate": 0.05
+    }
+  ],
+  "drop_cols": [],
+  "drop_m5_deposit": false,
+  "elapsed_seconds": 214.1697564125061,
+  "feature_count": 201,
+  "final_rounds": [
+    26,
+    26,
+    18,
+    55,
+    14
+  ],
+  "model": "v6_residual",
+  "month_scale": "rank",
+  "n_seeds": 10,
+  "per_month": [
+    {
+      "gain": 3.515882327498332e-06,
+      "residual_auc": 0.9194787450980393,
+      "residual_composite": 0.7371910145027214,
+      "residual_log_loss": 0.22867881284035688,
+      "snapshot": 0,
+      "structural_auc": 0.919480862745098,
+      "structural_composite": 0.7371874986203939,
+      "structural_log_loss": 0.22868313942366486
+    },
+    {
+      "gain": 7.00510187686687e-05,
+      "residual_auc": 0.9232807058823529,
+      "residual_composite": 0.7402481691414063,
+      "residual_log_loss": 0.22715524560143868,
+      "snapshot": 1,
+      "structural_auc": 0.9232272156862746,
+      "structural_composite": 0.7401781181226377,
+      "structural_log_loss": 0.2272034950839399
+    },
+    {
+      "gain": 9.438187785959506e-05,
+      "residual_auc": 0.9253787450980391,
+      "residual_composite": 0.7450460079518686,
+      "residual_log_loss": 0.22322961100328576,
+      "snapshot": 2,
+      "structural_auc": 0.9252925490196079,
+      "structural_composite": 0.744951626074009,
+      "structural_log_loss": 0.2232890152543855
+    },
+    {
+      "gain": 0.00016302921633448708,
+      "residual_auc": 0.9225908235294118,
+      "residual_composite": 0.7396065632895991,
+      "residual_log_loss": 0.227517851404481,
+      "snapshot": 3,
+      "structural_auc": 0.9224706666666667,
+      "structural_composite": 0.7394435340732646,
+      "structural_log_loss": 0.22763185982179038
+    }
+  ],
+  "round_scale": 1.0,
+  "rounds": [
+    [
+      24,
+      13,
+      35,
+      29
+    ],
+    [
+      38,
+      13,
+      13,
+      61
+    ],
+    [
+      24,
+      9,
+      13,
+      72
+    ],
+    [
+      24,
+      13,
+      105,
+      86
+    ],
+    [
+      21,
+      9,
+      13,
+      16
+    ]
+  ],
+  "seeds": [
+    909,
+    11,
+    22,
+    33,
+    44,
+    1001,
+    1002,
+    1003,
+    1004,
+    1005
+  ],
+  "submission": "/home/boss/Desktop/zindi/financial-stress/submission_v6_residual_s10.csv",
+  "test": {
+    "max": 0.9999999999941379,
+    "mean": 0.14999999999999986,
+    "min": 0.00040119530139015716,
+    "rows": 30000,
+    "snapshot_means": [
+      0.14999999999999983,
+      0.14999999999999983,
+      0.14999999999999983
+    ]
+  },
+  "threads": 8,
+  "validation": {
+    "gain": 8.13307733323887e-05,
+    "residual": {
+      "auc": 0.9227653578431374,
+      "composite": 0.7405561798978695,
+      "log_loss": 0.22664538021239058
+    },
+    "structural": {
+      "auc": 0.9227044607843138,
+      "composite": 0.7404748491245371,
+      "log_loss": 0.22670187739594513
+    }
+  }
+}

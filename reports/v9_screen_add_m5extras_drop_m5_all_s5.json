@@ -1,0 +1,145 @@
+{
+  "configs": [
+    {},
+    {
+      "max_depth": 4,
+      "num_leaves": 15
+    },
+    {
+      "min_data_in_leaf": 100
+    },
+    {
+      "learning_rate": 0.01
+    },
+    {
+      "learning_rate": 0.05
+    }
+  ],
+  "drop_cols": [
+    "m5_paybill_volume",
+    "m5_paybill_total_value",
+    "m5_paybill_highest_amount",
+    "m5_paybill_companies",
+    "m5_merchantpay_volume",
+    "m5_merchantpay_total_value",
+    "m5_merchantpay_highest_amount",
+    "m5_merchantpay_merchants",
+    "m5_transfer_from_bank_volume",
+    "m5_transfer_from_bank_total_value",
+    "m5_transfer_from_bank_highest_amount",
+    "m5_transfer_from_bank_banks",
+    "m5_mm_send_volume",
+    "m5_mm_send_total_value",
+    "m5_mm_send_highest_amount",
+    "m5_mm_send_recipients",
+    "m5_received_volume",
+    "m5_received_total_value",
+    "m5_received_highest_amount",
+    "m5_received_senders",
+    "m5_deposit_volume",
+    "m5_deposit_total_value",
+    "m5_deposit_highest_amount",
+    "m5_deposit_agents",
+    "m5_withdraw_volume",
+    "m5_withdraw_total_value",
+    "m5_withdraw_highest_amount",
+    "m5_withdraw_agents",
+    "m5_daily_avg_bal"
+  ],
+  "elapsed_seconds": 63.12036395072937,
+  "extra_cols": [
+    "m5_deposit_agents",
+    "m5_withdraw_highest_amount",
+    "m5_merchantpay_highest_amount"
+  ],
+  "feature_count": 175,
+  "final_rounds": [
+    22,
+    26,
+    22,
+    62,
+    3
+  ],
+  "init_preds": null,
+  "model": "v8_screen",
+  "month_scale": "rank",
+  "n_seeds": 5,
+  "per_month": [
+    {
+      "auc": 0.9195101960784314,
+      "composite": 0.7372444422481284,
+      "log_loss": 0.2286383058817172,
+      "snapshot": 0
+    },
+    {
+      "auc": 0.9233120784313725,
+      "composite": 0.7402863127590468,
+      "log_loss": 0.22712986429172305,
+      "snapshot": 1
+    },
+    {
+      "auc": 0.925345725490196,
+      "composite": 0.7449811938994839,
+      "log_loss": 0.22328078716078953,
+      "snapshot": 2
+    },
+    {
+      "auc": 0.9225921568627452,
+      "composite": 0.7396099032958534,
+      "log_loss": 0.227515068120501,
+      "snapshot": 3
+    }
+  ],
+  "preds": null,
+  "report": "/home/boss/Desktop/zindi/financial-stress/reports/v9_screen_add_m5extras_drop_m5_all_s5.json",
+  "round_scale": 1.0,
+  "rounds": [
+    [
+      19,
+      19,
+      35,
+      25
+    ],
+    [
+      28,
+      7,
+      30,
+      23
+    ],
+    [
+      19,
+      19,
+      35,
+      25
+    ],
+    [
+      56,
+      21,
+      83,
+      67
+    ],
+    [
+      2,
+      1,
+      4,
+      18
+    ]
+  ],
+  "seeds": [
+    909,
+    11,
+    22,
+    33,
+    44
+  ],
+  "stack_preds": [],
+  "submission": null,
+  "tag": "screen_add_m5extras_drop_m5_all_s5",
+  "threads": 8,
+  "validation": {
+    "auc": 0.9227758088235295,
+    "composite": 0.7405647708937654,
+    "log_loss": 0.2266410063636827
+  },
+  "variant": "add_m5extras_drop_m5_all"
+}

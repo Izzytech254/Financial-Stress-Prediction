@@ -1,0 +1,78 @@
+{
+  "baseline_file": "submission_B.csv",
+  "public_i1_actual": 0.744733669,
+  "verified_hashes": {
+    "submission_B.csv": "5278fb77528a3701f733cef622b2c19c4df04d4321b893d1e581a98909ff4a2c",
+    "submission_H1.csv": "c78844098e46556389caefcdad90f9fa3489a7d321049caa2306d03e71fb0959",
+    "submission_I1.csv": "10782ddcb411be2488c7ef7a85ea3d3b40d8612cae96e010abcf6f913b65f5a3",
+    "submission_K1.csv": "062e2dc7fa18a886529e3305ae4de304b4faf516ba13915cc96552f134159cbe"
+  },
+  "submissions_available": 0,
+  "submit_when_reset": [
+    "submission_L1.csv",
+    "submission_L2.csv"
+  ],
+  "source": "logistic_interactions_C1",
+  "candidates": [
+    {
+      "name": "L1",
+      "file": "submission_L1.csv",
+      "source": "logistic_interactions_C1",
+      "weight_source": 0.53,
+      "oof_proxy": 0.7410222791554886,
+      "oof_delta_vs_B": 0.00015920091498189404,
+      "oof_delta_vs_K1": 6.112105113809108e-06,
+      "oof_log_loss": 0.22627725872636276,
+      "oof_log_loss_delta_vs_B": -0.0001220031295792734,
+      "oof_auc": 0.9230025686274511,
+      "oof_auc_delta_vs_B": 9.043137254916012e-05,
+      "oof_date3_delta_vs_B": 2.650225107814208e-06,
+      "paired_delta": 0.000158786535896945,
+      "paired_se": 3.208327989015929e-05,
+      "paired_accept": true,
+      "test_mean_by_date": {
+        "4": 0.14999952354389579,
+        "5": 0.14999954902902018,
+        "6": 0.14999950470556686
+      },
+      "test_mad_vs_B": 0.0023054774850661073,
+      "validation": {
+        "rows": 30000,
+        "mean": 0.14999952575949427,
+        "min": 0.0003576510991137161,
+        "max": 0.9999952999999905
+      },
+      "sha256": "684fb9d44118f025664c0d167e63dd14ab67f2585ac78932195d02fb1c377594"
+    },
+    {
+      "name": "L2",
+      "file": "submission_L2.csv",
+      "source": "logistic_interactions_C1",
+      "weight_source": 0.54,
+      "oof_proxy": 0.7410240623685985,
+      "oof_delta_vs_B": 0.0001609841280918456,
+      "oof_delta_vs_K1": 7.895318223760661e-06,
+      "oof_log_loss": 0.22627580731780644,
+      "oof_log_loss_delta_vs_B": -0.0001234545381355867,
+      "oof_auc": 0.9230033676470589,
+      "oof_auc_delta_vs_B": 9.123039215697126e-05,
+      "oof_date3_delta_vs_B": 1.2635981028186194e-06,
+      "paired_delta": 0.00016063903005269313,
+      "paired_se": 3.274380220217251e-05,
+      "paired_accept": true,
+      "test_mean_by_date": {
+        "4": 0.1499995336812597,
+        "5": 0.1499995586241474,
+        "6": 0.14999951524374627
+      },
+      "test_mad_vs_B": 0.002348977060256034,
+      "validation": {
+        "rows": 30000,
+        "mean": 0.1499995358497178,
+        "min": 0.000356854502351824,
+        "max": 0.9999953999999904
+      },
+      "sha256": "0f08a674de1f15cf9e66e782ca088ed83c0e2b61bbc31534a567f0dd0f42beed"
+    }
+  ]
+}

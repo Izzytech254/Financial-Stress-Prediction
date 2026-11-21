@@ -1,0 +1,136 @@
+{
+  "configs": [
+    {},
+    {
+      "max_depth": 4,
+      "num_leaves": 15
+    },
+    {
+      "min_data_in_leaf": 100
+    },
+    {
+      "learning_rate": 0.01
+    },
+    {
+      "learning_rate": 0.05
+    },
+    {
+      "max_depth": 3,
+      "num_leaves": 5
+    }
+  ],
+  "drop_cols": [
+    "m5_deposit_volume",
+    "m5_deposit_total_value",
+    "m5_deposit_highest_amount",
+    "m5_deposit_agents"
+  ],
+  "elapsed_seconds": 326.80083537101746,
+  "extra_cols": [
+    "m5_deposit_agents",
+    "m2_merchantpay_merchants",
+    "m4_transfer_from_bank_volume",
+    "m5_withdraw_highest_amount",
+    "m4_paybill_volume",
+    "m4_transfer_from_bank_banks",
+    "m6_mm_send_total_value",
+    "m6_transfer_from_bank_banks",
+    "m3_withdraw_agents",
+    "m5_merchantpay_highest_amount"
+  ],
+  "feature_count": 207,
+  "final_rounds": [
+    36,
+    34,
+    36,
+    40,
+    16,
+    38
+  ],
+  "model": "v8_screen",
+  "month_scale": "rank",
+  "n_seeds": 5,
+  "per_month": [
+    {
+      "auc": 0.9195510588235294,
+      "composite": 0.7373350022087016,
+      "log_loss": 0.2285647094763709,
+      "snapshot": 0
+    },
+    {
+      "auc": 0.923308156862745,
+      "composite": 0.740286622664114,
+      "log_loss": 0.2271280014136425,
+      "snapshot": 1
+    },
+    {
+      "auc": 0.9253892549019609,
+      "composite": 0.745060055745095,
+      "log_loss": 0.22321984916389193,
+      "snapshot": 2
+    },
+    {
+      "auc": 0.9225941960784314,
+      "composite": 0.7396071633821466,
+      "log_loss": 0.2275185940904824,
+      "snapshot": 3
+    }
+  ],
+  "preds": "/home/boss/Desktop/zindi/financial-stress/reports/v8_add_extras_cfg_leaves5_s5_predictions.npz",
+  "report": "/home/boss/Desktop/zindi/financial-stress/reports/v8_screen_add_extras_cfg_leaves5.json",
+  "round_scale": 1.0,
+  "rounds": [
+    [
+      38,
+      7,
+      35,
+      50
+    ],
+    [
+      45,
+      10,
+      22,
+      46
+    ],
+    [
+      38,
+      7,
+      35,
+      50
+    ],
+    [
+      46,
+      11,
+      35,
+      134
+    ],
+    [
+      19,
+      7,
+      13,
+      21
+    ],
+    [
+      40,
+      10,
+      35,
+      50
+    ]
+  ],
+  "seeds": [
+    909,
+    11,
+    22,
+    33,
+    44
+  ],
+  "submission": null,
+  "tag": "add_extras_cfg_leaves5",
+  "threads": 2,
+  "validation": {
+    "auc": 0.9227971813725491,
+    "composite": 0.7406068168823674,
+    "log_loss": 0.2266077885360969
+  },
+  "variant": "add_extras"
+}

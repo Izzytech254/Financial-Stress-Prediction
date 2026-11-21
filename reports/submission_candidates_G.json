@@ -1,0 +1,45 @@
+{
+  "baseline_file": "submission_B.csv",
+  "baseline_sha256": "5278fb77528a3701f733cef622b2c19c4df04d4321b893d1e581a98909ff4a2c",
+  "public_baseline_score": 0.744694601,
+  "public_f3_reference": 0.744704184,
+  "f3_file": "submission_F3.csv",
+  "f3_sha256": "b6d6215be45163f7d9fbaba4f22fc70230cc9606395a37568ebd9c7ef02f9720",
+  "submit_order": [
+    "submission_G1.csv"
+  ],
+  "candidates": [
+    {
+      "name": "G1",
+      "file": "submission_G1.csv",
+      "source": "logistic_features_C1",
+      "weight_source": 0.1,
+      "oof_proxy": 0.7408889040499576,
+      "oof_delta_vs_B": 2.5825809450874537e-05,
+      "oof_delta_vs_F3": 1.2307172128078747e-05,
+      "oof_log_loss": 0.22638024487268085,
+      "oof_log_loss_delta_vs_B": -1.901698326117751e-05,
+      "oof_auc": 0.9229287598039215,
+      "oof_auc_delta_vs_B": 1.6622549019573718e-05,
+      "oof_by_date_delta_vs_B": [
+        5.45860983249824e-05,
+        2.2695955400831025e-05,
+        2.1234140081149988e-05,
+        1.317135772249678e-05
+      ],
+      "test_mean_by_date": {
+        "4": 0.1499990876372475,
+        "5": 0.14999913643854954,
+        "6": 0.14999905156385115
+      },
+      "test_mad_vs_B": 0.0002824961331806893,
+      "validation": {
+        "rows": 30000,
+        "mean": 0.14999909187988275,
+        "min": 0.0003967427348315631,
+        "max": 0.9999909999994081
+      },
+      "sha256": "e4e84a79fb38b76363a7ccb15ce321c7fa38b0cb45737fcb2c503644336f919c"
+    }
+  ]
+}

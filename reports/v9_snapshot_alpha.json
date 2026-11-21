@@ -1,0 +1,62 @@
+{
+  "best_preds": "/home/boss/Desktop/zindi/financial-stress/reports/v9_drop_m5_all_s50_predictions.npz",
+  "feature_count": 172,
+  "model": "v9_snapshot_alpha",
+  "month_alphas": {
+    "0": [
+      0.7371914564350355,
+      0.21999999999999997
+    ],
+    "1": [
+      0.7402148499243364,
+      1.5
+    ],
+    "2": [
+      0.7449589360049128,
+      -0.29000000000000004
+    ],
+    "3": [
+      0.7395254244350479,
+      1.49
+    ]
+  },
+  "snapshot_distances": {
+    "4": {
+      "0": 2.3480018297334584,
+      "1": 2.3002149347476055,
+      "2": 2.32047201312842,
+      "3": 2.3035933259222867
+    },
+    "5": {
+      "0": 2.2802360103840233,
+      "1": 2.248028607140635,
+      "2": 2.3737027835494473,
+      "3": 2.416930999925823
+    },
+    "6": {
+      "0": 2.339613151521693,
+      "1": 2.4634708898576982,
+      "2": 2.3801172762662826,
+      "3": 2.3448347043261077
+    }
+  },
+  "snapshot_mapping": {
+    "4": 1,
+    "5": 1,
+    "6": 0
+  },
+  "struct_preds": "/home/boss/Desktop/zindi/financial-stress/reports/v9_struct_fit_predictions.npz",
+  "submission": "/home/boss/Desktop/zindi/financial-stress/submission_v9_snapshot_alpha.csv",
+  "test": {
+    "max": 0.9999999999939058,
+    "mean": 0.15,
+    "min": 0.00039350595388104706,
+    "rows": 30000
+  },
+  "test_alphas": {
+    "4": 0.875,
+    "5": 0.875,
+    "6": 0.235
+  },
+  "variant": "drop_m5_all"
+}
